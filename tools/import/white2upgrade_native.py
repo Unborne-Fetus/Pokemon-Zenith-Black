@@ -30,6 +30,18 @@ EVOLUTION_METHODS = {
     "METHOD_ITEM_USE": "EVO_METHOD_ITEM",
 }
 STAT_KEYS = ("hp", "attack", "defense", "speed", "special_attack", "special_defense")
+# White2Upgrade keeps Gen 6's canonical ability numbers. Names are resolved
+# independently of the Gen 5 engine; these effects are not yet implemented.
+KALOS_ABILITIES = {
+    165: "AROMA_VEIL", 166: "FLOWER_VEIL", 167: "CHEEK_POUCH",
+    168: "PROTEAN", 169: "FUR_COAT", 170: "MAGICIAN",
+    171: "BULLETPROOF", 172: "COMPETITIVE", 173: "STRONG_JAW",
+    174: "REFRIGERATE", 175: "SWEET_VEIL", 176: "STANCE_CHANGE",
+    177: "GALE_WINGS", 178: "MEGA_LAUNCHER", 179: "GRASS_PELT",
+    180: "SYMBIOSIS", 181: "TOUGH_CLAWS", 182: "PIXILATE",
+    183: "GOOEY", 184: "AERILATE", 185: "PARENTAL_BOND",
+    186: "DARK_AURA", 187: "FAIRY_AURA", 188: "AURA_BREAK",
+}
 NAMES = {
     "SPECIES_FLABEBE": "Flabébé",
     "SPECIES_FARFETCHD": "Farfetch'd",
@@ -64,7 +76,10 @@ def named(prefix: str, value: int, missing: Counter) -> str:
     result = name(prefix, value)
     if isinstance(result, str):
         return result
-    code = f"{prefix}W2U_{value}"
+    if prefix == "ABILITY_" and value in KALOS_ABILITIES:
+        code = f"ABILITY_{KALOS_ABILITIES[value]}"
+    else:
+        code = f"{prefix}W2U_{value}"
     missing[code] += 1
     return code
 
