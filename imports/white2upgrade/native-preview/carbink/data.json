@@ -1,0 +1,178 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Carbink",
+  "base_stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 150,
+    "speed": 50,
+    "special_attack": 50,
+    "special_defense": 150
+  },
+  "types": [
+    "TYPE_ROCK",
+    "TYPE_FAIRY"
+  ],
+  "catch_rate": 60,
+  "evolution_stage": 1,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 1,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 1
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 255,
+  "hatch_cycles": 25,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FAIRY",
+    "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+    "ABILITY_CLEAR_BODY",
+    "ABILITY_CLEAR_BODY"
+  ],
+  "hidden_ability": "ABILITY_STURDY",
+  "flee_rate": 80,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_GRAY",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 100,
+  "height": 3,
+  "weight": 57,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_HARDEN"
+      ],
+      [
+        5,
+        "MOVE_ROCK_THROW"
+      ],
+      [
+        8,
+        "MOVE_SHARPEN"
+      ],
+      [
+        12,
+        "MOVE_SMACK_DOWN"
+      ],
+      [
+        18,
+        "MOVE_REFLECT"
+      ],
+      [
+        21,
+        "MOVE_STEALTH_ROCK"
+      ],
+      [
+        27,
+        "MOVE_GUARD_SPLIT"
+      ],
+      [
+        31,
+        "MOVE_ANCIENT_POWER"
+      ],
+      [
+        35,
+        "MOVE_FLAIL"
+      ],
+      [
+        40,
+        "MOVE_SKILL_SWAP"
+      ],
+      [
+        46,
+        "MOVE_POWER_GEM"
+      ],
+      [
+        49,
+        "MOVE_STONE_EDGE"
+      ],
+      [
+        50,
+        "MOVE_MOONBLAST"
+      ],
+      [
+        60,
+        "MOVE_LIGHT_SCREEN"
+      ],
+      [
+        70,
+        "MOVE_SAFEGUARD"
+      ]
+    ],
+    "by_tm": [
+      "TM04",
+      "TM06",
+      "TM07",
+      "TM10",
+      "TM11",
+      "TM16",
+      "TM17",
+      "TM20",
+      "TM21",
+      "TM23",
+      "TM27",
+      "TM29",
+      "TM32",
+      "TM33",
+      "TM37",
+      "TM39",
+      "TM42",
+      "TM44",
+      "TM48",
+      "TM64",
+      "TM69",
+      "TM70",
+      "TM71",
+      "TM74",
+      "TM77",
+      "TM80",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM92",
+      "TM94",
+      "HM01",
+      "HM04",
+      "HM05"
+    ],
+    "by_tutor": [
+      "MOVE_COVET",
+      "MOVE_MAGIC_COAT",
+      "MOVE_EARTH_POWER",
+      "MOVE_GRAVITY",
+      "MOVE_MAGNET_RISE",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_SNORE",
+      "MOVE_AFTER_YOU",
+      "MOVE_WONDER_ROOM",
+      "MOVE_STEALTH_ROCK",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SKILL_SWAP"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_CARBINK"
+}

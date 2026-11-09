@@ -1,0 +1,178 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Volcanion",
+  "base_stats": {
+    "hp": 80,
+    "attack": 110,
+    "defense": 120,
+    "speed": 70,
+    "special_attack": 130,
+    "special_defense": 90
+  },
+  "types": [
+    "TYPE_FIRE",
+    "TYPE_WATER"
+  ],
+  "catch_rate": 3,
+  "evolution_stage": 3,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 3,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 255,
+  "hatch_cycles": 120,
+  "base_friendship": 100,
+  "growth_rate": "GROWTH_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_WATER_ABSORB",
+    "ABILITY_WATER_ABSORB"
+  ],
+  "hidden_ability": "ABILITY_WATER_ABSORB",
+  "flee_rate": 0,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BROWN",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 270,
+  "height": 17,
+  "weight": 1950,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_STEAM_ERUPTION"
+      ],
+      [
+        1,
+        "MOVE_FLARE_BLITZ"
+      ],
+      [
+        1,
+        "MOVE_TAKE_DOWN"
+      ],
+      [
+        8,
+        "MOVE_MIST"
+      ],
+      [
+        11,
+        "MOVE_HAZE"
+      ],
+      [
+        15,
+        "MOVE_FLAME_CHARGE"
+      ],
+      [
+        21,
+        "MOVE_WATER_PULSE"
+      ],
+      [
+        28,
+        "MOVE_STOMP"
+      ],
+      [
+        32,
+        "MOVE_SCALD"
+      ],
+      [
+        40,
+        "MOVE_WEATHER_BALL"
+      ],
+      [
+        46,
+        "MOVE_BODY_SLAM"
+      ],
+      [
+        50,
+        "MOVE_HYDRO_PUMP"
+      ],
+      [
+        58,
+        "MOVE_FLARE_BLITZ"
+      ],
+      [
+        65,
+        "MOVE_OVERHEAT"
+      ],
+      [
+        76,
+        "MOVE_EXPLOSION"
+      ],
+      [
+        85,
+        "MOVE_STEAM_ERUPTION"
+      ]
+    ],
+    "by_tm": [
+      "TM05",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM15",
+      "TM17",
+      "TM21",
+      "TM22",
+      "TM23",
+      "TM26",
+      "TM27",
+      "TM31",
+      "TM32",
+      "TM34",
+      "TM35",
+      "TM36",
+      "TM37",
+      "TM38",
+      "TM42",
+      "TM43",
+      "TM44",
+      "TM48",
+      "TM50",
+      "TM52",
+      "TM55",
+      "TM56",
+      "TM59",
+      "TM61",
+      "TM64",
+      "TM68",
+      "TM71",
+      "TM74",
+      "TM78",
+      "TM80",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM91",
+      "TM94",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_EARTH_POWER",
+      "MOVE_SUPERPOWER",
+      "MOVE_SNORE",
+      "MOVE_HEAT_WAVE",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_VOLCANION"
+}

@@ -1,0 +1,193 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Pancham",
+  "base_stats": {
+    "hp": 67,
+    "attack": 82,
+    "defense": 62,
+    "speed": 43,
+    "special_attack": 46,
+    "special_defense": 48
+  },
+  "types": [
+    "TYPE_FIGHTING",
+    "TYPE_FIGHTING"
+  ],
+  "catch_rate": 220,
+  "evolution_stage": 1,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_MENTAL_HERB",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 25,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_HUMANSHAPE"
+  ],
+  "abilities": [
+    "ABILITY_IRON_FIST",
+    "ABILITY_MOLD_BREAKER"
+  ],
+  "hidden_ability": "ABILITY_SCRAPPY",
+  "flee_rate": 90,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_WHITE",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 70,
+  "height": 6,
+  "weight": 80,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_LEER"
+      ],
+      [
+        7,
+        "MOVE_ARM_THRUST"
+      ],
+      [
+        10,
+        "MOVE_WORK_UP"
+      ],
+      [
+        12,
+        "MOVE_KARATE_CHOP"
+      ],
+      [
+        15,
+        "MOVE_COMET_PUNCH"
+      ],
+      [
+        20,
+        "MOVE_SLASH"
+      ],
+      [
+        25,
+        "MOVE_CIRCLE_THROW"
+      ],
+      [
+        27,
+        "MOVE_VITAL_THROW"
+      ],
+      [
+        33,
+        "MOVE_BODY_SLAM"
+      ],
+      [
+        39,
+        "MOVE_CRUNCH"
+      ],
+      [
+        42,
+        "MOVE_ENTRAINMENT"
+      ],
+      [
+        45,
+        "MOVE_PARTING_SHOT"
+      ],
+      [
+        48,
+        "MOVE_SKY_UPPERCUT"
+      ]
+    ],
+    "by_tm": [
+      "TM05",
+      "TM06",
+      "TM08",
+      "TM10",
+      "TM11",
+      "TM17",
+      "TM18",
+      "TM21",
+      "TM27",
+      "TM28",
+      "TM31",
+      "TM32",
+      "TM36",
+      "TM39",
+      "TM40",
+      "TM41",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM47",
+      "TM48",
+      "TM49",
+      "TM54",
+      "TM56",
+      "TM65",
+      "TM66",
+      "TM67",
+      "TM71",
+      "TM75",
+      "TM78",
+      "TM80",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM94",
+      "HM02",
+      "HM03",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_COVET",
+      "MOVE_DUAL_CHOP",
+      "MOVE_IRON_HEAD",
+      "MOVE_LOW_KICK",
+      "MOVE_GUNK_SHOT",
+      "MOVE_UPROAR",
+      "MOVE_THUNDER_PUNCH",
+      "MOVE_FIRE_PUNCH",
+      "MOVE_ICE_PUNCH",
+      "MOVE_BLOCK",
+      "MOVE_FOUL_PLAY",
+      "MOVE_SUPERPOWER",
+      "MOVE_DARK_PULSE",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_HYPER_VOICE",
+      "MOVE_SNORE",
+      "MOVE_KNOCK_OFF",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_SPITE",
+      "MOVE_HELPING_HAND",
+      "MOVE_ENDEAVOR",
+      "MOVE_SNATCH",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [
+    {
+      "method": "EVO_METHOD_LEVEL",
+      "param": 32,
+      "species": "SPECIES_PANGORO"
+    }
+  ],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_PANCHAM"
+}

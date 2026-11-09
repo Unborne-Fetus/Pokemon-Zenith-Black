@@ -1,0 +1,120 @@
+# Native Gen 6 data conversion audit
+
+- Generated **72** Zenith Black-formatted `data.json` previews (#650–721).
+- Structural validation against `res/pokemon/species.schema.json`: **passed**.
+- This is not a playable ROM integration. The generated files are **not** in `res/pokemon/`.
+- Missing Pokédex prose, sprites, icons, cell animations, footprints, cries and egg moves.
+- New form offsets, battle data, save migrations and engine limits are unresolved.
+- Donor: https://github.com/ds-pokemon-hacking/White2Upgrade
+
+## Missing references and conversion warnings
+
+- ABILITY_W2U_165: 2
+- ABILITY_W2U_166: 6
+- ABILITY_W2U_167: 3
+- ABILITY_W2U_168: 3
+- ABILITY_W2U_169: 3
+- ABILITY_W2U_170: 7
+- ABILITY_W2U_171: 3
+- ABILITY_W2U_173: 4
+- ABILITY_W2U_174: 4
+- ABILITY_W2U_175: 4
+- ABILITY_W2U_176: 3
+- ABILITY_W2U_177: 3
+- ABILITY_W2U_178: 6
+- ABILITY_W2U_179: 2
+- ABILITY_W2U_180: 3
+- ABILITY_W2U_181: 2
+- ABILITY_W2U_182: 1
+- ABILITY_W2U_183: 3
+- ABILITY_W2U_186: 3
+- ABILITY_W2U_187: 3
+- ABILITY_W2U_188: 3
+- SPECIES_AEGISLASH has 1 alternate forms without converted assets: 1
+- SPECIES_DIANCIE has 1 alternate forms without converted assets: 1
+- SPECIES_FLABEBE has 4 alternate forms without converted assets: 1
+- SPECIES_FLOETTE has 5 alternate forms without converted assets: 1
+- SPECIES_FLORGES has 4 alternate forms without converted assets: 1
+- SPECIES_FURFROU has 9 alternate forms without converted assets: 1
+- SPECIES_GOURGEIST has 3 alternate forms without converted assets: 1
+- SPECIES_HOOPA has 1 alternate forms without converted assets: 1
+- SPECIES_MEOWSTIC has 1 alternate forms without converted assets: 1
+- SPECIES_PUMPKABOO has 3 alternate forms without converted assets: 1
+- SPECIES_VIVILLON has 19 alternate forms without converted assets: 1
+- SPECIES_XERNEAS has 1 alternate forms without converted assets: 1
+- TM/HM bit 101: 7
+- TM/HM bit 102: 22
+- TM/HM bit 103: 26
+- TM/HM bit 104: 7
+- TM/HM bit 105: 34
+- TM/HM bit 106: 7
+- tutor bit 13, group with 13 entries: 9
+- tutor bit 14, group with 13 entries: 17
+- tutor bit 15, group with 13 entries: 19
+- unimplemented item ITEM_SACHET: 1
+- unimplemented item ITEM_WHIPPED_DREAM: 1
+
+## Unresolved type/move/ability references
+
+- `ABILITY_W2U_165`
+- `ABILITY_W2U_166`
+- `ABILITY_W2U_167`
+- `ABILITY_W2U_168`
+- `ABILITY_W2U_169`
+- `ABILITY_W2U_170`
+- `ABILITY_W2U_171`
+- `ABILITY_W2U_173`
+- `ABILITY_W2U_174`
+- `ABILITY_W2U_175`
+- `ABILITY_W2U_176`
+- `ABILITY_W2U_177`
+- `ABILITY_W2U_178`
+- `ABILITY_W2U_179`
+- `ABILITY_W2U_180`
+- `ABILITY_W2U_181`
+- `ABILITY_W2U_182`
+- `ABILITY_W2U_183`
+- `ABILITY_W2U_186`
+- `ABILITY_W2U_187`
+- `ABILITY_W2U_188`
+- `MOVE_AROMATIC_MIST`
+- `MOVE_BABYDOLL_EYES`
+- `MOVE_BOOMBURST`
+- `MOVE_CRAFTY_SHIELD`
+- `MOVE_DIAMOND_STORM`
+- `MOVE_DISARMING_VOICE`
+- `MOVE_DRAINING_KISS`
+- `MOVE_EERIE_IMPULSE`
+- `MOVE_ELECTRIFY`
+- `MOVE_FAIRY_LOCK`
+- `MOVE_FAIRY_WIND`
+- `MOVE_FLOWER_SHIELD`
+- `MOVE_FLYING_PRESS`
+- `MOVE_FORESTS_CURSE`
+- `MOVE_FREEZEDRY`
+- `MOVE_GEOMANCY`
+- `MOVE_GRASSY_TERRAIN`
+- `MOVE_HYPERSPACE_HOLE`
+- `MOVE_KINGS_SHIELD`
+- `MOVE_LANDS_WRATH`
+- `MOVE_MAT_BLOCK`
+- `MOVE_MISTY_TERRAIN`
+- `MOVE_MOONBLAST`
+- `MOVE_MYSTICAL_FIRE`
+- `MOVE_NOBLE_ROAR`
+- `MOVE_NUZZLE`
+- `MOVE_OBLIVION_WING`
+- `MOVE_PARABOLIC_CHARGE`
+- `MOVE_PARTING_SHOT`
+- `MOVE_PETAL_BLIZZARD`
+- `MOVE_PHANTOM_FORCE`
+- `MOVE_PLAY_NICE`
+- `MOVE_PLAY_ROUGH`
+- `MOVE_POWDER`
+- `MOVE_ROTOTILLER`
+- `MOVE_SPIKY_SHIELD`
+- `MOVE_STEAM_ERUPTION`
+- `MOVE_TOPSYTURVY`
+- `MOVE_TRICKORTREAT`
+- `MOVE_WATER_SHURIKEN`
+- `TYPE_FAIRY`

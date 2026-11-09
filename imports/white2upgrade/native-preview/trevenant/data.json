@@ -1,0 +1,190 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Trevenant",
+  "base_stats": {
+    "hp": 85,
+    "attack": 110,
+    "defense": 76,
+    "speed": 56,
+    "special_attack": 65,
+    "special_defense": 82
+  },
+  "types": [
+    "TYPE_GHOST",
+    "TYPE_GRASS"
+  ],
+  "catch_rate": 60,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_GRASS",
+    "EGG_GROUP_AMORPHOUS"
+  ],
+  "abilities": [
+    "ABILITY_NATURAL_CURE",
+    "ABILITY_FRISK"
+  ],
+  "hidden_ability": "ABILITY_HARVEST",
+  "flee_rate": 120,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BROWN",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 166,
+  "height": 15,
+  "weight": 710,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_HORN_LEECH"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_CONFUSE_RAY"
+      ],
+      [
+        5,
+        "MOVE_ASTONISH"
+      ],
+      [
+        8,
+        "MOVE_GROWTH"
+      ],
+      [
+        13,
+        "MOVE_INGRAIN"
+      ],
+      [
+        19,
+        "MOVE_FAINT_ATTACK"
+      ],
+      [
+        23,
+        "MOVE_LEECH_SEED"
+      ],
+      [
+        28,
+        "MOVE_CURSE"
+      ],
+      [
+        31,
+        "MOVE_WILL_O_WISP"
+      ],
+      [
+        35,
+        "MOVE_FORESTS_CURSE"
+      ],
+      [
+        39,
+        "MOVE_DESTINY_BOND"
+      ],
+      [
+        45,
+        "MOVE_PHANTOM_FORCE"
+      ],
+      [
+        49,
+        "MOVE_WOOD_HAMMER"
+      ],
+      [
+        55,
+        "MOVE_SHADOW_CLAW"
+      ],
+      [
+        62,
+        "MOVE_HORN_LEECH"
+      ]
+    ],
+    "by_tm": [
+      "TM01",
+      "TM04",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM15",
+      "TM17",
+      "TM20",
+      "TM21",
+      "TM22",
+      "TM26",
+      "TM27",
+      "TM28",
+      "TM29",
+      "TM30",
+      "TM32",
+      "TM33",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM46",
+      "TM48",
+      "TM52",
+      "TM53",
+      "TM61",
+      "TM65",
+      "TM68",
+      "TM78",
+      "TM80",
+      "TM81",
+      "TM84",
+      "TM85",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM92",
+      "TM94",
+      "HM01",
+      "HM02",
+      "HM03",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_SEED_BOMB",
+      "MOVE_MAGIC_COAT",
+      "MOVE_BLOCK",
+      "MOVE_FOUL_PLAY",
+      "MOVE_DARK_PULSE",
+      "MOVE_SNORE",
+      "MOVE_ROLE_PLAY",
+      "MOVE_PAIN_SPLIT",
+      "MOVE_GIGA_DRAIN",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_WORRY_SEED",
+      "MOVE_SPITE",
+      "MOVE_TRICK",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SKILL_SWAP"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_PHANTUMP"
+}

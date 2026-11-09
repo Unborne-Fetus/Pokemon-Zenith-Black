@@ -1,0 +1,169 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Flabébé",
+  "base_stats": {
+    "hp": 44,
+    "attack": 38,
+    "defense": 39,
+    "speed": 42,
+    "special_attack": 61,
+    "special_defense": 79
+  },
+  "types": [
+    "TYPE_FAIRY",
+    "TYPE_FAIRY"
+  ],
+  "catch_rate": 225,
+  "evolution_stage": 1,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 1
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 254,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FAIRY",
+    "EGG_GROUP_FAIRY"
+  ],
+  "abilities": [
+    "ABILITY_W2U_166",
+    "ABILITY_W2U_166"
+  ],
+  "hidden_ability": "ABILITY_W2U_180",
+  "flee_rate": 90,
+  "forms": {
+    "count": 5,
+    "sprite_offset": 140
+  },
+  "color": "COLOR_WHITE",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 61,
+  "height": 1,
+  "weight": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_VINE_WHIP"
+      ],
+      [
+        6,
+        "MOVE_FAIRY_WIND"
+      ],
+      [
+        10,
+        "MOVE_LUCKY_CHANT"
+      ],
+      [
+        15,
+        "MOVE_RAZOR_LEAF"
+      ],
+      [
+        20,
+        "MOVE_WISH"
+      ],
+      [
+        22,
+        "MOVE_MAGICAL_LEAF"
+      ],
+      [
+        24,
+        "MOVE_GRASSY_TERRAIN"
+      ],
+      [
+        28,
+        "MOVE_PETAL_BLIZZARD"
+      ],
+      [
+        33,
+        "MOVE_AROMATHERAPY"
+      ],
+      [
+        37,
+        "MOVE_MISTY_TERRAIN"
+      ],
+      [
+        41,
+        "MOVE_MOONBLAST"
+      ],
+      [
+        45,
+        "MOVE_PETAL_DANCE"
+      ],
+      [
+        48,
+        "MOVE_SOLAR_BEAM"
+      ]
+    ],
+    "by_tm": [
+      "TM04",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM17",
+      "TM18",
+      "TM20",
+      "TM21",
+      "TM22",
+      "TM27",
+      "TM29",
+      "TM32",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM48",
+      "TM49",
+      "TM53",
+      "TM70",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM94",
+      "HM01",
+      "HM04",
+      "HM05"
+    ],
+    "by_tutor": [
+      "MOVE_COVET",
+      "MOVE_SEED_BOMB",
+      "MOVE_MAGIC_COAT",
+      "MOVE_SNORE",
+      "MOVE_SYNTHESIS",
+      "MOVE_HEAL_BELL",
+      "MOVE_GIGA_DRAIN",
+      "MOVE_WORRY_SEED",
+      "MOVE_AFTER_YOU",
+      "MOVE_HELPING_HAND",
+      "MOVE_ENDEAVOR",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [
+    {
+      "method": "EVO_METHOD_LEVEL",
+      "param": 19,
+      "species": "SPECIES_FLOETTE"
+    }
+  ],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_FLABEBE"
+}

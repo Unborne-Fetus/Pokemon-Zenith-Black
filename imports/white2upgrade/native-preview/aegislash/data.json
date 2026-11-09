@@ -1,0 +1,163 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Aegislash",
+  "base_stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 150,
+    "speed": 60,
+    "special_attack": 50,
+    "special_defense": 150
+  },
+  "types": [
+    "TYPE_STEEL",
+    "TYPE_GHOST"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 3,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 1
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_MINERAL",
+    "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+    "ABILITY_W2U_176",
+    "ABILITY_W2U_176"
+  ],
+  "hidden_ability": "ABILITY_W2U_176",
+  "flee_rate": 60,
+  "forms": {
+    "count": 2,
+    "sprite_offset": 163
+  },
+  "color": "COLOR_BROWN",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 234,
+  "height": 17,
+  "weight": 530,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_FURY_CUTTER"
+      ],
+      [
+        1,
+        "MOVE_PURSUIT"
+      ],
+      [
+        1,
+        "MOVE_AUTOTOMIZE"
+      ],
+      [
+        1,
+        "MOVE_SHADOW_SNEAK"
+      ],
+      [
+        1,
+        "MOVE_SLASH"
+      ],
+      [
+        1,
+        "MOVE_IRON_DEFENSE"
+      ],
+      [
+        1,
+        "MOVE_NIGHT_SLASH"
+      ],
+      [
+        1,
+        "MOVE_POWER_TRICK"
+      ],
+      [
+        1,
+        "MOVE_IRON_HEAD"
+      ],
+      [
+        1,
+        "MOVE_HEAD_SMASH"
+      ],
+      [
+        1,
+        "MOVE_SWORDS_DANCE"
+      ],
+      [
+        1,
+        "MOVE_AERIAL_ACE"
+      ],
+      [
+        1,
+        "MOVE_KINGS_SHIELD"
+      ],
+      [
+        1,
+        "MOVE_SACRED_SWORD"
+      ]
+    ],
+    "by_tm": [
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM15",
+      "TM17",
+      "TM18",
+      "TM21",
+      "TM27",
+      "TM30",
+      "TM31",
+      "TM32",
+      "TM33",
+      "TM40",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM48",
+      "TM54",
+      "TM65",
+      "TM67",
+      "TM68",
+      "TM74",
+      "TM75",
+      "TM80",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM91",
+      "TM94",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_IRON_HEAD",
+      "MOVE_BLOCK",
+      "MOVE_MAGNET_RISE",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_SNORE",
+      "MOVE_SPITE",
+      "MOVE_AFTER_YOU",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_HONEDGE"
+}

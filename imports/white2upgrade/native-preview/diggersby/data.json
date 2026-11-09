@@ -1,0 +1,208 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Diggersby",
+  "base_stats": {
+    "hp": 85,
+    "attack": 56,
+    "defense": 77,
+    "speed": 78,
+    "special_attack": 50,
+    "special_defense": 77
+  },
+  "types": [
+    "TYPE_NORMAL",
+    "TYPE_GROUND"
+  ],
+  "catch_rate": 127,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 2,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 15,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_PICKUP",
+    "ABILITY_W2U_167"
+  ],
+  "hidden_ability": "ABILITY_HUGE_POWER",
+  "flee_rate": 90,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BROWN",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 148,
+  "height": 10,
+  "weight": 424,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_HAMMER_ARM"
+      ],
+      [
+        1,
+        "MOVE_ROTOTILLER"
+      ],
+      [
+        1,
+        "MOVE_BULLDOZE"
+      ],
+      [
+        1,
+        "MOVE_SWORDS_DANCE"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_AGILITY"
+      ],
+      [
+        1,
+        "MOVE_LEER"
+      ],
+      [
+        7,
+        "MOVE_QUICK_ATTACK"
+      ],
+      [
+        13,
+        "MOVE_MUD_SLAP"
+      ],
+      [
+        15,
+        "MOVE_TAKE_DOWN"
+      ],
+      [
+        18,
+        "MOVE_MUD_SHOT"
+      ],
+      [
+        20,
+        "MOVE_DOUBLE_KICK"
+      ],
+      [
+        26,
+        "MOVE_ODOR_SLEUTH"
+      ],
+      [
+        31,
+        "MOVE_FLAIL"
+      ],
+      [
+        37,
+        "MOVE_DIG"
+      ],
+      [
+        42,
+        "MOVE_BOUNCE"
+      ],
+      [
+        48,
+        "MOVE_SUPER_FANG"
+      ],
+      [
+        53,
+        "MOVE_FACADE"
+      ],
+      [
+        57,
+        "MOVE_EARTHQUAKE"
+      ],
+      [
+        60,
+        "MOVE_HAMMER_ARM"
+      ]
+    ],
+    "by_tm": [
+      "TM06",
+      "TM08",
+      "TM10",
+      "TM15",
+      "TM17",
+      "TM21",
+      "TM23",
+      "TM26",
+      "TM27",
+      "TM28",
+      "TM31",
+      "TM32",
+      "TM36",
+      "TM37",
+      "TM39",
+      "TM41",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM46",
+      "TM48",
+      "TM56",
+      "TM66",
+      "TM68",
+      "TM71",
+      "TM75",
+      "TM78",
+      "TM80",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM89",
+      "TM90",
+      "TM93",
+      "TM94",
+      "HM01",
+      "HM03",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_SUPER_FANG",
+      "MOVE_IRON_HEAD",
+      "MOVE_BOUNCE",
+      "MOVE_LOW_KICK",
+      "MOVE_GUNK_SHOT",
+      "MOVE_UPROAR",
+      "MOVE_THUNDER_PUNCH",
+      "MOVE_FIRE_PUNCH",
+      "MOVE_ICE_PUNCH",
+      "MOVE_EARTH_POWER",
+      "MOVE_FOUL_PLAY",
+      "MOVE_LAST_RESORT",
+      "MOVE_SUPERPOWER",
+      "MOVE_IRON_TAIL",
+      "MOVE_SNORE",
+      "MOVE_KNOCK_OFF",
+      "MOVE_GASTRO_ACID",
+      "MOVE_ENDEAVOR",
+      "MOVE_RECYCLE",
+      "MOVE_SNATCH",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_BUNNELBY"
+}

@@ -1,0 +1,214 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Barbaracle",
+  "base_stats": {
+    "hp": 72,
+    "attack": 105,
+    "defense": 115,
+    "speed": 68,
+    "special_attack": 54,
+    "special_defense": 86
+  },
+  "types": [
+    "TYPE_ROCK",
+    "TYPE_WATER"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_WATER_3",
+    "EGG_GROUP_WATER_3"
+  ],
+  "abilities": [
+    "ABILITY_W2U_181",
+    "ABILITY_SNIPER"
+  ],
+  "hidden_ability": "ABILITY_PICKPOCKET",
+  "flee_rate": 30,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BROWN",
+  "asymmetric": true,
+  "palette_forms": false,
+  "base_exp": 175,
+  "height": 13,
+  "weight": 960,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_STONE_EDGE"
+      ],
+      [
+        1,
+        "MOVE_SKULL_BASH"
+      ],
+      [
+        1,
+        "MOVE_SHELL_SMASH"
+      ],
+      [
+        1,
+        "MOVE_SCRATCH"
+      ],
+      [
+        1,
+        "MOVE_SAND_ATTACK"
+      ],
+      [
+        4,
+        "MOVE_WATER_GUN"
+      ],
+      [
+        7,
+        "MOVE_WITHDRAW"
+      ],
+      [
+        10,
+        "MOVE_FURY_SWIPES"
+      ],
+      [
+        13,
+        "MOVE_SLASH"
+      ],
+      [
+        18,
+        "MOVE_MUD_SLAP"
+      ],
+      [
+        20,
+        "MOVE_CLAMP"
+      ],
+      [
+        24,
+        "MOVE_ROCK_POLISH"
+      ],
+      [
+        28,
+        "MOVE_ANCIENT_POWER"
+      ],
+      [
+        32,
+        "MOVE_HONE_CLAWS"
+      ],
+      [
+        37,
+        "MOVE_FURY_CUTTER"
+      ],
+      [
+        44,
+        "MOVE_NIGHT_SLASH"
+      ],
+      [
+        48,
+        "MOVE_RAZOR_SHELL"
+      ],
+      [
+        55,
+        "MOVE_CROSS_CHOP"
+      ],
+      [
+        60,
+        "MOVE_STONE_EDGE"
+      ],
+      [
+        65,
+        "MOVE_SKULL_BASH"
+      ]
+    ],
+    "by_tm": [
+      "TM01",
+      "TM02",
+      "TM06",
+      "TM08",
+      "TM10",
+      "TM12",
+      "TM13",
+      "TM14",
+      "TM15",
+      "TM17",
+      "TM18",
+      "TM20",
+      "TM21",
+      "TM23",
+      "TM26",
+      "TM27",
+      "TM28",
+      "TM31",
+      "TM32",
+      "TM34",
+      "TM36",
+      "TM37",
+      "TM39",
+      "TM40",
+      "TM41",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM46",
+      "TM48",
+      "TM52",
+      "TM54",
+      "TM55",
+      "TM56",
+      "TM63",
+      "TM65",
+      "TM66",
+      "TM68",
+      "TM69",
+      "TM71",
+      "TM75",
+      "TM78",
+      "TM80",
+      "TM81",
+      "TM83",
+      "TM84",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM94",
+      "HM01",
+      "HM03",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_DUAL_CHOP",
+      "MOVE_LOW_KICK",
+      "MOVE_EARTH_POWER",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_SUPERPOWER",
+      "MOVE_ICY_WIND",
+      "MOVE_SNORE",
+      "MOVE_HELPING_HAND",
+      "MOVE_ENDEAVOR",
+      "MOVE_STEALTH_ROCK",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_BINACLE"
+}

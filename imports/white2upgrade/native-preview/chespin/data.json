@@ -1,0 +1,194 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Chespin",
+  "base_stats": {
+    "hp": 56,
+    "attack": 61,
+    "defense": 65,
+    "speed": 38,
+    "special_attack": 48,
+    "special_defense": 45
+  },
+  "types": [
+    "TYPE_GRASS",
+    "TYPE_GRASS"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 1,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 1,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 31,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_OVERGROW",
+    "ABILITY_OVERGROW"
+  ],
+  "hidden_ability": "ABILITY_W2U_171",
+  "flee_rate": 0,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_GREEN",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 63,
+  "height": 4,
+  "weight": 90,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_GROWL"
+      ],
+      [
+        5,
+        "MOVE_VINE_WHIP"
+      ],
+      [
+        8,
+        "MOVE_ROLLOUT"
+      ],
+      [
+        11,
+        "MOVE_BITE"
+      ],
+      [
+        15,
+        "MOVE_LEECH_SEED"
+      ],
+      [
+        18,
+        "MOVE_PIN_MISSILE"
+      ],
+      [
+        27,
+        "MOVE_TAKE_DOWN"
+      ],
+      [
+        32,
+        "MOVE_SEED_BOMB"
+      ],
+      [
+        35,
+        "MOVE_MUD_SHOT"
+      ],
+      [
+        39,
+        "MOVE_BULK_UP"
+      ],
+      [
+        42,
+        "MOVE_BODY_SLAM"
+      ],
+      [
+        45,
+        "MOVE_PAIN_SPLIT"
+      ],
+      [
+        48,
+        "MOVE_WOOD_HAMMER"
+      ]
+    ],
+    "by_tm": [
+      "TM05",
+      "TM06",
+      "TM08",
+      "TM10",
+      "TM11",
+      "TM12",
+      "TM17",
+      "TM21",
+      "TM22",
+      "TM23",
+      "TM27",
+      "TM28",
+      "TM31",
+      "TM32",
+      "TM33",
+      "TM36",
+      "TM39",
+      "TM40",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM47",
+      "TM48",
+      "TM53",
+      "TM56",
+      "TM65",
+      "TM66",
+      "TM67",
+      "TM70",
+      "TM71",
+      "TM74",
+      "TM75",
+      "TM78",
+      "TM80",
+      "TM84",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM94",
+      "HM01",
+      "HM03",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_GRASS_PLEDGE",
+      "MOVE_SUPER_FANG",
+      "MOVE_DUAL_CHOP",
+      "MOVE_IRON_HEAD",
+      "MOVE_SEED_BOMB",
+      "MOVE_LOW_KICK",
+      "MOVE_THUNDER_PUNCH",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_SUPERPOWER",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_IRON_TAIL",
+      "MOVE_SNORE",
+      "MOVE_SYNTHESIS",
+      "MOVE_PAIN_SPLIT",
+      "MOVE_GIGA_DRAIN",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_WORRY_SEED",
+      "MOVE_HELPING_HAND",
+      "MOVE_ENDEAVOR",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [
+    {
+      "method": "EVO_METHOD_LEVEL",
+      "param": 16,
+      "species": "SPECIES_QUILLADIN"
+    }
+  ],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_CHESPIN"
+}

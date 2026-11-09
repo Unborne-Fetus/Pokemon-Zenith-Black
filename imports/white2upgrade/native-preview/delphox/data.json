@@ -1,0 +1,223 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Delphox",
+  "base_stats": {
+    "hp": 75,
+    "attack": 69,
+    "defense": 72,
+    "speed": 104,
+    "special_attack": 114,
+    "special_defense": 100
+  },
+  "types": [
+    "TYPE_FIRE",
+    "TYPE_PSYCHIC"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 3,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 3,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 31,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_BLAZE",
+    "ABILITY_BLAZE"
+  ],
+  "hidden_ability": "ABILITY_W2U_170",
+  "flee_rate": 0,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_RED",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 240,
+  "height": 15,
+  "weight": 390,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_FUTURE_SIGHT"
+      ],
+      [
+        1,
+        "MOVE_ROLE_PLAY"
+      ],
+      [
+        1,
+        "MOVE_SWITCHEROO"
+      ],
+      [
+        1,
+        "MOVE_SHADOW_BALL"
+      ],
+      [
+        1,
+        "MOVE_SCRATCH"
+      ],
+      [
+        1,
+        "MOVE_TAIL_WHIP"
+      ],
+      [
+        5,
+        "MOVE_EMBER"
+      ],
+      [
+        11,
+        "MOVE_HOWL"
+      ],
+      [
+        14,
+        "MOVE_FLAME_CHARGE"
+      ],
+      [
+        18,
+        "MOVE_PSYBEAM"
+      ],
+      [
+        22,
+        "MOVE_FIRE_SPIN"
+      ],
+      [
+        27,
+        "MOVE_LUCKY_CHANT"
+      ],
+      [
+        30,
+        "MOVE_LIGHT_SCREEN"
+      ],
+      [
+        34,
+        "MOVE_PSYSHOCK"
+      ],
+      [
+        36,
+        "MOVE_MYSTICAL_FIRE"
+      ],
+      [
+        42,
+        "MOVE_FLAMETHROWER"
+      ],
+      [
+        47,
+        "MOVE_WILL_O_WISP"
+      ],
+      [
+        51,
+        "MOVE_PSYCHIC"
+      ],
+      [
+        55,
+        "MOVE_SUNNY_DAY"
+      ],
+      [
+        58,
+        "MOVE_MAGIC_ROOM"
+      ],
+      [
+        61,
+        "MOVE_FIRE_BLAST"
+      ],
+      [
+        69,
+        "MOVE_FUTURE_SIGHT"
+      ],
+      [
+        75,
+        "MOVE_MYSTICAL_FIRE"
+      ]
+    ],
+    "by_tm": [
+      "TM03",
+      "TM04",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM15",
+      "TM16",
+      "TM17",
+      "TM18",
+      "TM20",
+      "TM21",
+      "TM22",
+      "TM27",
+      "TM29",
+      "TM30",
+      "TM32",
+      "TM35",
+      "TM38",
+      "TM42",
+      "TM43",
+      "TM44",
+      "TM45",
+      "TM46",
+      "TM48",
+      "TM49",
+      "TM50",
+      "TM59",
+      "TM61",
+      "TM63",
+      "TM68",
+      "TM77",
+      "TM85",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM92",
+      "TM94",
+      "HM03",
+      "HM04",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_FIRE_PLEDGE",
+      "MOVE_BLAST_BURN",
+      "MOVE_COVET",
+      "MOVE_SIGNAL_BEAM",
+      "MOVE_LOW_KICK",
+      "MOVE_THUNDER_PUNCH",
+      "MOVE_FIRE_PUNCH",
+      "MOVE_MAGIC_COAT",
+      "MOVE_FOUL_PLAY",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_IRON_TAIL",
+      "MOVE_SNORE",
+      "MOVE_HEAT_WAVE",
+      "MOVE_ROLE_PLAY",
+      "MOVE_TRICK",
+      "MOVE_MAGIC_ROOM",
+      "MOVE_WONDER_ROOM",
+      "MOVE_RECYCLE",
+      "MOVE_SNATCH",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SKILL_SWAP"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_FENNEKIN"
+}
