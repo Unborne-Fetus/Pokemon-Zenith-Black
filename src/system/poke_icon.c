@@ -29,11 +29,19 @@ enum {
 };
 
 // The icons after the species': the egg, Manaphy's egg, and the forms, in the order of the form sprites
+#ifdef ZENITH_721
+#define POKEICON_EGG 755
+#define POKEICON_FORMS 757
+// The palette source table still describes only the original species.
+#define POKEICON_PALETTE_EGG 757
+#define POKEICON_PALETTE_FORMS 758
+#else
 #define POKEICON_EGG 683
 #define POKEICON_FORMS 685
 // The same icons in the palette table, which leaves two more entries before them
 #define POKEICON_PALETTE_EGG 685
 #define POKEICON_PALETTE_FORMS 686
+#endif
 
 // The species that keep six bits of form and no sex in a packed species
 #define POKEICON_PACK_SPECIES_MASK 0x3ff
@@ -159,6 +167,16 @@ u8 PokeIcon_GetPalette(u32 species, u32 form, u32 sex, BOOL egg) {
         }
     }
 
+#ifdef ZENITH_721
+    // New species temporarily use palette bank 0 until the donor's icon palette
+    // map is integrated. Original special species and forms retain their banks.
+    if (species >= 650 && species <= 721) {
+        return 0;
+    }
+    if (species >= 722) {
+        species -= 72;
+    }
+#endif
     if (sex != 0) {
         return (u8)((sPokeIconPalettes[species] & 0xf0) >> 4);
     }
