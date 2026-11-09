@@ -139,7 +139,9 @@ def convert(record: dict, parents: dict[str, str], aliases: dict[str, str], miss
             continue
         parameter = evo["parameter"]
         if method in ("EVO_METHOD_ITEM", "EVO_METHOD_TRADE_WITH_ITEM"):
-            parameter = named("ITEM_", int(parameter), missing)
+            parameter = parameter if isinstance(parameter, str) and parameter.startswith("ITEM_") else named("ITEM_", int(parameter), missing)
+            if parameter not in constants():
+                missing[f"unimplemented item {parameter}"] += 1
         evolutions.append({
             "method": method, "param": parameter, "species": evo["target"]
         })
