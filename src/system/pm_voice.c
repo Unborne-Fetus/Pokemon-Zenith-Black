@@ -516,6 +516,17 @@ void getResIDFunc(u32 species, u32 form, u32 *waveArc) {
     const PokeVoiceFormEntry *entry;
     u32 i;
 
+#ifdef ZENITH_721
+    // A safe shared cry until the Kalos wave archives are packaged. The old
+    // Egg and Pokestar IDs remain at their original sound archive indices.
+    if (species >= 650 && species <= 721) {
+        *waveArc = 1;
+        return;
+    }
+    if (species >= 722) {
+        species -= 72;
+    }
+#endif
     if (species < 1 || species > POKE_VOICE_SPECIES_MAX) {
         *waveArc = 1;
         return;
