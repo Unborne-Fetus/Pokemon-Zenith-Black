@@ -56,6 +56,36 @@ The three resulting `a/.../` archives are **intermediate assets**, not a
 playable patched ROM. They are not incorporated into the game until the
 runtime code and file indexes are expanded to match them.
 
+## Experimental runtime work committed
+
+The development branch also includes these changes guarded by `ZENITH_721`.
+They **do not activate in the original matching Black 2/White 2 build**:
+
+- Enlarged Pokédex seen/caught arrays, national completion counts and Kalos form tracking.
+- Updated Pokédex search count for species 650–721.
+- Battle graphics and party-icon archive offset adjustments for the 72 new species.
+- Temporary fallback cries and preserved original Egg/Pokéstar wave ID handling.
+- `configure.py --zenith-721` for a nonmatching build, with a Gen 6 species
+  constant preflight check.
+- `tools/import/zenith721_constants.py` produces validated replacement
+  `species.txt`, `moves.txt`, `abilities.txt`, and `types.txt` under
+  `imports/white2upgrade/zenith721-lists/`. It deliberately **does not**
+  overwrite the original matching-build `generated/` files.
+
+**Critical**: These are partial runtime source changes, not a completed
+modified ROM build. Replacing only constant lists is unsafe until all
+dependent resources, save layout and engine tables are expanded.
+
+## Build verification status
+
+The importer is validated by public GitHub Actions with no ROM required.
+Source formatting and ordinary compilation can be checked independently.
+The repository's ROM build workflow attempts to check out private source
+ROM dumps using `ROMS_DEPLOY_KEY`, which is not available here. Therefore
+there is no successful 721-Pokémon ROM compile, gameplay test or patch.
+Existing saves must not be used with the expanded save structure until
+migration is implemented and tested.
+
 ## Work still required before Gen 6 is playable
 
 1. **Species identifiers**: insert #650–721, audit every numeric species
