@@ -11,8 +11,8 @@
 // Experimental Gen 6 save layout. The original game stays unchanged by default.
 // Existing saves need an explicit migration before this variant is distributable.
 #ifdef ZENITH_721
-#define POKEDEX_SPECIES_BYTES 0x5b  // ceil(721 / 8)
-#define POKEDEX_FORM_BYTES 0x20     // room for Gen 6 alternate-form flags
+#define POKEDEX_SPECIES_BYTES 0x5b // ceil(721 / 8)
+#define POKEDEX_FORM_BYTES 0x20 // room for Gen 6 alternate-form flags
 #else
 #define POKEDEX_SPECIES_BYTES 0x54
 #define POKEDEX_FORM_BYTES 0xb
