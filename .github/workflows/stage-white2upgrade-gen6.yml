@@ -6,6 +6,7 @@ on:
       - feature/white2upgrade-gen6-import
     paths:
       - tools/import/white2upgrade_gen6.py
+      - tools/import/white2upgrade_native.py
       - imports/white2upgrade/README.md
       - .github/workflows/stage-white2upgrade-gen6.yml
   workflow_dispatch:
@@ -21,18 +22,22 @@ jobs:
         with:
           persist-credentials: true
       - name: Verify importer parses
-        run: python3 -m py_compile tools/import/white2upgrade_gen6.py
+        run: python3 -m py_compile tools/import/white2upgrade_gen6.py tools/import/white2upgrade_native.py
       - name: Get donor data
         run: git clone --depth 1 https://github.com/ds-pokemon-hacking/White2Upgrade.git /tmp/White2Upgrade
       - name: Stage 72 Kalos species
         run: python3 tools/import/white2upgrade_gen6.py --donor /tmp/White2Upgrade
       - name: Check reproducibility
         run: python3 tools/import/white2upgrade_gen6.py --donor /tmp/White2Upgrade --check
+      - name: Generate 72 native schema previews
+        run: python3 tools/import/white2upgrade_native.py
+      - name: Check native preview reproducibility
+        run: python3 tools/import/white2upgrade_native.py --check
       - name: Publish staged records
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add imports/white2upgrade/gen6 imports/white2upgrade/REPORT.md
+          git add imports/white2upgrade/gen6 imports/white2upgrade/REPORT.md imports/white2upgrade/native-preview
           if ! git diff --cached --quiet; then
             git commit -m "Stage White2Upgrade species 650-721 metadata"
             git push origin HEAD:feature/white2upgrade-gen6-import
