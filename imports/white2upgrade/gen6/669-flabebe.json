@@ -1,0 +1,141 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/669.yml",
+    "evolutions": "data/pml/evolutions/669.yml",
+    "learnsets": "data/pml/learnsets/669.yml"
+  },
+  "national_dex": 669,
+  "species": "SPECIES_FLABEBE",
+  "base_stats": {
+    "hp": 44,
+    "attack": 38,
+    "defense": 39,
+    "speed": 42,
+    "special_attack": 61,
+    "special_defense": 79
+  },
+  "types": [
+    "TYPE_FAIRY",
+    "TYPE_FAIRY"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 1
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_VINE_WHIP"
+    ],
+    [
+      6,
+      "MOVE_FAIRY_WIND"
+    ],
+    [
+      10,
+      "MOVE_LUCKY_CHANT"
+    ],
+    [
+      15,
+      "MOVE_RAZOR_LEAF"
+    ],
+    [
+      20,
+      "MOVE_WISH"
+    ],
+    [
+      22,
+      "MOVE_MAGICAL_LEAF"
+    ],
+    [
+      24,
+      "MOVE_GRASSY_TERRAIN"
+    ],
+    [
+      28,
+      "MOVE_PETAL_BLIZZARD"
+    ],
+    [
+      33,
+      "MOVE_AROMATHERAPY"
+    ],
+    [
+      37,
+      "MOVE_MISTY_TERRAIN"
+    ],
+    [
+      41,
+      "MOVE_MOONBLAST"
+    ],
+    [
+      45,
+      "MOVE_PETAL_DANCE"
+    ],
+    [
+      48,
+      "MOVE_SOLARBEAM"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_LEVELUP",
+      "parameter": 19,
+      "target": "SPECIES_FLOETTE"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 44,
+    "Base Attack": 38,
+    "Base Defense": 39,
+    "Base Speed": 42,
+    "Base Special Attack": 61,
+    "Base Special Defense": 79,
+    "Primary Type": "TYPE_FAIRY",
+    "Secondary Type": "TYPE_FAIRY",
+    "Capture Rate": 225,
+    "Evolution Stage": 1,
+    "EV Yield": 1024,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 254,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 6,
+    "Egg Group 2": 6,
+    "Primary Ability": 166,
+    "Secondary Ability": 166,
+    "Hidden Ability": 180,
+    "Escape Rate": 90,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 140,
+    "Form Count": 5,
+    "Color": 8,
+    "Base Experience": 61,
+    "Height (cm)": 10,
+    "Weight (cg)": 1,
+    "TM HM 1": -1808071128,
+    "TM HM 2": 1153536,
+    "TM HM 3": -1562378208,
+    "TM HM 4": 12,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      66,
+      1,
+      1098,
+      8474
+    ]
+  },
+  "status": "staged_not_playable"
+}

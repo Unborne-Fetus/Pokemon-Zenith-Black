@@ -1,0 +1,155 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/697.yml",
+    "evolutions": "data/pml/evolutions/697.yml",
+    "learnsets": "data/pml/learnsets/697.yml"
+  },
+  "national_dex": 697,
+  "species": "SPECIES_TYRANTRUM",
+  "base_stats": {
+    "hp": 82,
+    "attack": 121,
+    "defense": 119,
+    "speed": 71,
+    "special_attack": 69,
+    "special_defense": 59
+  },
+  "types": [
+    "TYPE_ROCK",
+    "TYPE_DRAGON"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_HEAD_SMASH"
+    ],
+    [
+      1,
+      "MOVE_TAIL_WHIP"
+    ],
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      6,
+      "MOVE_ROAR"
+    ],
+    [
+      10,
+      "MOVE_STOMP"
+    ],
+    [
+      12,
+      "MOVE_BIDE"
+    ],
+    [
+      15,
+      "MOVE_STEALTH_ROCK"
+    ],
+    [
+      17,
+      "MOVE_BITE"
+    ],
+    [
+      20,
+      "MOVE_CHARM"
+    ],
+    [
+      26,
+      "MOVE_ANCIENTPOWER"
+    ],
+    [
+      30,
+      "MOVE_DRAGON_TAIL"
+    ],
+    [
+      34,
+      "MOVE_CRUNCH"
+    ],
+    [
+      37,
+      "MOVE_DRAGON_CLAW"
+    ],
+    [
+      42,
+      "MOVE_THRASH"
+    ],
+    [
+      47,
+      "MOVE_EARTHQUAKE"
+    ],
+    [
+      53,
+      "MOVE_HORN_DRILL"
+    ],
+    [
+      58,
+      "MOVE_HEAD_SMASH"
+    ],
+    [
+      68,
+      "MOVE_ROCK_SLIDE"
+    ],
+    [
+      75,
+      "MOVE_GIGA_IMPACT"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 82,
+    "Base Attack": 121,
+    "Base Defense": 119,
+    "Base Speed": 71,
+    "Base Special Attack": 69,
+    "Base Special Defense": 59,
+    "Primary Type": "TYPE_ROCK",
+    "Secondary Type": "TYPE_DRAGON",
+    "Capture Rate": 45,
+    "Evolution Stage": 2,
+    "EV Yield": 8,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 31,
+    "Egg Happiness": 30,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 1,
+    "Egg Group 2": 14,
+    "Primary Ability": 173,
+    "Secondary Ability": 173,
+    "Hidden Ability": 69,
+    "Escape Rate": 0,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 0,
+    "Base Experience": 182,
+    "Height (cm)": 250,
+    "Weight (cg)": 2700,
+    "TM HM 1": -837728717,
+    "TM HM 2": 39632,
+    "TM HM 3": 583180376,
+    "TM HM 4": 649,
+    "Type Tutors": 64,
+    "Special Tutors": [
+      32,
+      123206,
+      2,
+      12800
+    ]
+  },
+  "status": "staged_not_playable"
+}

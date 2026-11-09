@@ -1,0 +1,145 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/651.yml",
+    "evolutions": "data/pml/evolutions/651.yml",
+    "learnsets": "data/pml/learnsets/651.yml"
+  },
+  "national_dex": 651,
+  "species": "SPECIES_QUILLADIN",
+  "base_stats": {
+    "hp": 61,
+    "attack": 78,
+    "defense": 95,
+    "speed": 57,
+    "special_attack": 56,
+    "special_defense": 58
+  },
+  "types": [
+    "TYPE_GRASS",
+    "TYPE_GRASS"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_GROWL"
+    ],
+    [
+      5,
+      "MOVE_VINE_WHIP"
+    ],
+    [
+      8,
+      "MOVE_ROLLOUT"
+    ],
+    [
+      11,
+      "MOVE_BITE"
+    ],
+    [
+      15,
+      "MOVE_LEECH_SEED"
+    ],
+    [
+      20,
+      "MOVE_PIN_MISSILE"
+    ],
+    [
+      26,
+      "MOVE_NEEDLE_ARM"
+    ],
+    [
+      30,
+      "MOVE_TAKE_DOWN"
+    ],
+    [
+      35,
+      "MOVE_SEED_BOMB"
+    ],
+    [
+      39,
+      "MOVE_MUD_SHOT"
+    ],
+    [
+      44,
+      "MOVE_BULK_UP"
+    ],
+    [
+      48,
+      "MOVE_BODY_SLAM"
+    ],
+    [
+      52,
+      "MOVE_PAIN_SPLIT"
+    ],
+    [
+      55,
+      "MOVE_WOOD_HAMMER"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_LEVELUP",
+      "parameter": 36,
+      "target": "SPECIES_CHESNAUGHT"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 61,
+    "Base Attack": 78,
+    "Base Defense": 95,
+    "Base Speed": 57,
+    "Base Special Attack": 56,
+    "Base Special Defense": 58,
+    "Primary Type": "TYPE_GRASS",
+    "Secondary Type": "TYPE_GRASS",
+    "Capture Rate": 45,
+    "Evolution Stage": 2,
+    "EV Yield": 32,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 31,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 3,
+    "Egg Group 1": 5,
+    "Egg Group 2": 5,
+    "Primary Ability": 65,
+    "Secondary Ability": 65,
+    "Hidden Ability": 171,
+    "Escape Rate": 0,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 3,
+    "Base Experience": 142,
+    "Height (cm)": 70,
+    "Weight (cg)": 290,
+    "TM HM 1": -865005903,
+    "TM HM 2": 9493193,
+    "TM HM 3": -1561811353,
+    "TM HM 4": 666,
+    "Type Tutors": 1,
+    "Special Tutors": [
+      4716,
+      74048,
+      11786,
+      8466
+    ]
+  },
+  "status": "staged_not_playable"
+}

@@ -1,0 +1,137 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/692.yml",
+    "evolutions": "data/pml/evolutions/692.yml",
+    "learnsets": "data/pml/learnsets/692.yml"
+  },
+  "national_dex": 692,
+  "species": "SPECIES_CLAUNCHER",
+  "base_stats": {
+    "hp": 50,
+    "attack": 53,
+    "defense": 62,
+    "speed": 44,
+    "special_attack": 58,
+    "special_defense": 63
+  },
+  "types": [
+    "TYPE_WATER",
+    "TYPE_WATER"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 1,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_SPLASH"
+    ],
+    [
+      1,
+      "MOVE_WATER_GUN"
+    ],
+    [
+      7,
+      "MOVE_WATER_SPORT"
+    ],
+    [
+      9,
+      "MOVE_VICEGRIP"
+    ],
+    [
+      12,
+      "MOVE_BUBBLE"
+    ],
+    [
+      16,
+      "MOVE_FLAIL"
+    ],
+    [
+      20,
+      "MOVE_BUBBLEBEAM"
+    ],
+    [
+      25,
+      "MOVE_SWORDS_DANCE"
+    ],
+    [
+      30,
+      "MOVE_CRABHAMMER"
+    ],
+    [
+      34,
+      "MOVE_WATER_PULSE"
+    ],
+    [
+      39,
+      "MOVE_SMACK_DOWN"
+    ],
+    [
+      43,
+      "MOVE_AQUA_JET"
+    ],
+    [
+      48,
+      "MOVE_MUDDY_WATER"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_LEVELUP",
+      "parameter": 37,
+      "target": "SPECIES_CLAWITZER"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 50,
+    "Base Attack": 53,
+    "Base Defense": 62,
+    "Base Speed": 44,
+    "Base Special Attack": 58,
+    "Base Special Defense": 63,
+    "Primary Type": "TYPE_WATER",
+    "Secondary Type": "TYPE_WATER",
+    "Capture Rate": 225,
+    "Evolution Stage": 1,
+    "EV Yield": 256,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 15,
+    "Base Happiness": 70,
+    "Experience Group": 5,
+    "Egg Group 1": 2,
+    "Egg Group 2": 9,
+    "Primary Ability": 178,
+    "Secondary Ability": 178,
+    "Hidden Ability": 178,
+    "Escape Rate": 0,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 65,
+    "Base Experience": 66,
+    "Height (cm)": 50,
+    "Weight (cg)": 83,
+    "TM HM 1": -2074930400,
+    "TM HM 2": 4233738,
+    "TM HM 3": 666928128,
+    "TM HM 4": 1368,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      256,
+      84992,
+      32770,
+      8208
+    ]
+  },
+  "status": "staged_not_playable"
+}

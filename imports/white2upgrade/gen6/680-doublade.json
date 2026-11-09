@@ -1,0 +1,145 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/680.yml",
+    "evolutions": "data/pml/evolutions/680.yml",
+    "learnsets": "data/pml/learnsets/680.yml"
+  },
+  "national_dex": 680,
+  "species": "SPECIES_DOUBLADE",
+  "base_stats": {
+    "hp": 59,
+    "attack": 110,
+    "defense": 150,
+    "speed": 35,
+    "special_attack": 45,
+    "special_defense": 49
+  },
+  "types": [
+    "TYPE_STEEL",
+    "TYPE_GHOST"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_SWORDS_DANCE"
+    ],
+    [
+      5,
+      "MOVE_FURY_CUTTER"
+    ],
+    [
+      8,
+      "MOVE_METAL_SOUND"
+    ],
+    [
+      13,
+      "MOVE_PURSUIT"
+    ],
+    [
+      18,
+      "MOVE_AUTOTOMIZE"
+    ],
+    [
+      20,
+      "MOVE_SHADOW_SNEAK"
+    ],
+    [
+      22,
+      "MOVE_AERIAL_ACE"
+    ],
+    [
+      26,
+      "MOVE_RETALIATE"
+    ],
+    [
+      29,
+      "MOVE_SLASH"
+    ],
+    [
+      32,
+      "MOVE_IRON_DEFENSE"
+    ],
+    [
+      36,
+      "MOVE_NIGHT_SLASH"
+    ],
+    [
+      41,
+      "MOVE_POWER_TRICK"
+    ],
+    [
+      45,
+      "MOVE_IRON_HEAD"
+    ],
+    [
+      51,
+      "MOVE_SACRED_SWORD"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_ITEM_USE",
+      "parameter": 108,
+      "target": "SPECIES_AEGISLASH"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 59,
+    "Base Attack": 110,
+    "Base Defense": 150,
+    "Base Speed": 35,
+    "Base Special Attack": 45,
+    "Base Special Defense": 49,
+    "Primary Type": "TYPE_STEEL",
+    "Secondary Type": "TYPE_GHOST",
+    "Capture Rate": 90,
+    "Evolution Stage": 2,
+    "EV Yield": 32,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 10,
+    "Egg Group 2": 10,
+    "Primary Ability": 99,
+    "Secondary Ability": 99,
+    "Hidden Ability": 99,
+    "Escape Rate": 60,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 5,
+    "Base Experience": 157,
+    "Height (cm)": 80,
+    "Weight (cg)": 45,
+    "TM HM 1": -1005387232,
+    "TM HM 2": 2103937,
+    "TM HM 3": 650151429,
+    "TM HM 4": 536,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      32,
+      96,
+      16386,
+      8204
+    ]
+  },
+  "status": "staged_not_playable"
+}

@@ -1,0 +1,141 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/708.yml",
+    "evolutions": "data/pml/evolutions/708.yml",
+    "learnsets": "data/pml/learnsets/708.yml"
+  },
+  "national_dex": 708,
+  "species": "SPECIES_PHANTUMP",
+  "base_stats": {
+    "hp": 43,
+    "attack": 70,
+    "defense": 48,
+    "speed": 38,
+    "special_attack": 50,
+    "special_defense": 60
+  },
+  "types": [
+    "TYPE_GHOST",
+    "TYPE_GRASS"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_CONFUSE_RAY"
+    ],
+    [
+      5,
+      "MOVE_ASTONISH"
+    ],
+    [
+      8,
+      "MOVE_GROWTH"
+    ],
+    [
+      13,
+      "MOVE_INGRAIN"
+    ],
+    [
+      19,
+      "MOVE_FAINT_ATTACK"
+    ],
+    [
+      23,
+      "MOVE_LEECH_SEED"
+    ],
+    [
+      28,
+      "MOVE_CURSE"
+    ],
+    [
+      31,
+      "MOVE_WILLOWISP"
+    ],
+    [
+      35,
+      "MOVE_FORESTS_CURSE"
+    ],
+    [
+      39,
+      "MOVE_DESTINY_BOND"
+    ],
+    [
+      45,
+      "MOVE_PHANTOM_FORCE"
+    ],
+    [
+      49,
+      "MOVE_WOOD_HAMMER"
+    ],
+    [
+      54,
+      "MOVE_HORN_LEECH"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_TRADE",
+      "parameter": 0,
+      "target": "SPECIES_TREVENANT"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 43,
+    "Base Attack": 70,
+    "Base Defense": 48,
+    "Base Speed": 38,
+    "Base Special Attack": 50,
+    "Base Special Defense": 60,
+    "Primary Type": "TYPE_GHOST",
+    "Secondary Type": "TYPE_GRASS",
+    "Capture Rate": 120,
+    "Evolution Stage": 1,
+    "EV Yield": 4,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 7,
+    "Egg Group 2": 11,
+    "Primary Ability": 30,
+    "Secondary Ability": 119,
+    "Hidden Ability": 139,
+    "Escape Rate": 120,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 5,
+    "Base Experience": 62,
+    "Height (cm)": 40,
+    "Weight (cg)": 70,
+    "TM HM 1": -1137113568,
+    "TM HM 2": 269531649,
+    "TM HM 3": -1426546687,
+    "TM HM 4": 665,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      64,
+      4105,
+      1570,
+      24614
+    ]
+  },
+  "status": "staged_not_playable"
+}

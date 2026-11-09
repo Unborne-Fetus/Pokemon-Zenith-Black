@@ -1,0 +1,171 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/655.yml",
+    "evolutions": "data/pml/evolutions/655.yml",
+    "learnsets": "data/pml/learnsets/655.yml"
+  },
+  "national_dex": 655,
+  "species": "SPECIES_DELPHOX",
+  "base_stats": {
+    "hp": 75,
+    "attack": 69,
+    "defense": 72,
+    "speed": 104,
+    "special_attack": 114,
+    "special_defense": 100
+  },
+  "types": [
+    "TYPE_FIRE",
+    "TYPE_PSYCHIC"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 3,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_FUTURE_SIGHT"
+    ],
+    [
+      1,
+      "MOVE_ROLE_PLAY"
+    ],
+    [
+      1,
+      "MOVE_SWITCHEROO"
+    ],
+    [
+      1,
+      "MOVE_SHADOW_BALL"
+    ],
+    [
+      1,
+      "MOVE_SCRATCH"
+    ],
+    [
+      1,
+      "MOVE_TAIL_WHIP"
+    ],
+    [
+      5,
+      "MOVE_EMBER"
+    ],
+    [
+      11,
+      "MOVE_HOWL"
+    ],
+    [
+      14,
+      "MOVE_FLAME_CHARGE"
+    ],
+    [
+      18,
+      "MOVE_PSYBEAM"
+    ],
+    [
+      22,
+      "MOVE_FIRE_SPIN"
+    ],
+    [
+      27,
+      "MOVE_LUCKY_CHANT"
+    ],
+    [
+      30,
+      "MOVE_LIGHT_SCREEN"
+    ],
+    [
+      34,
+      "MOVE_PSYSHOCK"
+    ],
+    [
+      36,
+      "MOVE_MYSTICAL_FIRE"
+    ],
+    [
+      42,
+      "MOVE_FLAMETHROWER"
+    ],
+    [
+      47,
+      "MOVE_WILLOWISP"
+    ],
+    [
+      51,
+      "MOVE_PSYCHIC"
+    ],
+    [
+      55,
+      "MOVE_SUNNY_DAY"
+    ],
+    [
+      58,
+      "MOVE_MAGIC_ROOM"
+    ],
+    [
+      61,
+      "MOVE_FIRE_BLAST"
+    ],
+    [
+      69,
+      "MOVE_FUTURE_SIGHT"
+    ],
+    [
+      75,
+      "MOVE_MYSTICAL_FIRE"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 75,
+    "Base Attack": 69,
+    "Base Defense": 72,
+    "Base Speed": 104,
+    "Base Special Attack": 114,
+    "Base Special Defense": 100,
+    "Primary Type": "TYPE_FIRE",
+    "Secondary Type": "TYPE_PSYCHIC",
+    "Capture Rate": 45,
+    "Evolution Stage": 3,
+    "EV Yield": 768,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 31,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 3,
+    "Egg Group 1": 5,
+    "Egg Group 2": 5,
+    "Primary Ability": 66,
+    "Secondary Ability": 66,
+    "Hidden Ability": 170,
+    "Escape Rate": 0,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 0,
+    "Base Experience": 240,
+    "Height (cm)": 150,
+    "Weight (cg)": 390,
+    "TM HM 1": -1271151060,
+    "TM HM 2": 1409531428,
+    "TM HM 3": 720375816,
+    "TM HM 4": 30,
+    "Type Tutors": 18,
+    "Special Tutors": [
+      12818,
+      73737,
+      16434,
+      27872
+    ]
+  },
+  "status": "staged_not_playable"
+}

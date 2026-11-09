@@ -1,0 +1,141 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/674.yml",
+    "evolutions": "data/pml/evolutions/674.yml",
+    "learnsets": "data/pml/learnsets/674.yml"
+  },
+  "national_dex": 674,
+  "species": "SPECIES_PANCHAM",
+  "base_stats": {
+    "hp": 67,
+    "attack": 82,
+    "defense": 62,
+    "speed": 43,
+    "special_attack": 46,
+    "special_defense": 48
+  },
+  "types": [
+    "TYPE_FIGHTING",
+    "TYPE_FIGHTING"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_LEER"
+    ],
+    [
+      7,
+      "MOVE_ARM_THRUST"
+    ],
+    [
+      10,
+      "MOVE_WORK_UP"
+    ],
+    [
+      12,
+      "MOVE_KARATE_CHOP"
+    ],
+    [
+      15,
+      "MOVE_COMET_PUNCH"
+    ],
+    [
+      20,
+      "MOVE_SLASH"
+    ],
+    [
+      25,
+      "MOVE_CIRCLE_THROW"
+    ],
+    [
+      27,
+      "MOVE_VITAL_THROW"
+    ],
+    [
+      33,
+      "MOVE_BODY_SLAM"
+    ],
+    [
+      39,
+      "MOVE_CRUNCH"
+    ],
+    [
+      42,
+      "MOVE_ENTRAINMENT"
+    ],
+    [
+      45,
+      "MOVE_PARTING_SHOT"
+    ],
+    [
+      48,
+      "MOVE_SKY_UPPERCUT"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_LEVELUP",
+      "parameter": 32,
+      "target": "SPECIES_PANGORO"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 67,
+    "Base Attack": 82,
+    "Base Defense": 62,
+    "Base Speed": 43,
+    "Base Special Attack": 46,
+    "Base Special Defense": 48,
+    "Primary Type": "TYPE_FIGHTING",
+    "Secondary Type": "TYPE_FIGHTING",
+    "Capture Rate": 220,
+    "Evolution Stage": 1,
+    "EV Yield": 4,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 219,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 25,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 5,
+    "Egg Group 2": 8,
+    "Primary Ability": 89,
+    "Secondary Ability": 104,
+    "Hidden Ability": 113,
+    "Escape Rate": 90,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 8,
+    "Base Experience": 70,
+    "Height (cm)": 60,
+    "Weight (cg)": 80,
+    "TM HM 1": -871168336,
+    "TM HM 2": 10607560,
+    "TM HM 3": 585147463,
+    "TM HM 4": 731,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      32298,
+      45322,
+      10246,
+      10516
+    ]
+  },
+  "status": "staged_not_playable"
+}

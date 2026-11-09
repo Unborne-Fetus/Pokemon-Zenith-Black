@@ -1,0 +1,159 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/713.yml",
+    "evolutions": "data/pml/evolutions/713.yml",
+    "learnsets": "data/pml/learnsets/713.yml"
+  },
+  "national_dex": 713,
+  "species": "SPECIES_AVALUGG",
+  "base_stats": {
+    "hp": 95,
+    "attack": 117,
+    "defense": 184,
+    "speed": 28,
+    "special_attack": 44,
+    "special_defense": 46
+  },
+  "types": [
+    "TYPE_ICE",
+    "TYPE_ICE"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_IRON_DEFENSE"
+    ],
+    [
+      1,
+      "MOVE_CRUNCH"
+    ],
+    [
+      1,
+      "MOVE_SKULL_BASH"
+    ],
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_BITE"
+    ],
+    [
+      1,
+      "MOVE_HARDEN"
+    ],
+    [
+      5,
+      "MOVE_POWDER_SNOW"
+    ],
+    [
+      10,
+      "MOVE_ICY_WIND"
+    ],
+    [
+      15,
+      "MOVE_TAKE_DOWN"
+    ],
+    [
+      20,
+      "MOVE_SHARPEN"
+    ],
+    [
+      22,
+      "MOVE_CURSE"
+    ],
+    [
+      26,
+      "MOVE_ICE_FANG"
+    ],
+    [
+      30,
+      "MOVE_ICE_BALL"
+    ],
+    [
+      35,
+      "MOVE_RAPID_SPIN"
+    ],
+    [
+      42,
+      "MOVE_AVALANCHE"
+    ],
+    [
+      46,
+      "MOVE_BLIZZARD"
+    ],
+    [
+      51,
+      "MOVE_RECOVER"
+    ],
+    [
+      56,
+      "MOVE_DOUBLEEDGE"
+    ],
+    [
+      60,
+      "MOVE_SKULL_BASH"
+    ],
+    [
+      65,
+      "MOVE_CRUNCH"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 95,
+    "Base Attack": 117,
+    "Base Defense": 184,
+    "Base Speed": 28,
+    "Base Special Attack": 44,
+    "Base Special Defense": 46,
+    "Primary Type": "TYPE_ICE",
+    "Secondary Type": "TYPE_ICE",
+    "Capture Rate": 55,
+    "Evolution Stage": 2,
+    "EV Yield": 32,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 1,
+    "Egg Group 2": 1,
+    "Primary Ability": 20,
+    "Secondary Ability": 115,
+    "Hidden Ability": 5,
+    "Escape Rate": 30,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 1,
+    "Base Experience": 180,
+    "Height (cm)": 200,
+    "Weight (cg)": 5050,
+    "TM HM 1": -2045021584,
+    "TM HM 2": 39488,
+    "TM HM 3": 650175096,
+    "TM HM 4": 712,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      32,
+      1346,
+      32770,
+      8200
+    ]
+  },
+  "status": "staged_not_playable"
+}

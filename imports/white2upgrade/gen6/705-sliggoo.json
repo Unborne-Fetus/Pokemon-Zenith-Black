@@ -1,0 +1,129 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/705.yml",
+    "evolutions": "data/pml/evolutions/705.yml",
+    "learnsets": "data/pml/learnsets/705.yml"
+  },
+  "national_dex": 705,
+  "species": "SPECIES_SLIGGOO",
+  "base_stats": {
+    "hp": 68,
+    "attack": 75,
+    "defense": 53,
+    "speed": 60,
+    "special_attack": 83,
+    "special_defense": 113
+  },
+  "types": [
+    "TYPE_DRAGON",
+    "TYPE_DRAGON"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 2
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_BUBBLE"
+    ],
+    [
+      5,
+      "MOVE_ABSORB"
+    ],
+    [
+      9,
+      "MOVE_PROTECT"
+    ],
+    [
+      13,
+      "MOVE_BIDE"
+    ],
+    [
+      18,
+      "MOVE_DRAGONBREATH"
+    ],
+    [
+      25,
+      "MOVE_RAIN_DANCE"
+    ],
+    [
+      28,
+      "MOVE_FLAIL"
+    ],
+    [
+      32,
+      "MOVE_BODY_SLAM"
+    ],
+    [
+      38,
+      "MOVE_MUDDY_WATER"
+    ],
+    [
+      47,
+      "MOVE_DRAGON_PULSE"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_LEVELUP",
+      "parameter": 50,
+      "target": "SPECIES_GOODRA"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 68,
+    "Base Attack": 75,
+    "Base Defense": 53,
+    "Base Speed": 60,
+    "Base Special Attack": 83,
+    "Base Special Defense": 113,
+    "Primary Type": "TYPE_DRAGON",
+    "Secondary Type": "TYPE_DRAGON",
+    "Capture Rate": 45,
+    "Evolution Stage": 2,
+    "EV Yield": 2048,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 40,
+    "Base Happiness": 35,
+    "Experience Group": 5,
+    "Egg Group 1": 14,
+    "Egg Group 2": 14,
+    "Primary Ability": 157,
+    "Secondary Ability": 93,
+    "Hidden Ability": 183,
+    "Escape Rate": 120,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 6,
+    "Base Experience": 158,
+    "Height (cm)": 80,
+    "Weight (cg)": 175,
+    "TM HM 1": -2070727136,
+    "TM HM 2": 39434,
+    "TM HM 3": 583303168,
+    "TM HM 4": 8,
+    "Type Tutors": 64,
+    "Special Tutors": [
+      0,
+      81920,
+      49154,
+      8704
+    ]
+  },
+  "status": "staged_not_playable"
+}
