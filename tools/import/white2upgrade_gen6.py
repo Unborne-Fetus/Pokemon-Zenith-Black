@@ -61,7 +61,7 @@ def table(text: str, prefix: str) -> tuple[str, list[dict]]:
     species, lines = header(text)
     entries, current = [], None
     for line in lines:
-        match = re.fullmatch(r"- (" + re.escape(prefix) + r"_[0-9]+|LEARNSET_END):\s*", line)
+        match = re.fullmatch(r"\s*- (" + re.escape(prefix) + r"_[0-9]+|LEARNSET_END):\s*", line)
         if match:
             if current is not None:
                 entries.append(current)
