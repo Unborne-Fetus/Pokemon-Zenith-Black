@@ -1,0 +1,29 @@
+{
+  "battle": {
+    "source_archive": "a/0/0/4",
+    "source_index_first": 13000,
+    "source_index_last": 14439,
+    "target_insert_at": 13000,
+    "entries": 1440,
+    "empty_entries": 280,
+    "source_bytes": 340764
+  },
+  "icons": {
+    "source_archive": "a/0/0/7",
+    "source_index_first": 1308,
+    "source_index_last": 1451,
+    "target_insert_at": 1308,
+    "entries": 144,
+    "empty_entries": 71,
+    "source_bytes": 78256
+  },
+  "footprints": {
+    "source_archive": "a/1/6/5",
+    "source_index_first": 655,
+    "source_index_last": 726,
+    "target_insert_at": 655,
+    "entries": 72,
+    "empty_entries": 0,
+    "source_bytes": 7961
+  }
+}
