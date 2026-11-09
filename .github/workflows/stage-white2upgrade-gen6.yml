@@ -6,7 +6,7 @@ on:
       - feature/white2upgrade-gen6-import
     paths:
       - tools/import/white2upgrade_gen6.py
-      - tools/import/white2upgrade_native.py tools/import/white2upgrade_graphics.py
+      - tools/import/white2upgrade_native.py
       - tools/import/white2upgrade_graphics.py
       - imports/white2upgrade/README.md
       - .github/workflows/stage-white2upgrade-gen6.yml
@@ -23,7 +23,7 @@ jobs:
         with:
           persist-credentials: true
       - name: Verify importer parses
-        run: python3 -m py_compile tools/import/white2upgrade_gen6.py tools/import/white2upgrade_native.py
+        run: python3 -m py_compile tools/import/white2upgrade_gen6.py tools/import/white2upgrade_native.py tools/import/white2upgrade_graphics.py
       - name: Get donor data
         run: git clone --depth 1 https://github.com/ds-pokemon-hacking/White2Upgrade.git /tmp/White2Upgrade
       - name: Stage 72 Kalos species
