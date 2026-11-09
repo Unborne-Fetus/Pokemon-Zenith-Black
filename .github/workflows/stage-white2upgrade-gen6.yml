@@ -6,7 +6,8 @@ on:
       - feature/white2upgrade-gen6-import
     paths:
       - tools/import/white2upgrade_gen6.py
-      - tools/import/white2upgrade_native.py
+      - tools/import/white2upgrade_native.py tools/import/white2upgrade_graphics.py
+      - tools/import/white2upgrade_graphics.py
       - imports/white2upgrade/README.md
       - .github/workflows/stage-white2upgrade-gen6.yml
   workflow_dispatch:
@@ -33,11 +34,13 @@ jobs:
         run: python3 tools/import/white2upgrade_native.py
       - name: Check native preview reproducibility
         run: python3 tools/import/white2upgrade_native.py --check
+      - name: Audit donor graphics for all 72 species
+        run: python3 tools/import/white2upgrade_graphics.py --donor /tmp/White2Upgrade --report imports/white2upgrade/graphics-inventory.json
       - name: Publish staged records
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add imports/white2upgrade/gen6 imports/white2upgrade/REPORT.md imports/white2upgrade/native-preview
+          git add imports/white2upgrade/gen6 imports/white2upgrade/REPORT.md imports/white2upgrade/native-preview imports/white2upgrade/graphics-inventory.json
           if ! git diff --cached --quiet; then
             git commit -m "Stage White2Upgrade species 650-721 metadata"
             git push origin HEAD:feature/white2upgrade-gen6-import
