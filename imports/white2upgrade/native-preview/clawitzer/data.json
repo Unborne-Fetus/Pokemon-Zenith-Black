@@ -38,10 +38,10 @@
     "EGG_GROUP_WATER_3"
   ],
   "abilities": [
-    "ABILITY_W2U_178",
-    "ABILITY_W2U_178"
+    "ABILITY_MEGA_LAUNCHER",
+    "ABILITY_MEGA_LAUNCHER"
   ],
-  "hidden_ability": "ABILITY_W2U_178",
+  "hidden_ability": "ABILITY_MEGA_LAUNCHER",
   "flee_rate": 0,
   "forms": {
     "count": 1,

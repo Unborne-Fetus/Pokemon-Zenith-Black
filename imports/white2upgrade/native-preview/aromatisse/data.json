@@ -41,7 +41,7 @@
     "ABILITY_HEALER",
     "ABILITY_HEALER"
   ],
-  "hidden_ability": "ABILITY_W2U_165",
+  "hidden_ability": "ABILITY_AROMA_VEIL",
   "flee_rate": 50,
   "forms": {
     "count": 1,

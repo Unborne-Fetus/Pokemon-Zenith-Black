@@ -41,7 +41,7 @@
     "ABILITY_SAP_SIPPER",
     "ABILITY_HYDRATION"
   ],
-  "hidden_ability": "ABILITY_W2U_183",
+  "hidden_ability": "ABILITY_GOOEY",
   "flee_rate": 120,
   "forms": {
     "count": 1,

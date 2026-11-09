@@ -38,10 +38,10 @@
     "EGG_GROUP_FIELD"
   ],
   "abilities": [
-    "ABILITY_W2U_169",
-    "ABILITY_W2U_169"
+    "ABILITY_FUR_COAT",
+    "ABILITY_FUR_COAT"
   ],
-  "hidden_ability": "ABILITY_W2U_169",
+  "hidden_ability": "ABILITY_FUR_COAT",
   "flee_rate": 0,
   "forms": {
     "count": 10,

@@ -39,7 +39,7 @@
   ],
   "abilities": [
     "ABILITY_PICKUP",
-    "ABILITY_W2U_167"
+    "ABILITY_CHEEK_POUCH"
   ],
   "hidden_ability": "ABILITY_HUGE_POWER",
   "flee_rate": 90,

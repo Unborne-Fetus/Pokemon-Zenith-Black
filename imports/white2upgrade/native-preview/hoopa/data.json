@@ -38,10 +38,10 @@
     "EGG_GROUP_UNDISCOVERED"
   ],
   "abilities": [
-    "ABILITY_W2U_170",
-    "ABILITY_W2U_170"
+    "ABILITY_MAGICIAN",
+    "ABILITY_MAGICIAN"
   ],
-  "hidden_ability": "ABILITY_W2U_170",
+  "hidden_ability": "ABILITY_MAGICIAN",
   "flee_rate": 0,
   "forms": {
     "count": 2,

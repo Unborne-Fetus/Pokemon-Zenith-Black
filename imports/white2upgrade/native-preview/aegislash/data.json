@@ -38,10 +38,10 @@
     "EGG_GROUP_MINERAL"
   ],
   "abilities": [
-    "ABILITY_W2U_176",
-    "ABILITY_W2U_176"
+    "ABILITY_STANCE_CHANGE",
+    "ABILITY_STANCE_CHANGE"
   ],
-  "hidden_ability": "ABILITY_W2U_176",
+  "hidden_ability": "ABILITY_STANCE_CHANGE",
   "flee_rate": 60,
   "forms": {
     "count": 2,

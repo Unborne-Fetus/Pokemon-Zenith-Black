@@ -38,10 +38,10 @@
     "EGG_GROUP_UNDISCOVERED"
   ],
   "abilities": [
-    "ABILITY_W2U_188",
-    "ABILITY_W2U_188"
+    "ABILITY_AURA_BREAK",
+    "ABILITY_AURA_BREAK"
   ],
-  "hidden_ability": "ABILITY_W2U_188",
+  "hidden_ability": "ABILITY_AURA_BREAK",
   "flee_rate": 0,
   "forms": {
     "count": 1,

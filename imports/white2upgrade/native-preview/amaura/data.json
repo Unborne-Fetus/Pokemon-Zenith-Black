@@ -38,8 +38,8 @@
     "EGG_GROUP_MONSTER"
   ],
   "abilities": [
-    "ABILITY_W2U_174",
-    "ABILITY_W2U_174"
+    "ABILITY_REFRIGERATE",
+    "ABILITY_REFRIGERATE"
   ],
   "hidden_ability": "ABILITY_SNOW_WARNING",
   "flee_rate": 0,

@@ -38,10 +38,10 @@
     "EGG_GROUP_FAIRY"
   ],
   "abilities": [
-    "ABILITY_W2U_166",
-    "ABILITY_W2U_166"
+    "ABILITY_FLOWER_VEIL",
+    "ABILITY_FLOWER_VEIL"
   ],
-  "hidden_ability": "ABILITY_W2U_180",
+  "hidden_ability": "ABILITY_SYMBIOSIS",
   "flee_rate": 90,
   "forms": {
     "count": 5,

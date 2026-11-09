@@ -41,7 +41,7 @@
     "ABILITY_SAP_SIPPER",
     "ABILITY_SAP_SIPPER"
   ],
-  "hidden_ability": "ABILITY_W2U_179",
+  "hidden_ability": "ABILITY_GRASS_PELT",
   "flee_rate": 60,
   "forms": {
     "count": 1,
