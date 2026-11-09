@@ -18,7 +18,11 @@
 // The file of the national Pokédex's species, in their order
 #define FILE_NATIONAL_ORDER 4
 // The number of species of the national Pokédex
+#ifdef ZENITH_721
+#define NATIONAL_COUNT 721
+#else
 #define NATIONAL_COUNT 649
+#endif
 // A species' value in the regional Pokédex's table when it is not in it
 #define REGIONAL_NONE 999
 // The species and the form of an entry of the list
