@@ -18,6 +18,11 @@ on:
 permissions:
   contents: write
 
+# Avoid older imports racing the latest commit on the same feature branch.
+concurrency:
+  group: white2upgrade-gen6-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   stage-gen6:
     runs-on: ubuntu-latest
@@ -58,5 +63,7 @@ jobs:
           git add imports/white2upgrade/gen6 imports/white2upgrade/REPORT.md imports/white2upgrade/native-preview imports/white2upgrade/graphics-inventory.json imports/white2upgrade/moves imports/white2upgrade/fairy-type-chart.json imports/white2upgrade/zenith721-lists
           if ! git diff --cached --quiet; then
             git commit -m "Stage White2Upgrade species 650-721 metadata"
+            git fetch origin feature/white2upgrade-gen6-import
+            git rebase origin/feature/white2upgrade-gen6-import
             git push origin HEAD:feature/white2upgrade-gen6-import
           fi
