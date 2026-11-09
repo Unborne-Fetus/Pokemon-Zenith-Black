@@ -640,10 +640,10 @@ def get_dsd(tools_dir: Path, from_source: bool) -> Path:
     return dsd
 
 
-def add_version(n: Writer, version: str, dsd: Path, bugfix: bool, shift: int) -> tuple[list[Path], list[str]]:
+def add_version(n: Writer, version: str, dsd: Path, bugfix: bool, shift: int, zenith_721: bool) -> tuple[list[Path], list[str]]:
     """Adds the build steps of one version. Returns its check targets and dsd config files. A build with the bugs fixed
     or with its code shifted does not match, so its only targets are the ROM and its archives."""
-    matching = not bugfix and not shift
+    matching = not bugfix and not shift and not zenith_721
     baserom = Path("orig") / f"baserom_{version}.nds"
     extract_dir = Path("extract") / version
     config_dir = Path("config") / version
@@ -693,7 +693,7 @@ def add_version(n: Writer, version: str, dsd: Path, bugfix: bool, shift: int) ->
     # Source files are listed in delinks.txt by their path. Complete files are linked from the compiled object, and
     # incomplete ones are still compiled so objdiff can compare them. A file in config/deadstrip.toml is compiled to an
     # object under unstripped/, which the strip turns into the one at the usual path.
-    version_defines = VERSIONS[version]["defines"] + (["BUGFIX"] if bugfix else [])
+    version_defines = VERSIONS[version]["defines"] + (["BUGFIX"] if bugfix else []) + (["ZENITH_721"] if zenith_721 else [])
     defines = " ".join(f"-d {define}" for define in version_defines)
     as_defines = " ".join(f"-D{define}" for define in version_defines)
     objects = []
@@ -907,7 +907,15 @@ def main():
                              "code sizes; the ROMs no longer match. A multiple of 32, such as 0x100")
     parser.add_argument("--bugfix", action="store_true",
                         help="fix the game's bugs that are marked with BUGFIX in the source; the ROMs no longer match")
+    parser.add_argument("--zenith-721", action="store_true",
+                        help="experimental 721-species modified build (requires prepared species data and assets)")
     args = parser.parse_args()
+
+    if args.zenith_721:
+        species = (ROOT / "generated/species.txt").read_text(encoding="utf-8")
+        if "SPECIES_VOLCANION" not in species:
+            sys.exit("--zenith-721 needs Gen 6 species data: prepare an expanded workspace first. "
+                     "The original matching build has only 649 species.")
 
     versions = args.versions or [v for v in VERSIONS if (ROOT / "orig" / f"baserom_{v}.nds").exists()]
     if not versions:
@@ -1013,6 +1021,7 @@ def main():
     n.rule("progress", "$python tools/build/progress.py $in", "Progress")
     # A regeneration keeps the options that chose the tools, so that a build with another dsd keeps it
     configure_args = [*args.versions, *(["--bugfix"] if args.bugfix else []),
+                      *(["--zenith-721"] if args.zenith_721 else []),
                       *([f"--shift {args.shift:#x}"] if args.shift else []),
                       *([f"--dsd {shlex.quote(str(args.dsd.resolve()))}"] if args.dsd else []),
                       *(["--dsd-from-source"] if args.dsd_from_source else []),
@@ -1075,7 +1084,7 @@ def main():
 
     checks, configs = [], []
     for version in versions:
-        version_checks, version_configs = add_version(n, version, dsd, args.bugfix, args.shift)
+        version_checks, version_configs = add_version(n, version, dsd, args.bugfix, args.shift, args.zenith_721)
         checks += version_checks
         configs += version_configs
 
@@ -1106,7 +1115,8 @@ def main():
     write_compile_flags()
     fixes = ", with the bugs fixed" if args.bugfix else ""
     shifted = f", with the code shifted by {args.shift:#x} bytes" if args.shift else ""
-    print(f"Wrote build.ninja for {', '.join(versions)}{fixes}{shifted}, now run ninja")
+    modded = ", with experimental Zenith 721 limits" if args.zenith_721 else ""
+    print(f"Wrote build.ninja for {', '.join(versions)}{fixes}{shifted}{modded}, now run ninja")
 
 
 if __name__ == "__main__":
