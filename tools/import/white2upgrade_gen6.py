@@ -144,9 +144,18 @@ def report(records: list[dict]) -> str:
     abilities = constants(ROOT / "generated/abilities.txt", "ABILITY")
     moves = constants(ROOT / "generated/moves.txt", "MOVE")
     types = constants(ROOT / "generated/types.txt", "TYPE")
-    unknown_moves = sorted({
-        move for r in records for _, move in r["level_up_moves"] if move not in moves
-    })
+    # The donor sometimes omits underscores (MOVE_ANCIENTPOWER vs
+    # MOVE_ANCIENT_POWER). Treat unambiguous spelling aliases as available.
+    canonical = {}
+    for name in moves:
+        canonical.setdefault(name.replace("_", ""), set()).add(name)
+    referenced = {move for r in records for _, move in r["level_up_moves"]}
+    aliases = {
+        move: next(iter(canonical[move.replace("_", "")]))
+        for move in referenced if move not in moves
+        and len(canonical.get(move.replace("_", ""), ())) == 1
+    }
+    unknown_moves = sorted(referenced - moves - aliases.keys())
     unknown_types = sorted({
         value for r in records for value in r["types"] if value not in types
     })
@@ -168,7 +177,8 @@ def report(records: list[dict]) -> str:
         f"- Source: {SOURCE_URL}", "",
         "## Integration blockers", "",
         f"- Missing target type constants: {', '.join(unknown_types) or 'none'}",
-        f"- Missing target move constants: {', '.join(unknown_moves) or 'none'}",
+        f"- Missing target move constants after spelling normalization: {', '.join(unknown_moves) or 'none'}",
+        f"- Existing moves needing name alias conversion: {', '.join(f'{a} → {b}' for a, b in sorted(aliases.items())) or 'none'}",
         f"- Additional ability IDs that need mapping/engine implementation: {', '.join(map(str, additional_ability_ids)) or 'none'}",
         f"- Evolution methods requiring cross-project mapping: {', '.join(unknown_methods) or 'none'}",
         "- Implement and test Pokédex/save expansion before changing the species list.",
