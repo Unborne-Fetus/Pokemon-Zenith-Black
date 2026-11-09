@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -27,9 +28,12 @@ def scalar(raw: str):
 
 def header(text: str) -> tuple[str, list[str]]:
     lines = text.replace("\r", "").splitlines()
-    if not lines or not re.fullmatch(r"SPECIES_[A-Z0-9_]+:", lines[0].strip()):
-        raise ValueError("Unrecognized White2Upgrade species file header")
-    return lines[0].strip()[:-1], lines[1:]
+    raw = lines[0].strip() if lines else ""
+    normalized = unicodedata.normalize("NFKD", raw)
+    normalized = "".join(ch for ch in normalized if not unicodedata.combining(ch)).upper()
+    if not re.fullmatch(r"SPECIES_[A-Z0-9_]+:", normalized):
+        raise ValueError(f"Unrecognized White2Upgrade species file header: {raw!r}")
+    return normalized[:-1], lines[1:]
 
 
 def personal(text: str) -> tuple[str, dict]:
