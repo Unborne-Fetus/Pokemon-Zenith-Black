@@ -50,6 +50,9 @@ enum {
 
 // The palettes of each icon: the male's, or the only one, in the low nibble and the female's in the high one
 // clang-format off
+#ifdef ZENITH_721
+#include "zenith721_icon_palettes.h"
+#else
 static const u8 sPokeIconPalettes[] = {
     0x00, 0x11, 0x11, 0x11, 0x00, 0x00, 0x00, 0x00, 0x22, 0x22, 0x11, 0x11, 0x00, 0x11, 0x22, 0x22,
     0x00, 0x00, 0x00, 0x22, 0x11, 0x00, 0x00, 0x22, 0x22, 0x22, 0x00, 0x22, 0x22, 0x22, 0x22, 0x22,
@@ -100,6 +103,7 @@ static const u8 sPokeIconPalettes[] = {
     0x11, 0x00, 0x22, 0x11, 0x00, 0x11, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x22, 0x22, 0x22,
     0x22, 0x00, 0x00, 0x00,
 };
+#endif
 
 // clang-format on
 
@@ -167,16 +171,6 @@ u8 PokeIcon_GetPalette(u32 species, u32 form, u32 sex, BOOL egg) {
         }
     }
 
-#ifdef ZENITH_721
-    // New species temporarily use palette bank 0 until the donor's icon palette
-    // map is integrated. Original special species and forms retain their banks.
-    if (species >= 650 && species <= 721) {
-        return 0;
-    }
-    if (species >= 722) {
-        species -= 72;
-    }
-#endif
     if (sex != 0) {
         return (u8)((sPokeIconPalettes[species] & 0xf0) >> 4);
     }
