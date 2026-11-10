@@ -1,29 +1,66 @@
 {
-  "battle": {
-    "source_archive": "a/0/0/4",
-    "source_index_first": 13000,
-    "source_index_last": 14439,
-    "target_insert_at": 13000,
-    "entries": 1440,
-    "empty_entries": 280,
-    "source_bytes": 340764
+  "a/0/0/4": {
+    "archive": "a/0/0/4",
+    "folder": "battle_sprites",
+    "sections": [
+      {
+        "insert_at_original_index": 13000,
+        "donor_first": 13000,
+        "donor_last": 14439,
+        "entries": 1440,
+        "empty_entries": 280,
+        "total_bytes": 340764
+      },
+      {
+        "insert_at_original_index": 15020,
+        "donor_first": 15800,
+        "donor_last": 17939,
+        "entries": 2140,
+        "empty_entries": 424,
+        "total_bytes": 884442
+      }
+    ],
+    "base_species": 72,
+    "extra_form_groups": 107
   },
-  "icons": {
-    "source_archive": "a/0/0/7",
-    "source_index_first": 1308,
-    "source_index_last": 1451,
-    "target_insert_at": 1308,
-    "entries": 144,
-    "empty_entries": 71,
-    "source_bytes": 78256
+  "a/0/0/7": {
+    "archive": "a/0/0/7",
+    "folder": "icons",
+    "sections": [
+      {
+        "insert_at_original_index": 1308,
+        "donor_first": 1308,
+        "donor_last": 1451,
+        "entries": 144,
+        "empty_entries": 71,
+        "total_bytes": 78256
+      },
+      {
+        "insert_at_original_index": 1510,
+        "donor_first": 1588,
+        "donor_last": 1801,
+        "entries": 214,
+        "empty_entries": 107,
+        "total_bytes": 114704
+      }
+    ],
+    "base_species": 72,
+    "extra_form_groups": 107
   },
-  "footprints": {
-    "source_archive": "a/1/6/5",
-    "source_index_first": 655,
-    "source_index_last": 726,
-    "target_insert_at": 655,
-    "entries": 72,
-    "empty_entries": 0,
-    "source_bytes": 7961
+  "a/1/6/5": {
+    "archive": "a/1/6/5",
+    "folder": "footprints",
+    "sections": [
+      {
+        "insert_at_original_index": 655,
+        "donor_first": 655,
+        "donor_last": 726,
+        "entries": 72,
+        "empty_entries": 0,
+        "total_bytes": 7961
+      }
+    ],
+    "base_species": 72,
+    "extra_form_groups": 0
   }
 }
