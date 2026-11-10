@@ -640,7 +640,8 @@ def get_dsd(tools_dir: Path, from_source: bool) -> Path:
     return dsd
 
 
-def add_version(n: Writer, version: str, dsd: Path, bugfix: bool, shift: int, zenith_721: bool) -> tuple[list[Path], list[str]]:
+def add_version(n: Writer, version: str, dsd: Path, bugfix: bool, shift: int, zenith_721: bool,
+                zenith_donor: Path | None) -> tuple[list[Path], list[str]]:
     """Adds the build steps of one version. Returns its check targets and dsd config files. A build with the bugs fixed
     or with its code shifted does not match, so its only targets are the ROM and its archives."""
     matching = not bugfix and not shift and not zenith_721
@@ -819,6 +820,33 @@ def add_version(n: Writer, version: str, dsd: Path, bugfix: bool, shift: int, ze
                                                                   *(ROOT / "include" / "constants").glob("*.h")])
     for script, data_dir, paths, per_version, *other_dirs in DATA_PACKS:
         outputs = [files_dir / path for path in paths]
+        if zenith_721 and script == "tools/data/pokemon_graphics.py":
+            # The decomp's original PNG packer describes the 649-species ROM.
+            # In this experimental variant, merge the donor's already-encoded
+            # Nitro members into *extracted* original NARCs instead. This
+            # preserves old sprites, special Pokémon and every old form.
+            from tools.import.white2upgrade_graphics import TARGETS, donor_files
+            for archive_name, archive in zip(paths, outputs):
+                source = extract_dir / "files" / archive_name
+                if archive_name in TARGETS:
+                    folder, ranges = TARGETS[archive_name]
+                    donor_dir = zenith_donor / "data/graphics/pokegra" / folder
+                    candidates = donor_files(donor_dir)
+                    wanted = {i for _, first, count in ranges
+                              for i in range(first, first + count)}
+                    dependencies = sorted(str(candidates[i]) for i in wanted)
+                    n.build([archive], "zenith_graphics", [source],
+                            implicit=["tools/import/white2upgrade_graphics.py",
+                                      "tools/data/narc.py", *dependencies],
+                            order_only=[files_ok],
+                            variables={"donor": shlex.quote(str(zenith_donor)),
+                                       "archive": archive_name})
+                else:
+                    # Unmodified musical and form-footprint archives.
+                    n.build([archive], "zenith_file_copy", [source], order_only=[files_ok])
+                archives.append(archive)
+                checks.append(archive)
+            continue
         sources = sorted(str(p.relative_to(ROOT)) for d in [data_dir, *(other_dirs[0] if other_dirs else [])]
                          for p in ([ROOT / d] if (ROOT / d).is_file() else (ROOT / d).rglob("*")) if p.is_file())
         game = VERSIONS[version]["defines"][0].lower() if per_version else ""
@@ -909,13 +937,19 @@ def main():
                         help="fix the game's bugs that are marked with BUGFIX in the source; the ROMs no longer match")
     parser.add_argument("--zenith-721", action="store_true",
                         help="experimental 721-species modified build (requires prepared species data and assets)")
+    parser.add_argument("--zenith-donor", type=Path, default=ROOT.parent / "White2Upgrade",
+                        help="local White2Upgrade clone for optional Kalos graphics; default ../White2Upgrade")
     args = parser.parse_args()
 
+    zenith_donor = args.zenith_donor.resolve() if args.zenith_721 else None
     if args.zenith_721:
         species = (ROOT / "generated/species.txt").read_text(encoding="utf-8")
         if "SPECIES_VOLCANION" not in species:
             sys.exit("--zenith-721 needs Gen 6 species data: prepare an expanded workspace first. "
                      "The original matching build has only 649 species.")
+        for folder in ("battle_sprites", "icons", "footprints"):
+            if not (zenith_donor / "data/graphics/pokegra" / folder).is_dir():
+                sys.exit(f"--zenith-721 needs a local White2Upgrade graphics clone: {zenith_donor}")
 
     versions = args.versions or [v for v in VERSIONS if (ROOT / "orig" / f"baserom_{v}.nds").exists()]
     if not versions:
@@ -999,6 +1033,15 @@ def main():
     n.rule("narc", "$python tools/data/narc.py pack $out $in", "Packing $out")
     n.rule("text_pack", "$python tools/text/text_data.py pack $dir $out", "Packing $out")
     n.rule("data_pack", "$python $script pack $dir $game $out $scripts", "Packing $dir")
+    n.rule("zenith_graphics",
+           "$python tools/import/white2upgrade_graphics.py --donor $donor "
+           "--archive $archive --base-archive $in --output-archive $out",
+           "Importing Kalos graphics into $out")
+    n.rule("zenith_file_copy", "mkdir -p $(dirname $out) && cp $in $out",
+           "Copying original Pokemon graphics $out")
+    n.rule("zenith_icon_palette",
+           "$python tools/import/white2upgrade_graphics.py --donor $donor --palette-header $out",
+           "Generating 721-Pokemon icon palette table")
     n.rule("check_file", "cmp $in $original && mkdir -p $$(dirname $out) && touch $out", "Checking $in")
     n.rule("files_tree", "$python tools/build/files_tree.py $source $output $built --stamp $out",
            "Linking the files of $output")
@@ -1021,7 +1064,8 @@ def main():
     n.rule("progress", "$python tools/build/progress.py $in", "Progress")
     # A regeneration keeps the options that chose the tools, so that a build with another dsd keeps it
     configure_args = [*args.versions, *(["--bugfix"] if args.bugfix else []),
-                      *(["--zenith-721"] if args.zenith_721 else []),
+                      *(["--zenith-721", f"--zenith-donor {shlex.quote(str(zenith_donor))}"]
+                        if args.zenith_721 else []),
                       *([f"--shift {args.shift:#x}"] if args.shift else []),
                       *([f"--dsd {shlex.quote(str(args.dsd.resolve()))}"] if args.dsd else []),
                       *(["--dsd-from-source"] if args.dsd_from_source else []),
@@ -1037,6 +1081,18 @@ def main():
     # rewritten, and restat keeps its users from recompiling.
     n.rule("gen_constants", "$python tools/data/gen_constants.py $in $out", "Generating $out", restat="1")
     constant_headers = []
+    if args.zenith_721:
+        # The icon palette table uses donor bank indexes for Kalos species and
+        # added forms, but preserves the existing game's palette choices.
+        header = Path(GENERATED_INCLUDE_DIR) / "zenith721_icon_palettes.h"
+        donor_palette = zenith_donor / "data/pokeicon_palette_map.bin"
+        if not donor_palette.is_file():
+            sys.exit(f"--zenith-721 needs the donor icon palette file: {donor_palette}")
+        n.build([header], "zenith_icon_palette",
+                [donor_palette, "src/system/poke_icon.c"],
+                implicit=["tools/import/white2upgrade_graphics.py"],
+                variables={"donor": shlex.quote(str(zenith_donor))})
+        constant_headers.append(header)
     for source in sorted((ROOT / "generated").glob("*.txt")):
         header = Path(GENERATED_INCLUDE_DIR) / "constants" / source.with_suffix(".h").name
         n.build([header], "gen_constants", [source.relative_to(ROOT)], implicit=["tools/data/gen_constants.py"])
@@ -1084,7 +1140,8 @@ def main():
 
     checks, configs = [], []
     for version in versions:
-        version_checks, version_configs = add_version(n, version, dsd, args.bugfix, args.shift, args.zenith_721)
+        version_checks, version_configs = add_version(n, version, dsd, args.bugfix, args.shift, args.zenith_721,
+                                                    zenith_donor)
         checks += version_checks
         configs += version_configs
 
