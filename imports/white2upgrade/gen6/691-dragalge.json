@@ -1,0 +1,159 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/691.yml",
+    "evolutions": "data/pml/evolutions/691.yml",
+    "learnsets": "data/pml/learnsets/691.yml"
+  },
+  "national_dex": 691,
+  "species": "SPECIES_DRAGALGE",
+  "base_stats": {
+    "hp": 65,
+    "attack": 75,
+    "defense": 90,
+    "speed": 44,
+    "special_attack": 97,
+    "special_defense": 123
+  },
+  "types": [
+    "TYPE_POISON",
+    "TYPE_DRAGON"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 2
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_DRAGON_TAIL"
+    ],
+    [
+      1,
+      "MOVE_TWISTER"
+    ],
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_SMOKESCREEN"
+    ],
+    [
+      1,
+      "MOVE_WATER_GUN"
+    ],
+    [
+      5,
+      "MOVE_FAINT_ATTACK"
+    ],
+    [
+      9,
+      "MOVE_TAIL_WHIP"
+    ],
+    [
+      12,
+      "MOVE_BUBBLE"
+    ],
+    [
+      15,
+      "MOVE_ACID"
+    ],
+    [
+      19,
+      "MOVE_CAMOUFLAGE"
+    ],
+    [
+      23,
+      "MOVE_POISON_TAIL"
+    ],
+    [
+      25,
+      "MOVE_WATER_PULSE"
+    ],
+    [
+      28,
+      "MOVE_DOUBLE_TEAM"
+    ],
+    [
+      32,
+      "MOVE_TOXIC"
+    ],
+    [
+      35,
+      "MOVE_AQUA_TAIL"
+    ],
+    [
+      38,
+      "MOVE_SLUDGE_BOMB"
+    ],
+    [
+      42,
+      "MOVE_HYDRO_PUMP"
+    ],
+    [
+      53,
+      "MOVE_DRAGON_PULSE"
+    ],
+    [
+      59,
+      "MOVE_DRAGON_TAIL"
+    ],
+    [
+      67,
+      "MOVE_TWISTER"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 65,
+    "Base Attack": 75,
+    "Base Defense": 90,
+    "Base Speed": 44,
+    "Base Special Attack": 97,
+    "Base Special Defense": 123,
+    "Primary Type": "TYPE_POISON",
+    "Secondary Type": "TYPE_DRAGON",
+    "Capture Rate": 55,
+    "Evolution Stage": 2,
+    "EV Yield": 2048,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 2,
+    "Egg Group 2": 14,
+    "Primary Ability": 38,
+    "Secondary Ability": 143,
+    "Hidden Ability": 91,
+    "Escape Rate": 60,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 5,
+    "Base Experience": 173,
+    "Height (cm)": 180,
+    "Weight (cg)": 815,
+    "TM HM 1": -1517075616,
+    "TM HM 2": 4758026,
+    "TM HM 3": 583139336,
+    "TM HM 4": 1352,
+    "Type Tutors": 64,
+    "Special Tutors": [
+      1280,
+      84992,
+      49154,
+      8704
+    ]
+  },
+  "status": "staged_not_playable"
+}

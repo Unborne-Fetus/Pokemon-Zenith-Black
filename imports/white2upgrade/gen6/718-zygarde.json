@@ -1,0 +1,151 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/718.yml",
+    "evolutions": "data/pml/evolutions/718.yml",
+    "learnsets": "data/pml/learnsets/718.yml"
+  },
+  "national_dex": 718,
+  "species": "SPECIES_ZYGARDE",
+  "base_stats": {
+    "hp": 108,
+    "attack": 100,
+    "defense": 121,
+    "speed": 95,
+    "special_attack": 81,
+    "special_defense": 95
+  },
+  "types": [
+    "TYPE_DRAGON",
+    "TYPE_GROUND"
+  ],
+  "ev_yields": {
+    "hp": 3,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_GLARE"
+    ],
+    [
+      1,
+      "MOVE_BULLDOZE"
+    ],
+    [
+      1,
+      "MOVE_DRAGONBREATH"
+    ],
+    [
+      1,
+      "MOVE_BITE"
+    ],
+    [
+      5,
+      "MOVE_SAFEGUARD"
+    ],
+    [
+      10,
+      "MOVE_DIG"
+    ],
+    [
+      18,
+      "MOVE_BIND"
+    ],
+    [
+      26,
+      "MOVE_LANDS_WRATH"
+    ],
+    [
+      35,
+      "MOVE_SANDSTORM"
+    ],
+    [
+      44,
+      "MOVE_HAZE"
+    ],
+    [
+      51,
+      "MOVE_CRUNCH"
+    ],
+    [
+      55,
+      "MOVE_EARTHQUAKE"
+    ],
+    [
+      59,
+      "MOVE_CAMOUFLAGE"
+    ],
+    [
+      63,
+      "MOVE_DRAGON_PULSE"
+    ],
+    [
+      72,
+      "MOVE_DRAGON_DANCE"
+    ],
+    [
+      80,
+      "MOVE_COIL"
+    ],
+    [
+      88,
+      "MOVE_EXTREMESPEED"
+    ],
+    [
+      93,
+      "MOVE_OUTRAGE"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 108,
+    "Base Attack": 100,
+    "Base Defense": 121,
+    "Base Speed": 95,
+    "Base Special Attack": 81,
+    "Base Special Defense": 95,
+    "Primary Type": "TYPE_DRAGON",
+    "Secondary Type": "TYPE_GROUND",
+    "Capture Rate": 3,
+    "Evolution Stage": 3,
+    "EV Yield": 3,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 255,
+    "Egg Happiness": 120,
+    "Base Happiness": 0,
+    "Experience Group": 5,
+    "Egg Group 1": 15,
+    "Egg Group 2": 15,
+    "Primary Ability": 188,
+    "Secondary Ability": 188,
+    "Hidden Ability": 188,
+    "Escape Rate": 0,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 67,
+    "Base Experience": 270,
+    "Height (cm)": 500,
+    "Weight (cg)": 3050,
+    "TM HM 1": -837204448,
+    "TM HM 2": 559634,
+    "TM HM 3": 585277512,
+    "TM HM 4": 648,
+    "Type Tutors": 64,
+    "Special Tutors": [
+      0,
+      123142,
+      16899,
+      8708
+    ]
+  },
+  "status": "staged_not_playable"
+}

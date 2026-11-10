@@ -1,0 +1,171 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Froakie",
+  "base_stats": {
+    "hp": 41,
+    "attack": 56,
+    "defense": 40,
+    "speed": 71,
+    "special_attack": 62,
+    "special_defense": 44
+  },
+  "types": [
+    "TYPE_WATER",
+    "TYPE_WATER"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 1,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 1,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 31,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_WATER_1",
+    "EGG_GROUP_WATER_1"
+  ],
+  "abilities": [
+    "ABILITY_TORRENT",
+    "ABILITY_TORRENT"
+  ],
+  "hidden_ability": "ABILITY_PROTEAN",
+  "flee_rate": 0,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BLUE",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 63,
+  "height": 3,
+  "weight": 70,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_POUND"
+      ],
+      [
+        1,
+        "MOVE_GROWL"
+      ],
+      [
+        5,
+        "MOVE_BUBBLE"
+      ],
+      [
+        8,
+        "MOVE_QUICK_ATTACK"
+      ],
+      [
+        10,
+        "MOVE_LICK"
+      ],
+      [
+        14,
+        "MOVE_WATER_PULSE"
+      ],
+      [
+        18,
+        "MOVE_SMOKE_SCREEN"
+      ],
+      [
+        21,
+        "MOVE_ROUND"
+      ],
+      [
+        25,
+        "MOVE_FLING"
+      ],
+      [
+        29,
+        "MOVE_SMACK_DOWN"
+      ],
+      [
+        35,
+        "MOVE_SUBSTITUTE"
+      ],
+      [
+        39,
+        "MOVE_BOUNCE"
+      ],
+      [
+        43,
+        "MOVE_DOUBLE_TEAM"
+      ],
+      [
+        48,
+        "MOVE_HYDRO_PUMP"
+      ]
+    ],
+    "by_tm": [
+      "TM06",
+      "TM10",
+      "TM12",
+      "TM13",
+      "TM14",
+      "TM17",
+      "TM18",
+      "TM21",
+      "TM23",
+      "TM27",
+      "TM28",
+      "TM32",
+      "TM39",
+      "TM40",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM46",
+      "TM48",
+      "TM49",
+      "TM55",
+      "TM56",
+      "TM62",
+      "TM80",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM89",
+      "TM90",
+      "TM94",
+      "HM03",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_WATER_PLEDGE",
+      "MOVE_BOUNCE",
+      "MOVE_ICY_WIND",
+      "MOVE_SNORE",
+      "MOVE_ROLE_PLAY",
+      "MOVE_SPITE",
+      "MOVE_SNATCH",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [
+    {
+      "method": "EVO_METHOD_LEVEL",
+      "param": 16,
+      "species": "SPECIES_FROGADIER"
+    }
+  ],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_FROAKIE"
+}

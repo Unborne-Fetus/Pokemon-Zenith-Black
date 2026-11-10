@@ -1,0 +1,149 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/714.yml",
+    "evolutions": "data/pml/evolutions/714.yml",
+    "learnsets": "data/pml/learnsets/714.yml"
+  },
+  "national_dex": 714,
+  "species": "SPECIES_NOIBAT",
+  "base_stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 35,
+    "speed": 55,
+    "special_attack": 45,
+    "special_defense": 40
+  },
+  "types": [
+    "TYPE_FLYING",
+    "TYPE_DRAGON"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 1,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_SCREECH"
+    ],
+    [
+      1,
+      "MOVE_SUPERSONIC"
+    ],
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      5,
+      "MOVE_LEECH_LIFE"
+    ],
+    [
+      11,
+      "MOVE_GUST"
+    ],
+    [
+      13,
+      "MOVE_BITE"
+    ],
+    [
+      16,
+      "MOVE_WING_ATTACK"
+    ],
+    [
+      18,
+      "MOVE_AGILITY"
+    ],
+    [
+      23,
+      "MOVE_AIR_CUTTER"
+    ],
+    [
+      27,
+      "MOVE_ROOST"
+    ],
+    [
+      31,
+      "MOVE_RAZOR_WIND"
+    ],
+    [
+      35,
+      "MOVE_TAILWIND"
+    ],
+    [
+      40,
+      "MOVE_WHIRLWIND"
+    ],
+    [
+      43,
+      "MOVE_SUPER_FANG"
+    ],
+    [
+      48,
+      "MOVE_AIR_SLASH"
+    ],
+    [
+      58,
+      "MOVE_HURRICANE"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_LEVELUP",
+      "parameter": 48,
+      "target": "SPECIES_NOIVERN"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 40,
+    "Base Attack": 30,
+    "Base Defense": 35,
+    "Base Speed": 55,
+    "Base Special Attack": 45,
+    "Base Special Defense": 40,
+    "Primary Type": "TYPE_FLYING",
+    "Secondary Type": "TYPE_DRAGON",
+    "Capture Rate": 190,
+    "Evolution Stage": 1,
+    "EV Yield": 64,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 4,
+    "Egg Group 2": 4,
+    "Primary Ability": 119,
+    "Secondary Ability": 151,
+    "Hidden Ability": 140,
+    "Escape Rate": 60,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 6,
+    "Base Experience": 49,
+    "Height (cm)": 50,
+    "Weight (cg)": 80,
+    "TM HM 1": -197849568,
+    "TM HM 2": 537246592,
+    "TM HM 3": 869335041,
+    "TM HM 4": 57,
+    "Type Tutors": 64,
+    "Special Tutors": [
+      2052,
+      118784,
+      37266,
+      10752
+    ]
+  },
+  "status": "staged_not_playable"
+}

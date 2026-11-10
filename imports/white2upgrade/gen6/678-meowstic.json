@@ -1,0 +1,163 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/678.yml",
+    "evolutions": "data/pml/evolutions/678.yml",
+    "learnsets": "data/pml/learnsets/678.yml"
+  },
+  "national_dex": 678,
+  "species": "SPECIES_MEOWSTIC",
+  "base_stats": {
+    "hp": 74,
+    "attack": 48,
+    "defense": 76,
+    "speed": 104,
+    "special_attack": 83,
+    "special_defense": 81
+  },
+  "types": [
+    "TYPE_PSYCHIC",
+    "TYPE_PSYCHIC"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 2,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_QUICK_GUARD"
+    ],
+    [
+      1,
+      "MOVE_MEAN_LOOK"
+    ],
+    [
+      1,
+      "MOVE_HELPING_HAND"
+    ],
+    [
+      1,
+      "MOVE_SCRATCH"
+    ],
+    [
+      1,
+      "MOVE_LEER"
+    ],
+    [
+      5,
+      "MOVE_COVET"
+    ],
+    [
+      9,
+      "MOVE_CONFUSION"
+    ],
+    [
+      13,
+      "MOVE_LIGHT_SCREEN"
+    ],
+    [
+      17,
+      "MOVE_PSYBEAM"
+    ],
+    [
+      19,
+      "MOVE_FAKE_OUT"
+    ],
+    [
+      22,
+      "MOVE_DISARMING_VOICE"
+    ],
+    [
+      25,
+      "MOVE_PSYSHOCK"
+    ],
+    [
+      28,
+      "MOVE_CHARM"
+    ],
+    [
+      31,
+      "MOVE_MIRACLE_EYE"
+    ],
+    [
+      35,
+      "MOVE_REFLECT"
+    ],
+    [
+      40,
+      "MOVE_PSYCHIC"
+    ],
+    [
+      43,
+      "MOVE_ROLE_PLAY"
+    ],
+    [
+      45,
+      "MOVE_IMPRISON"
+    ],
+    [
+      48,
+      "MOVE_SUCKER_PUNCH"
+    ],
+    [
+      50,
+      "MOVE_MISTY_TERRAIN"
+    ],
+    [
+      53,
+      "MOVE_QUICK_GUARD"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 74,
+    "Base Attack": 48,
+    "Base Defense": 76,
+    "Base Speed": 104,
+    "Base Special Attack": 83,
+    "Base Special Defense": 81,
+    "Primary Type": "TYPE_PSYCHIC",
+    "Secondary Type": "TYPE_PSYCHIC",
+    "Capture Rate": 75,
+    "Evolution Stage": 2,
+    "EV Yield": 128,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 5,
+    "Egg Group 2": 5,
+    "Primary Ability": 51,
+    "Secondary Ability": 151,
+    "Hidden Ability": 158,
+    "Escape Rate": 60,
+    "Form Data Offset": 748,
+    "Form Sprite Offset": 162,
+    "Form Count": 2,
+    "Color": 8,
+    "Base Experience": 163,
+    "Height (cm)": 60,
+    "Weight (cg)": 85,
+    "TM HM 1": -1130641876,
+    "TM HM 2": 17931009,
+    "TM HM 3": 718278954,
+    "TM HM 4": 27,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      18,
+      73745,
+      16482,
+      11504
+    ]
+  },
+  "status": "staged_not_playable"
+}

@@ -1,0 +1,107 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/695.yml",
+    "evolutions": "data/pml/evolutions/695.yml",
+    "learnsets": "data/pml/learnsets/695.yml"
+  },
+  "national_dex": 695,
+  "species": "SPECIES_HELIOLISK",
+  "base_stats": {
+    "hp": 62,
+    "attack": 55,
+    "defense": 52,
+    "speed": 109,
+    "special_attack": 109,
+    "special_defense": 94
+  },
+  "types": [
+    "TYPE_ELECTRIC",
+    "TYPE_NORMAL"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 1,
+    "special_attack": 1,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_EERIE_IMPULSE"
+    ],
+    [
+      1,
+      "MOVE_ELECTRIFY"
+    ],
+    [
+      1,
+      "MOVE_RAZOR_WIND"
+    ],
+    [
+      1,
+      "MOVE_QUICK_ATTACK"
+    ],
+    [
+      1,
+      "MOVE_THUNDER"
+    ],
+    [
+      1,
+      "MOVE_CHARGE"
+    ],
+    [
+      1,
+      "MOVE_PARABOLIC_CHARGE"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 62,
+    "Base Attack": 55,
+    "Base Defense": 52,
+    "Base Speed": 109,
+    "Base Special Attack": 109,
+    "Base Special Defense": 94,
+    "Primary Type": "TYPE_ELECTRIC",
+    "Secondary Type": "TYPE_NORMAL",
+    "Capture Rate": 75,
+    "Evolution Stage": 2,
+    "EV Yield": 320,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 1,
+    "Egg Group 2": 14,
+    "Primary Ability": 87,
+    "Secondary Ability": 8,
+    "Hidden Ability": 94,
+    "Escape Rate": 90,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 2,
+    "Base Experience": 168,
+    "Height (cm)": 100,
+    "Weight (cg)": 210,
+    "TM HM 1": -1919696352,
+    "TM HM 2": 17357392,
+    "TM HM 3": 870494632,
+    "TM HM 4": 89,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      12816,
+      115232,
+      16386,
+      8192
+    ]
+  },
+  "status": "staged_not_playable"
+}

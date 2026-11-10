@@ -1,0 +1,155 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/675.yml",
+    "evolutions": "data/pml/evolutions/675.yml",
+    "learnsets": "data/pml/learnsets/675.yml"
+  },
+  "national_dex": 675,
+  "species": "SPECIES_PANGORO",
+  "base_stats": {
+    "hp": 95,
+    "attack": 124,
+    "defense": 78,
+    "speed": 58,
+    "special_attack": 69,
+    "special_defense": 71
+  },
+  "types": [
+    "TYPE_FIGHTING",
+    "TYPE_DARK"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_ENTRAINMENT"
+    ],
+    [
+      1,
+      "MOVE_HAMMER_ARM"
+    ],
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_LEER"
+    ],
+    [
+      7,
+      "MOVE_ARM_THRUST"
+    ],
+    [
+      10,
+      "MOVE_WORK_UP"
+    ],
+    [
+      12,
+      "MOVE_KARATE_CHOP"
+    ],
+    [
+      15,
+      "MOVE_COMET_PUNCH"
+    ],
+    [
+      20,
+      "MOVE_SLASH"
+    ],
+    [
+      25,
+      "MOVE_CIRCLE_THROW"
+    ],
+    [
+      27,
+      "MOVE_VITAL_THROW"
+    ],
+    [
+      35,
+      "MOVE_BODY_SLAM"
+    ],
+    [
+      42,
+      "MOVE_CRUNCH"
+    ],
+    [
+      45,
+      "MOVE_ENTRAINMENT"
+    ],
+    [
+      48,
+      "MOVE_PARTING_SHOT"
+    ],
+    [
+      52,
+      "MOVE_SKY_UPPERCUT"
+    ],
+    [
+      57,
+      "MOVE_HAMMER_ARM"
+    ],
+    [
+      65,
+      "MOVE_TAUNT"
+    ],
+    [
+      70,
+      "MOVE_LOW_SWEEP"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 95,
+    "Base Attack": 124,
+    "Base Defense": 78,
+    "Base Speed": 58,
+    "Base Special Attack": 69,
+    "Base Special Defense": 71,
+    "Primary Type": "TYPE_FIGHTING",
+    "Secondary Type": "TYPE_DARK",
+    "Capture Rate": 65,
+    "Evolution Stage": 2,
+    "EV Yield": 8,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 219,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 25,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 5,
+    "Egg Group 2": 8,
+    "Primary Ability": 89,
+    "Secondary Ability": 104,
+    "Hidden Ability": 113,
+    "Escape Rate": 90,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 8,
+    "Base Experience": 173,
+    "Height (cm)": 210,
+    "Weight (cg)": 1360,
+    "TM HM 1": -837595469,
+    "TM HM 2": 1219099592,
+    "TM HM 3": 1659741263,
+    "TM HM 4": 731,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      32298,
+      45322,
+      10246,
+      11028
+    ]
+  },
+  "status": "staged_not_playable"
+}

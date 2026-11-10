@@ -1,0 +1,188 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Gogoat",
+  "base_stats": {
+    "hp": 123,
+    "attack": 100,
+    "defense": 62,
+    "speed": 68,
+    "special_attack": 97,
+    "special_defense": 81
+  },
+  "types": [
+    "TYPE_GRASS",
+    "TYPE_GRASS"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 2,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_SAP_SIPPER",
+    "ABILITY_SAP_SIPPER"
+  ],
+  "hidden_ability": "ABILITY_GRASS_PELT",
+  "flee_rate": 60,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BROWN",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 186,
+  "height": 17,
+  "weight": 910,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_AERIAL_ACE"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_GROWTH"
+      ],
+      [
+        7,
+        "MOVE_VINE_WHIP"
+      ],
+      [
+        9,
+        "MOVE_TAIL_WHIP"
+      ],
+      [
+        12,
+        "MOVE_LEECH_SEED"
+      ],
+      [
+        13,
+        "MOVE_RAZOR_LEAF"
+      ],
+      [
+        16,
+        "MOVE_WORRY_SEED"
+      ],
+      [
+        20,
+        "MOVE_SYNTHESIS"
+      ],
+      [
+        22,
+        "MOVE_TAKE_DOWN"
+      ],
+      [
+        26,
+        "MOVE_BULLDOZE"
+      ],
+      [
+        30,
+        "MOVE_SEED_BOMB"
+      ],
+      [
+        34,
+        "MOVE_BULK_UP"
+      ],
+      [
+        40,
+        "MOVE_DOUBLE_EDGE"
+      ],
+      [
+        47,
+        "MOVE_HORN_LEECH"
+      ],
+      [
+        55,
+        "MOVE_LEAF_BLADE"
+      ],
+      [
+        58,
+        "MOVE_MILK_DRINK"
+      ],
+      [
+        60,
+        "MOVE_EARTHQUAKE"
+      ],
+      [
+        65,
+        "MOVE_AERIAL_ACE"
+      ]
+    ],
+    "by_tm": [
+      "TM05",
+      "TM06",
+      "TM08",
+      "TM10",
+      "TM11",
+      "TM15",
+      "TM17",
+      "TM18",
+      "TM21",
+      "TM22",
+      "TM26",
+      "TM27",
+      "TM28",
+      "TM31",
+      "TM32",
+      "TM40",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM48",
+      "TM53",
+      "TM66",
+      "TM67",
+      "TM68",
+      "TM78",
+      "TM80",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM93",
+      "TM94",
+      "HM01",
+      "HM05"
+    ],
+    "by_tutor": [
+      "MOVE_SEED_BOMB",
+      "MOVE_BOUNCE",
+      "MOVE_SUPERPOWER",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_IRON_TAIL",
+      "MOVE_SNORE",
+      "MOVE_SYNTHESIS",
+      "MOVE_GIGA_DRAIN",
+      "MOVE_WORRY_SEED",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_SKIDDO"
+}

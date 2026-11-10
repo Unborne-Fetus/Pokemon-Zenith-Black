@@ -1,0 +1,159 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/689.yml",
+    "evolutions": "data/pml/evolutions/689.yml",
+    "learnsets": "data/pml/learnsets/689.yml"
+  },
+  "national_dex": 689,
+  "species": "SPECIES_BARBARACLE",
+  "base_stats": {
+    "hp": 72,
+    "attack": 105,
+    "defense": 115,
+    "speed": 68,
+    "special_attack": 54,
+    "special_defense": 86
+  },
+  "types": [
+    "TYPE_ROCK",
+    "TYPE_WATER"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_STONE_EDGE"
+    ],
+    [
+      1,
+      "MOVE_SKULL_BASH"
+    ],
+    [
+      1,
+      "MOVE_SHELL_SMASH"
+    ],
+    [
+      1,
+      "MOVE_SCRATCH"
+    ],
+    [
+      1,
+      "MOVE_SANDATTACK"
+    ],
+    [
+      4,
+      "MOVE_WATER_GUN"
+    ],
+    [
+      7,
+      "MOVE_WITHDRAW"
+    ],
+    [
+      10,
+      "MOVE_FURY_SWIPES"
+    ],
+    [
+      13,
+      "MOVE_SLASH"
+    ],
+    [
+      18,
+      "MOVE_MUDSLAP"
+    ],
+    [
+      20,
+      "MOVE_CLAMP"
+    ],
+    [
+      24,
+      "MOVE_ROCK_POLISH"
+    ],
+    [
+      28,
+      "MOVE_ANCIENTPOWER"
+    ],
+    [
+      32,
+      "MOVE_HONE_CLAWS"
+    ],
+    [
+      37,
+      "MOVE_FURY_CUTTER"
+    ],
+    [
+      44,
+      "MOVE_NIGHT_SLASH"
+    ],
+    [
+      48,
+      "MOVE_RAZOR_SHELL"
+    ],
+    [
+      55,
+      "MOVE_CROSS_CHOP"
+    ],
+    [
+      60,
+      "MOVE_STONE_EDGE"
+    ],
+    [
+      65,
+      "MOVE_SKULL_BASH"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 72,
+    "Base Attack": 105,
+    "Base Defense": 115,
+    "Base Speed": 68,
+    "Base Special Attack": 54,
+    "Base Special Defense": 86,
+    "Primary Type": "TYPE_ROCK",
+    "Secondary Type": "TYPE_WATER",
+    "Capture Rate": 45,
+    "Evolution Stage": 2,
+    "EV Yield": 8,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 9,
+    "Egg Group 2": 9,
+    "Primary Ability": 181,
+    "Secondary Ability": 97,
+    "Hidden Ability": 124,
+    "Escape Rate": 30,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 69,
+    "Base Experience": 175,
+    "Height (cm)": 130,
+    "Weight (cg)": 960,
+    "TM HM 1": -832865629,
+    "TM HM 2": 1088994266,
+    "TM HM 3": -1561484197,
+    "TM HM 4": 730,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      520,
+      1348,
+      32770,
+      12560
+    ]
+  },
+  "status": "staged_not_playable"
+}

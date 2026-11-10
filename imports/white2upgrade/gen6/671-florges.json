@@ -1,0 +1,127 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/671.yml",
+    "evolutions": "data/pml/evolutions/671.yml",
+    "learnsets": "data/pml/learnsets/671.yml"
+  },
+  "national_dex": 671,
+  "species": "SPECIES_FLORGES",
+  "base_stats": {
+    "hp": 78,
+    "attack": 65,
+    "defense": 68,
+    "speed": 75,
+    "special_attack": 112,
+    "special_defense": 154
+  },
+  "types": [
+    "TYPE_FAIRY",
+    "TYPE_FAIRY"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 3
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_DISARMING_VOICE"
+    ],
+    [
+      1,
+      "MOVE_LUCKY_CHANT"
+    ],
+    [
+      1,
+      "MOVE_WISH"
+    ],
+    [
+      1,
+      "MOVE_MAGICAL_LEAF"
+    ],
+    [
+      1,
+      "MOVE_FLOWER_SHIELD"
+    ],
+    [
+      1,
+      "MOVE_GRASS_KNOT"
+    ],
+    [
+      1,
+      "MOVE_GRASSY_TERRAIN"
+    ],
+    [
+      1,
+      "MOVE_PETAL_BLIZZARD"
+    ],
+    [
+      1,
+      "MOVE_MISTY_TERRAIN"
+    ],
+    [
+      1,
+      "MOVE_MOONBLAST"
+    ],
+    [
+      1,
+      "MOVE_PETAL_DANCE"
+    ],
+    [
+      1,
+      "MOVE_AROMATHERAPY"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 78,
+    "Base Attack": 65,
+    "Base Defense": 68,
+    "Base Speed": 75,
+    "Base Special Attack": 112,
+    "Base Special Defense": 154,
+    "Primary Type": "TYPE_FAIRY",
+    "Secondary Type": "TYPE_FAIRY",
+    "Capture Rate": 45,
+    "Evolution Stage": 3,
+    "EV Yield": 3072,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 254,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 6,
+    "Egg Group 2": 6,
+    "Primary Ability": 166,
+    "Secondary Ability": 166,
+    "Hidden Ability": 180,
+    "Escape Rate": 90,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 149,
+    "Form Count": 5,
+    "Color": 8,
+    "Base Experience": 248,
+    "Height (cm)": 110,
+    "Weight (cg)": 100,
+    "TM HM 1": -1808021976,
+    "TM HM 2": 1153536,
+    "TM HM 3": -1562378200,
+    "TM HM 4": 12,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      66,
+      1,
+      1098,
+      8474
+    ]
+  },
+  "status": "staged_not_playable"
+}

@@ -1,0 +1,78 @@
+name: Stage White2Upgrade Kalos Pokémon
+
+on:
+  push:
+    branches:
+      - feature/white2upgrade-gen6-import
+    paths:
+      - tools/import/white2upgrade_gen6.py
+      - tools/import/white2upgrade_native.py
+      - tools/import/white2upgrade_graphics.py
+      - tools/import/test_white2upgrade_graphics.py
+      - tools/import/white2upgrade_moves.py
+      - tools/import/white2upgrade_type_chart.py
+      - tools/import/zenith721_constants.py
+      - imports/white2upgrade/README.md
+      - .github/workflows/stage-white2upgrade-gen6.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Avoid older imports racing the latest commit on the same feature branch.
+concurrency:
+  group: white2upgrade-gen6-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  stage-gen6:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify importer parses
+        run: python3 -m py_compile tools/import/white2upgrade_gen6.py tools/import/white2upgrade_native.py tools/import/white2upgrade_graphics.py tools/import/white2upgrade_moves.py tools/import/white2upgrade_type_chart.py tools/import/zenith721_constants.py
+      - name: Get donor data
+        run: git clone --depth 1 https://github.com/ds-pokemon-hacking/White2Upgrade.git /tmp/White2Upgrade
+      - name: Stage 72 Kalos species
+        run: python3 tools/import/white2upgrade_gen6.py --donor /tmp/White2Upgrade
+      - name: Check reproducibility
+        run: python3 tools/import/white2upgrade_gen6.py --donor /tmp/White2Upgrade --check
+      - name: Generate 72 native schema previews
+        run: python3 tools/import/white2upgrade_native.py
+      - name: Check native preview reproducibility
+        run: python3 tools/import/white2upgrade_native.py --check
+      - name: Stage 62 Gen 6 moves
+        run: python3 tools/import/white2upgrade_moves.py --donor /tmp/White2Upgrade
+      - name: Check move staging reproducibility
+        run: python3 tools/import/white2upgrade_moves.py --donor /tmp/White2Upgrade --check
+      - name: Stage Fairy type effectiveness data
+        run: python3 tools/import/white2upgrade_type_chart.py --donor /tmp/White2Upgrade
+      - name: Validate Fairy type staging
+        run: python3 tools/import/white2upgrade_type_chart.py --donor /tmp/White2Upgrade --check
+      - name: Generate expanded runtime ID lists
+        run: python3 tools/import/zenith721_constants.py
+      - name: Check runtime ID list reproducibility
+        run: python3 tools/import/zenith721_constants.py --check
+      - name: Audit donor graphics for all 72 species
+        run: python3 tools/import/white2upgrade_graphics.py --donor /tmp/White2Upgrade --report imports/white2upgrade/graphics-inventory.json
+      - name: Verify Kalos battle sprites, icons, footprints and forms
+        env:
+          ZENITH_GRAPHICS_TEST_DONOR: /tmp/White2Upgrade
+        run: python3 -m unittest tools.import.test_white2upgrade_graphics -v
+      - name: Generate the expanded icon palette C header
+        run: |
+          python3 tools/import/white2upgrade_graphics.py --donor /tmp/White2Upgrade --palette-header /tmp/zenith721_icon_palettes.h
+          test -s /tmp/zenith721_icon_palettes.h
+      - name: Publish staged records
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add imports/white2upgrade/gen6 imports/white2upgrade/REPORT.md imports/white2upgrade/native-preview imports/white2upgrade/graphics-inventory.json imports/white2upgrade/moves imports/white2upgrade/fairy-type-chart.json imports/white2upgrade/zenith721-lists
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage White2Upgrade species 650-721 metadata"
+            git fetch origin feature/white2upgrade-gen6-import
+            git rebase origin/feature/white2upgrade-gen6-import
+            git push origin HEAD:feature/white2upgrade-gen6-import
+          fi

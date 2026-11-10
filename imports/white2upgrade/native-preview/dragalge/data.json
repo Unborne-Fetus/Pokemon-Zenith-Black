@@ -1,0 +1,186 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Dragalge",
+  "base_stats": {
+    "hp": 65,
+    "attack": 75,
+    "defense": 90,
+    "speed": 44,
+    "special_attack": 97,
+    "special_defense": 123
+  },
+  "types": [
+    "TYPE_POISON",
+    "TYPE_DRAGON"
+  ],
+  "catch_rate": 55,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 2
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_WATER_1",
+    "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+    "ABILITY_POISON_POINT",
+    "ABILITY_POISON_TOUCH"
+  ],
+  "hidden_ability": "ABILITY_ADAPTABILITY",
+  "flee_rate": 60,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BROWN",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 173,
+  "height": 18,
+  "weight": 815,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_DRAGON_TAIL"
+      ],
+      [
+        1,
+        "MOVE_TWISTER"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_SMOKE_SCREEN"
+      ],
+      [
+        1,
+        "MOVE_WATER_GUN"
+      ],
+      [
+        5,
+        "MOVE_FAINT_ATTACK"
+      ],
+      [
+        9,
+        "MOVE_TAIL_WHIP"
+      ],
+      [
+        12,
+        "MOVE_BUBBLE"
+      ],
+      [
+        15,
+        "MOVE_ACID"
+      ],
+      [
+        19,
+        "MOVE_CAMOUFLAGE"
+      ],
+      [
+        23,
+        "MOVE_POISON_TAIL"
+      ],
+      [
+        25,
+        "MOVE_WATER_PULSE"
+      ],
+      [
+        28,
+        "MOVE_DOUBLE_TEAM"
+      ],
+      [
+        32,
+        "MOVE_TOXIC"
+      ],
+      [
+        35,
+        "MOVE_AQUA_TAIL"
+      ],
+      [
+        38,
+        "MOVE_SLUDGE_BOMB"
+      ],
+      [
+        42,
+        "MOVE_HYDRO_PUMP"
+      ],
+      [
+        53,
+        "MOVE_DRAGON_PULSE"
+      ],
+      [
+        59,
+        "MOVE_DRAGON_TAIL"
+      ],
+      [
+        67,
+        "MOVE_TWISTER"
+      ]
+    ],
+    "by_tm": [
+      "TM06",
+      "TM07",
+      "TM09",
+      "TM10",
+      "TM15",
+      "TM17",
+      "TM18",
+      "TM21",
+      "TM24",
+      "TM25",
+      "TM27",
+      "TM30",
+      "TM32",
+      "TM34",
+      "TM36",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM48",
+      "TM52",
+      "TM55",
+      "TM68",
+      "TM82",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM94",
+      "HM05"
+    ],
+    "by_tutor": [
+      "MOVE_DRACO_METEOR",
+      "MOVE_BOUNCE",
+      "MOVE_GUNK_SHOT",
+      "MOVE_ICY_WIND",
+      "MOVE_AQUA_TAIL",
+      "MOVE_DRAGON_PULSE",
+      "MOVE_IRON_TAIL",
+      "MOVE_SNORE",
+      "MOVE_OUTRAGE",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_SKRELP"
+}

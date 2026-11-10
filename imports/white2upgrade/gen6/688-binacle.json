@@ -1,0 +1,149 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/688.yml",
+    "evolutions": "data/pml/evolutions/688.yml",
+    "learnsets": "data/pml/learnsets/688.yml"
+  },
+  "national_dex": 688,
+  "species": "SPECIES_BINACLE",
+  "base_stats": {
+    "hp": 42,
+    "attack": 52,
+    "defense": 67,
+    "speed": 50,
+    "special_attack": 39,
+    "special_defense": 56
+  },
+  "types": [
+    "TYPE_ROCK",
+    "TYPE_WATER"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_SHELL_SMASH"
+    ],
+    [
+      1,
+      "MOVE_SCRATCH"
+    ],
+    [
+      1,
+      "MOVE_SANDATTACK"
+    ],
+    [
+      4,
+      "MOVE_WATER_GUN"
+    ],
+    [
+      7,
+      "MOVE_WITHDRAW"
+    ],
+    [
+      10,
+      "MOVE_FURY_SWIPES"
+    ],
+    [
+      13,
+      "MOVE_SLASH"
+    ],
+    [
+      18,
+      "MOVE_MUDSLAP"
+    ],
+    [
+      20,
+      "MOVE_CLAMP"
+    ],
+    [
+      24,
+      "MOVE_ROCK_POLISH"
+    ],
+    [
+      28,
+      "MOVE_ANCIENTPOWER"
+    ],
+    [
+      32,
+      "MOVE_HONE_CLAWS"
+    ],
+    [
+      37,
+      "MOVE_FURY_CUTTER"
+    ],
+    [
+      41,
+      "MOVE_NIGHT_SLASH"
+    ],
+    [
+      45,
+      "MOVE_RAZOR_SHELL"
+    ],
+    [
+      49,
+      "MOVE_CROSS_CHOP"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_LEVELUP",
+      "parameter": 39,
+      "target": "SPECIES_BARBARACLE"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 42,
+    "Base Attack": 52,
+    "Base Defense": 67,
+    "Base Speed": 50,
+    "Base Special Attack": 39,
+    "Base Special Defense": 56,
+    "Primary Type": "TYPE_ROCK",
+    "Secondary Type": "TYPE_WATER",
+    "Capture Rate": 120,
+    "Evolution Stage": 1,
+    "EV Yield": 4,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 9,
+    "Egg Group 2": 9,
+    "Primary Ability": 181,
+    "Secondary Ability": 97,
+    "Hidden Ability": 124,
+    "Escape Rate": 30,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 5,
+    "Base Experience": 61,
+    "Height (cm)": 50,
+    "Weight (cg)": 310,
+    "TM HM 1": -832882143,
+    "TM HM 2": 1088469978,
+    "TM HM 3": -1561484205,
+    "TM HM 4": 730,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      8,
+      1088,
+      32770,
+      12560
+    ]
+  },
+  "status": "staged_not_playable"
+}

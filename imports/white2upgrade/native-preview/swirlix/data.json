@@ -1,0 +1,176 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Swirlix",
+  "base_stats": {
+    "hp": 62,
+    "attack": 48,
+    "defense": 66,
+    "speed": 49,
+    "special_attack": 59,
+    "special_defense": 57
+  },
+  "types": [
+    "TYPE_FAIRY",
+    "TYPE_FAIRY"
+  ],
+  "catch_rate": 200,
+  "evolution_stage": 1,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 1,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FAIRY",
+    "EGG_GROUP_FAIRY"
+  ],
+  "abilities": [
+    "ABILITY_SWEET_VEIL",
+    "ABILITY_SWEET_VEIL"
+  ],
+  "hidden_ability": "ABILITY_UNBURDEN",
+  "flee_rate": 30,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_WHITE",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 68,
+  "height": 4,
+  "weight": 35,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_SWEET_SCENT"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        5,
+        "MOVE_FAIRY_WIND"
+      ],
+      [
+        8,
+        "MOVE_PLAY_NICE"
+      ],
+      [
+        10,
+        "MOVE_FAKE_TEARS"
+      ],
+      [
+        13,
+        "MOVE_ROUND"
+      ],
+      [
+        17,
+        "MOVE_COTTON_SPORE"
+      ],
+      [
+        21,
+        "MOVE_ENDEAVOR"
+      ],
+      [
+        26,
+        "MOVE_AROMATHERAPY"
+      ],
+      [
+        31,
+        "MOVE_DRAINING_KISS"
+      ],
+      [
+        36,
+        "MOVE_ENERGY_BALL"
+      ],
+      [
+        41,
+        "MOVE_COTTON_GUARD"
+      ],
+      [
+        45,
+        "MOVE_WISH"
+      ],
+      [
+        49,
+        "MOVE_PLAY_ROUGH"
+      ],
+      [
+        58,
+        "MOVE_LIGHT_SCREEN"
+      ],
+      [
+        67,
+        "MOVE_SAFEGUARD"
+      ]
+    ],
+    "by_tm": [
+      "TM04",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM16",
+      "TM17",
+      "TM18",
+      "TM20",
+      "TM21",
+      "TM24",
+      "TM27",
+      "TM29",
+      "TM32",
+      "TM35",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM46",
+      "TM48",
+      "TM53",
+      "TM70",
+      "TM77",
+      "TM85",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM94",
+      "HM04",
+      "HM05"
+    ],
+    "by_tutor": [
+      "MOVE_COVET",
+      "MOVE_MAGIC_COAT",
+      "MOVE_SNORE",
+      "MOVE_HEAL_BELL",
+      "MOVE_GASTRO_ACID",
+      "MOVE_AFTER_YOU",
+      "MOVE_HELPING_HAND",
+      "MOVE_ENDEAVOR",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [
+    {
+      "method": "EVO_METHOD_TRADE_WITH_ITEM",
+      "param": "ITEM_WHIPPED_DREAM",
+      "species": "SPECIES_SLURPUFF"
+    }
+  ],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_SWIRLIX"
+}

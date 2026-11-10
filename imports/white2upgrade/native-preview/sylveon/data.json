@@ -1,0 +1,170 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Sylveon",
+  "base_stats": {
+    "hp": 95,
+    "attack": 65,
+    "defense": 65,
+    "speed": 60,
+    "special_attack": 110,
+    "special_defense": 130
+  },
+  "types": [
+    "TYPE_FAIRY",
+    "TYPE_FAIRY"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 2
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 31,
+  "hatch_cycles": 35,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_CUTE_CHARM",
+    "ABILITY_CUTE_CHARM"
+  ],
+  "hidden_ability": "ABILITY_PIXILATE",
+  "flee_rate": 0,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_PINK",
+  "asymmetric": true,
+  "palette_forms": false,
+  "base_exp": 184,
+  "height": 10,
+  "weight": 235,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_DISARMING_VOICE"
+      ],
+      [
+        1,
+        "MOVE_TAIL_WHIP"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_HELPING_HAND"
+      ],
+      [
+        5,
+        "MOVE_SAND_ATTACK"
+      ],
+      [
+        9,
+        "MOVE_FAIRY_WIND"
+      ],
+      [
+        13,
+        "MOVE_QUICK_ATTACK"
+      ],
+      [
+        17,
+        "MOVE_SWIFT"
+      ],
+      [
+        20,
+        "MOVE_DRAINING_KISS"
+      ],
+      [
+        25,
+        "MOVE_SKILL_SWAP"
+      ],
+      [
+        29,
+        "MOVE_MISTY_TERRAIN"
+      ],
+      [
+        33,
+        "MOVE_LIGHT_SCREEN"
+      ],
+      [
+        37,
+        "MOVE_MOONBLAST"
+      ],
+      [
+        41,
+        "MOVE_LAST_RESORT"
+      ],
+      [
+        45,
+        "MOVE_PSYCH_UP"
+      ]
+    ],
+    "by_tm": [
+      "TM03",
+      "TM04",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM15",
+      "TM16",
+      "TM17",
+      "TM18",
+      "TM20",
+      "TM21",
+      "TM27",
+      "TM28",
+      "TM30",
+      "TM32",
+      "TM33",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM48",
+      "TM49",
+      "TM67",
+      "TM68",
+      "TM70",
+      "TM77",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM94",
+      "HM04",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_COVET",
+      "MOVE_MAGIC_COAT",
+      "MOVE_LAST_RESORT",
+      "MOVE_HYPER_VOICE",
+      "MOVE_IRON_TAIL",
+      "MOVE_SNORE",
+      "MOVE_HEAL_BELL",
+      "MOVE_HELPING_HAND",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SKILL_SWAP"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_EEVEE"
+}

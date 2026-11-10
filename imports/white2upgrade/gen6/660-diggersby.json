@@ -1,0 +1,159 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/660.yml",
+    "evolutions": "data/pml/evolutions/660.yml",
+    "learnsets": "data/pml/learnsets/660.yml"
+  },
+  "national_dex": 660,
+  "species": "SPECIES_DIGGERSBY",
+  "base_stats": {
+    "hp": 85,
+    "attack": 56,
+    "defense": 77,
+    "speed": 78,
+    "special_attack": 50,
+    "special_defense": 77
+  },
+  "types": [
+    "TYPE_NORMAL",
+    "TYPE_GROUND"
+  ],
+  "ev_yields": {
+    "hp": 2,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_HAMMER_ARM"
+    ],
+    [
+      1,
+      "MOVE_ROTOTILLER"
+    ],
+    [
+      1,
+      "MOVE_BULLDOZE"
+    ],
+    [
+      1,
+      "MOVE_SWORDS_DANCE"
+    ],
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_AGILITY"
+    ],
+    [
+      1,
+      "MOVE_LEER"
+    ],
+    [
+      7,
+      "MOVE_QUICK_ATTACK"
+    ],
+    [
+      13,
+      "MOVE_MUDSLAP"
+    ],
+    [
+      15,
+      "MOVE_TAKE_DOWN"
+    ],
+    [
+      18,
+      "MOVE_MUD_SHOT"
+    ],
+    [
+      20,
+      "MOVE_DOUBLE_KICK"
+    ],
+    [
+      26,
+      "MOVE_ODOR_SLEUTH"
+    ],
+    [
+      31,
+      "MOVE_FLAIL"
+    ],
+    [
+      37,
+      "MOVE_DIG"
+    ],
+    [
+      42,
+      "MOVE_BOUNCE"
+    ],
+    [
+      48,
+      "MOVE_SUPER_FANG"
+    ],
+    [
+      53,
+      "MOVE_FACADE"
+    ],
+    [
+      57,
+      "MOVE_EARTHQUAKE"
+    ],
+    [
+      60,
+      "MOVE_HAMMER_ARM"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 85,
+    "Base Attack": 56,
+    "Base Defense": 77,
+    "Base Speed": 78,
+    "Base Special Attack": 50,
+    "Base Special Defense": 77,
+    "Primary Type": "TYPE_NORMAL",
+    "Secondary Type": "TYPE_GROUND",
+    "Capture Rate": 127,
+    "Evolution Stage": 2,
+    "EV Yield": 2,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 15,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 5,
+    "Egg Group 2": 5,
+    "Primary Ability": 53,
+    "Secondary Ability": 167,
+    "Hidden Ability": 37,
+    "Escape Rate": 90,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 5,
+    "Base Experience": 148,
+    "Height (cm)": 100,
+    "Weight (cg)": 424,
+    "TM HM 1": -833535328,
+    "TM HM 2": 8436568,
+    "TM HM 3": -1277123510,
+    "TM HM 4": 730,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      32548,
+      65932,
+      8198,
+      11521
+    ]
+  },
+  "status": "staged_not_playable"
+}

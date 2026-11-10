@@ -1,0 +1,151 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/716.yml",
+    "evolutions": "data/pml/evolutions/716.yml",
+    "learnsets": "data/pml/learnsets/716.yml"
+  },
+  "national_dex": 716,
+  "species": "SPECIES_XERNEAS",
+  "base_stats": {
+    "hp": 126,
+    "attack": 131,
+    "defense": 95,
+    "speed": 99,
+    "special_attack": 131,
+    "special_defense": 98
+  },
+  "types": [
+    "TYPE_FAIRY",
+    "TYPE_FAIRY"
+  ],
+  "ev_yields": {
+    "hp": 3,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_HEAL_PULSE"
+    ],
+    [
+      1,
+      "MOVE_AROMATHERAPY"
+    ],
+    [
+      1,
+      "MOVE_INGRAIN"
+    ],
+    [
+      1,
+      "MOVE_TAKE_DOWN"
+    ],
+    [
+      5,
+      "MOVE_LIGHT_SCREEN"
+    ],
+    [
+      10,
+      "MOVE_AURORA_BEAM"
+    ],
+    [
+      18,
+      "MOVE_GRAVITY"
+    ],
+    [
+      26,
+      "MOVE_GEOMANCY"
+    ],
+    [
+      35,
+      "MOVE_MOONBLAST"
+    ],
+    [
+      44,
+      "MOVE_MEGAHORN"
+    ],
+    [
+      51,
+      "MOVE_NIGHT_SLASH"
+    ],
+    [
+      55,
+      "MOVE_HORN_LEECH"
+    ],
+    [
+      59,
+      "MOVE_PSYCH_UP"
+    ],
+    [
+      63,
+      "MOVE_MISTY_TERRAIN"
+    ],
+    [
+      72,
+      "MOVE_NATURE_POWER"
+    ],
+    [
+      80,
+      "MOVE_CLOSE_COMBAT"
+    ],
+    [
+      88,
+      "MOVE_GIGA_IMPACT"
+    ],
+    [
+      93,
+      "MOVE_OUTRAGE"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 126,
+    "Base Attack": 131,
+    "Base Defense": 95,
+    "Base Speed": 99,
+    "Base Special Attack": 131,
+    "Base Special Defense": 98,
+    "Primary Type": "TYPE_FAIRY",
+    "Secondary Type": "TYPE_FAIRY",
+    "Capture Rate": 45,
+    "Evolution Stage": 3,
+    "EV Yield": 3,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 255,
+    "Egg Happiness": 120,
+    "Base Happiness": 0,
+    "Experience Group": 5,
+    "Egg Group 1": 15,
+    "Egg Group 2": 15,
+    "Primary Ability": 187,
+    "Secondary Ability": 187,
+    "Hidden Ability": 187,
+    "Escape Rate": 0,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 170,
+    "Form Count": 2,
+    "Color": 1,
+    "Base Experience": 306,
+    "Height (cm)": 300,
+    "Weight (cg)": 2150,
+    "TM HM 1": -1785477508,
+    "TM HM 2": 625153,
+    "TM HM 3": -1495232216,
+    "TM HM 4": 28,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      0,
+      40978,
+      2,
+      9088
+    ]
+  },
+  "status": "staged_not_playable"
+}

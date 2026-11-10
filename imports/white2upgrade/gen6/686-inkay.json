@@ -1,0 +1,157 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/686.yml",
+    "evolutions": "data/pml/evolutions/686.yml",
+    "learnsets": "data/pml/learnsets/686.yml"
+  },
+  "national_dex": 686,
+  "species": "SPECIES_INKAY",
+  "base_stats": {
+    "hp": 53,
+    "attack": 54,
+    "defense": 53,
+    "speed": 45,
+    "special_attack": 37,
+    "special_defense": 46
+  },
+  "types": [
+    "TYPE_DARK",
+    "TYPE_PSYCHIC"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_PECK"
+    ],
+    [
+      1,
+      "MOVE_CONSTRICT"
+    ],
+    [
+      4,
+      "MOVE_REFLECT"
+    ],
+    [
+      8,
+      "MOVE_FOUL_PLAY"
+    ],
+    [
+      12,
+      "MOVE_SWAGGER"
+    ],
+    [
+      13,
+      "MOVE_PSYWAVE"
+    ],
+    [
+      15,
+      "MOVE_TOPSYTURVY"
+    ],
+    [
+      18,
+      "MOVE_HYPNOSIS"
+    ],
+    [
+      21,
+      "MOVE_PSYBEAM"
+    ],
+    [
+      23,
+      "MOVE_SWITCHEROO"
+    ],
+    [
+      27,
+      "MOVE_PAYBACK"
+    ],
+    [
+      31,
+      "MOVE_LIGHT_SCREEN"
+    ],
+    [
+      35,
+      "MOVE_PLUCK"
+    ],
+    [
+      39,
+      "MOVE_PSYCHO_CUT"
+    ],
+    [
+      43,
+      "MOVE_SLASH"
+    ],
+    [
+      46,
+      "MOVE_NIGHT_SLASH"
+    ],
+    [
+      48,
+      "MOVE_SUPERPOWER"
+    ]
+  ],
+  "evolutions": [
+    {
+      "method": "METHOD_TRADE",
+      "parameter": 0,
+      "target": "SPECIES_MALAMAR"
+    }
+  ],
+  "personal_source_fields": {
+    "Base HP": 53,
+    "Base Attack": 54,
+    "Base Defense": 53,
+    "Base Speed": 45,
+    "Base Special Attack": 37,
+    "Base Special Defense": 46,
+    "Primary Type": "TYPE_DARK",
+    "Secondary Type": "TYPE_PSYCHIC",
+    "Capture Rate": 190,
+    "Evolution Stage": 1,
+    "EV Yield": 4,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 2,
+    "Egg Group 2": 12,
+    "Primary Ability": 126,
+    "Secondary Ability": 21,
+    "Hidden Ability": 151,
+    "Escape Rate": 60,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 1,
+    "Base Experience": 58,
+    "Height (cm)": 40,
+    "Weight (cg)": 35,
+    "TM HM 1": -1802269144,
+    "TM HM 2": 1082178437,
+    "TM HM 3": 717262886,
+    "TM HM 4": 25,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      0,
+      4360,
+      39,
+      10244
+    ]
+  },
+  "status": "staged_not_playable"
+}

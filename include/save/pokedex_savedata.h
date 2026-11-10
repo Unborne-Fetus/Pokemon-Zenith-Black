@@ -8,8 +8,17 @@
 // The Pokédex's save block 0x36 (swan's getPokedexSaveAddress). The lists of bits are by species - 1, and the ones of
 // forms by the form's place in pokemonFormList
 
+// Experimental Gen 6 save layout. The original game stays unchanged by default.
+// Existing saves need an explicit migration before this variant is distributable.
+#ifdef ZENITH_721
+// Rounded up from 721 species.
+#define POKEDEX_SPECIES_BYTES 0x5b
+// Room for Gen 6 alternate-form flags.
+#define POKEDEX_FORM_BYTES 0x20
+#else
 #define POKEDEX_SPECIES_BYTES 0x54
 #define POKEDEX_FORM_BYTES 0xb
+#endif
 // The species that the Pokédex has entries in other languages of
 #define POKEDEX_LANGUAGE_SPECIES_MAX 493
 #define POKEDEX_LANGUAGE_COUNT 7

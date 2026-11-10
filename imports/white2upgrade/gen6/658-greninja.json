@@ -1,0 +1,163 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/658.yml",
+    "evolutions": "data/pml/evolutions/658.yml",
+    "learnsets": "data/pml/learnsets/658.yml"
+  },
+  "national_dex": 658,
+  "species": "SPECIES_GRENINJA",
+  "base_stats": {
+    "hp": 72,
+    "attack": 95,
+    "defense": 67,
+    "speed": 122,
+    "special_attack": 103,
+    "special_defense": 71
+  },
+  "types": [
+    "TYPE_WATER",
+    "TYPE_DARK"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 3,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_NIGHT_SLASH"
+    ],
+    [
+      1,
+      "MOVE_ROLE_PLAY"
+    ],
+    [
+      1,
+      "MOVE_MAT_BLOCK"
+    ],
+    [
+      1,
+      "MOVE_POUND"
+    ],
+    [
+      1,
+      "MOVE_GROWL"
+    ],
+    [
+      5,
+      "MOVE_BUBBLE"
+    ],
+    [
+      8,
+      "MOVE_QUICK_ATTACK"
+    ],
+    [
+      10,
+      "MOVE_LICK"
+    ],
+    [
+      14,
+      "MOVE_WATER_PULSE"
+    ],
+    [
+      20,
+      "MOVE_SMOKESCREEN"
+    ],
+    [
+      23,
+      "MOVE_SHADOW_SNEAK"
+    ],
+    [
+      28,
+      "MOVE_SPIKES"
+    ],
+    [
+      33,
+      "MOVE_FAINT_ATTACK"
+    ],
+    [
+      36,
+      "MOVE_WATER_SHURIKEN"
+    ],
+    [
+      43,
+      "MOVE_SUBSTITUTE"
+    ],
+    [
+      49,
+      "MOVE_EXTRASENSORY"
+    ],
+    [
+      52,
+      "MOVE_DOUBLE_TEAM"
+    ],
+    [
+      56,
+      "MOVE_HAZE"
+    ],
+    [
+      60,
+      "MOVE_HYDRO_PUMP"
+    ],
+    [
+      70,
+      "MOVE_NIGHT_SLASH"
+    ],
+    [
+      75,
+      "MOVE_WATER_SHURIKEN"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 72,
+    "Base Attack": 95,
+    "Base Defense": 67,
+    "Base Speed": 122,
+    "Base Special Attack": 103,
+    "Base Special Defense": 71,
+    "Primary Type": "TYPE_WATER",
+    "Secondary Type": "TYPE_DARK",
+    "Capture Rate": 45,
+    "Evolution Stage": 3,
+    "EV Yield": 192,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 31,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 3,
+    "Egg Group 1": 2,
+    "Egg Group 2": 2,
+    "Primary Ability": 67,
+    "Secondary Ability": 67,
+    "Hidden Ability": 168,
+    "Escape Rate": 0,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 65,
+    "Base Experience": 239,
+    "Height (cm)": 150,
+    "Weight (cg)": 400,
+    "TM HM 1": -1940686304,
+    "TM HM 2": 549567168,
+    "TM HM 3": 601915400,
+    "TM HM 4": 2011,
+    "Type Tutors": 36,
+    "Special Tutors": [
+      18176,
+      5120,
+      32802,
+      10244
+    ]
+  },
+  "status": "staged_not_playable"
+}

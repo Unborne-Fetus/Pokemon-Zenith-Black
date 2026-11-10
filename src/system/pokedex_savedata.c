@@ -14,7 +14,14 @@
 // shows, and the languages of the entries. The ROM has no string for the file, so the name is a guess. The names
 // are swan's where there is one. Block 0x36.
 
+#ifdef ZENITH_721
+// 721 National Pokémon, excluding 13 original and 3 Kalos mythical species.
+#define NATIONAL_DEX_COMPLETE 705
+#define NATIONAL_DEX_LAST_SPECIES 721
+#else
 #define NATIONAL_DEX_COMPLETE 636
+#define NATIONAL_DEX_LAST_SPECIES SPECIES_GENESECT
+#endif
 #define UNOVA_DEX_COMPLETE 297
 // A species that isn't in the regional Pokédex, in its table
 #define REGIONAL_DEX_NONE 999
@@ -57,6 +64,9 @@ static const u16 NATIONAL_DEX_COMPLETION_EXCLUSIONS[] = {
     SPECIES_MEW,     SPECIES_CELEBI,  SPECIES_JIRACHI, SPECIES_DEOXYS,   SPECIES_PHIONE,
     SPECIES_MANAPHY, SPECIES_DARKRAI, SPECIES_SHAYMIN, SPECIES_ARCEUS,   SPECIES_KELDEO,
     SPECIES_MELOETTA, SPECIES_GENESECT, SPECIES_VICTINI,
+#ifdef ZENITH_721
+    SPECIES_DIANCIE, SPECIES_HOOPA, SPECIES_VOLCANION,
+#endif
 };
 
 // clang-format on
@@ -68,7 +78,14 @@ static const PokeDexFormEntry pokemonFormList[] = {
     { SPECIES_WORMADAM, 3 },   { SPECIES_CASTFORM, 4 }, { SPECIES_CHERRIM, 2 },  { SPECIES_DEERLING, 4 },
     { SPECIES_SAWSBUCK, 4 },   { SPECIES_MELOETTA, 2 }, { SPECIES_DARMANITAN, 2 }, { SPECIES_BASCULIN, 2 },
     { SPECIES_KYUREM, 3 },     { SPECIES_KELDEO, 2 },   { SPECIES_THUNDURUS, 2 }, { SPECIES_TORNADUS, 2 },
-    { SPECIES_LANDORUS, 2 },   { 0, 0 },
+    { SPECIES_LANDORUS, 2 },
+#ifdef ZENITH_721
+    { SPECIES_VIVILLON, 20 }, { SPECIES_FLABEBE, 5 }, { SPECIES_FLOETTE, 6 },
+    { SPECIES_FLORGES, 5 },   { SPECIES_FURFROU, 10 }, { SPECIES_MEOWSTIC, 2 },
+    { SPECIES_AEGISLASH, 2 }, { SPECIES_PUMPKABOO, 4 }, { SPECIES_GOURGEIST, 4 },
+    { SPECIES_XERNEAS, 2 },   { SPECIES_DIANCIE, 2 },  { SPECIES_HOOPA, 2 },
+#endif
+    { 0, 0 },
 };
 
 // clang-format on
@@ -127,7 +144,7 @@ static inline BOOL CheckShown(const PokeDexSave *pokedex, u16 kind, u16 species)
 }
 
 static BOOL PML_PkmIsBadMonsNo(u16 species) {
-    if (species == 0 || species > SPECIES_GENESECT) {
+    if (species == 0 || species > NATIONAL_DEX_LAST_SPECIES) {
         return TRUE;
     }
     return FALSE;
@@ -484,7 +501,7 @@ u16 PokeDex_GetCaughtNoNational(PokeDexSave *pokedex) {
     int count = 0;
     int i;
 
-    for (i = 1; i <= SPECIES_GENESECT; i++) {
+    for (i = 1; i <= NATIONAL_DEX_LAST_SPECIES; i++) {
         if (PokeDex_IsCaught(pokedex, i) == TRUE) {
             count++;
         }
@@ -497,7 +514,7 @@ u16 PokeDex_GetCaughtNoUnova(PokeDexSave *pokedex, HeapID heapId) {
     u16 count = 0;
     u16 *table = PML_PersonalLoadRegionalDexTable(heapId, NULL);
 
-    for (i = 1; i <= SPECIES_GENESECT; i++) {
+    for (i = 1; i <= NATIONAL_DEX_LAST_SPECIES; i++) {
         if (PokeDex_IsCaught(pokedex, i) == TRUE && table[i] != REGIONAL_DEX_NONE) {
             count++;
         }
@@ -562,7 +579,7 @@ u16 PokeDex_GetSeenNoNational(PokeDexSave *pokedex) {
     int count = 0;
     int i;
 
-    for (i = 1; i <= SPECIES_GENESECT; i++) {
+    for (i = 1; i <= NATIONAL_DEX_LAST_SPECIES; i++) {
         if (PokeDex_IsSeen(pokedex, i) == TRUE) {
             count++;
         }
@@ -575,7 +592,7 @@ u16 PokeDex_GetSeenNoUnova(PokeDexSave *pokedex, HeapID heapId) {
     u16 count = 0;
     u16 *table = PML_PersonalLoadRegionalDexTable(heapId, NULL);
 
-    for (i = 1; i <= SPECIES_GENESECT; i++) {
+    for (i = 1; i <= NATIONAL_DEX_LAST_SPECIES; i++) {
         if (PokeDex_IsSeen(pokedex, i) == TRUE && table[i] != REGIONAL_DEX_NONE) {
             count++;
         }
@@ -654,7 +671,7 @@ static u16 PokeDex_GetCaughtNoPermissive(PokeDexSave *pokedex) {
     int i;
     u16 count = 0;
 
-    for (i = 1; i <= SPECIES_GENESECT; i++) {
+    for (i = 1; i <= NATIONAL_DEX_LAST_SPECIES; i++) {
         if (PokeDex_IsCaught(pokedex, i) == TRUE && PML_PkmIsNationalDexExclude(i) == TRUE) {
             count++;
         }
@@ -667,7 +684,7 @@ static u16 PokeDex_GetCaughtNoUnovaPermissive(PokeDexSave *pokedex, HeapID heapI
     u16 count = 0;
     u16 *table = PML_PersonalLoadRegionalDexTable(heapId, NULL);
 
-    for (i = 1; i <= SPECIES_GENESECT; i++) {
+    for (i = 1; i <= NATIONAL_DEX_LAST_SPECIES; i++) {
         if (PokeDex_IsCaught(pokedex, i) == TRUE && table[i] != REGIONAL_DEX_NONE &&
             PML_PkmIsRegionalDexExclude(i) == TRUE) {
             count++;
@@ -682,7 +699,7 @@ static u16 PokeDex_GetSeenNoUnovaPermissive(PokeDexSave *pokedex, HeapID heapId)
     u16 count = 0;
     u16 *table = PML_PersonalLoadRegionalDexTable(heapId, NULL);
 
-    for (i = 1; i <= SPECIES_GENESECT; i++) {
+    for (i = 1; i <= NATIONAL_DEX_LAST_SPECIES; i++) {
         if (PokeDex_IsSeen(pokedex, i) == TRUE && table[i] != REGIONAL_DEX_NONE &&
             PML_PkmIsRegionalDexExclude(i) == TRUE) {
             count++;

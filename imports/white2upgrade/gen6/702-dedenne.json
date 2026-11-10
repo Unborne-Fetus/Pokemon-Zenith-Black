@@ -1,0 +1,143 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/702.yml",
+    "evolutions": "data/pml/evolutions/702.yml",
+    "learnsets": "data/pml/learnsets/702.yml"
+  },
+  "national_dex": 702,
+  "species": "SPECIES_DEDENNE",
+  "base_stats": {
+    "hp": 67,
+    "attack": 58,
+    "defense": 57,
+    "speed": 101,
+    "special_attack": 81,
+    "special_defense": 67
+  },
+  "types": [
+    "TYPE_ELECTRIC",
+    "TYPE_FAIRY"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 2,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_TAIL_WHIP"
+    ],
+    [
+      7,
+      "MOVE_THUNDERSHOCK"
+    ],
+    [
+      11,
+      "MOVE_CHARGE"
+    ],
+    [
+      14,
+      "MOVE_CHARM"
+    ],
+    [
+      17,
+      "MOVE_PARABOLIC_CHARGE"
+    ],
+    [
+      20,
+      "MOVE_NUZZLE"
+    ],
+    [
+      23,
+      "MOVE_THUNDER_WAVE"
+    ],
+    [
+      26,
+      "MOVE_VOLT_SWITCH"
+    ],
+    [
+      30,
+      "MOVE_REST"
+    ],
+    [
+      31,
+      "MOVE_SNORE"
+    ],
+    [
+      34,
+      "MOVE_CHARGE_BEAM"
+    ],
+    [
+      39,
+      "MOVE_ENTRAINMENT"
+    ],
+    [
+      42,
+      "MOVE_PLAY_ROUGH"
+    ],
+    [
+      45,
+      "MOVE_THUNDER"
+    ],
+    [
+      50,
+      "MOVE_DISCHARGE"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 67,
+    "Base Attack": 58,
+    "Base Defense": 57,
+    "Base Speed": 101,
+    "Base Special Attack": 81,
+    "Base Special Defense": 67,
+    "Primary Type": "TYPE_ELECTRIC",
+    "Secondary Type": "TYPE_FAIRY",
+    "Capture Rate": 180,
+    "Evolution Stage": 2,
+    "EV Yield": 128,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 5,
+    "Egg Group 2": 6,
+    "Primary Ability": 167,
+    "Secondary Ability": 53,
+    "Hidden Ability": 57,
+    "Escape Rate": 30,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 2,
+    "Base Experience": 151,
+    "Height (cm)": 20,
+    "Weight (cg)": 22,
+    "TM HM 1": -1919744480,
+    "TM HM 2": 25213568,
+    "TM HM 3": 870318508,
+    "TM HM 4": 24,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      4118,
+      66208,
+      16386,
+      9232
+    ]
+  },
+  "status": "staged_not_playable"
+}

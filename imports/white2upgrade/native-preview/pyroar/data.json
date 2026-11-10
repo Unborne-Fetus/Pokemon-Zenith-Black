@@ -1,0 +1,178 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Pyroar",
+  "base_stats": {
+    "hp": 86,
+    "attack": 68,
+    "defense": 72,
+    "speed": 106,
+    "special_attack": 109,
+    "special_defense": 66
+  },
+  "types": [
+    "TYPE_FIRE",
+    "TYPE_NORMAL"
+  ],
+  "catch_rate": 65,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 2,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 225,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_RIVALRY",
+    "ABILITY_UNNERVE"
+  ],
+  "hidden_ability": "ABILITY_MOXIE",
+  "flee_rate": 0,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BROWN",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 177,
+  "height": 15,
+  "weight": 815,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_HYPER_BEAM"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_LEER"
+      ],
+      [
+        5,
+        "MOVE_EMBER"
+      ],
+      [
+        8,
+        "MOVE_WORK_UP"
+      ],
+      [
+        11,
+        "MOVE_HEADBUTT"
+      ],
+      [
+        15,
+        "MOVE_NOBLE_ROAR"
+      ],
+      [
+        20,
+        "MOVE_TAKE_DOWN"
+      ],
+      [
+        23,
+        "MOVE_FIRE_FANG"
+      ],
+      [
+        28,
+        "MOVE_ENDEAVOR"
+      ],
+      [
+        33,
+        "MOVE_ECHOED_VOICE"
+      ],
+      [
+        38,
+        "MOVE_FLAMETHROWER"
+      ],
+      [
+        42,
+        "MOVE_CRUNCH"
+      ],
+      [
+        48,
+        "MOVE_HYPER_VOICE"
+      ],
+      [
+        51,
+        "MOVE_INCINERATE"
+      ],
+      [
+        57,
+        "MOVE_OVERHEAT"
+      ]
+    ],
+    "by_tm": [
+      "TM05",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM12",
+      "TM15",
+      "TM17",
+      "TM18",
+      "TM21",
+      "TM22",
+      "TM27",
+      "TM28",
+      "TM32",
+      "TM35",
+      "TM38",
+      "TM42",
+      "TM43",
+      "TM44",
+      "TM45",
+      "TM46",
+      "TM48",
+      "TM49",
+      "TM50",
+      "TM59",
+      "TM61",
+      "TM66",
+      "TM67",
+      "TM68",
+      "TM78",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM93",
+      "TM94",
+      "TM95",
+      "HM02",
+      "HM05"
+    ],
+    "by_tutor": [
+      "MOVE_BOUNCE",
+      "MOVE_HYPER_VOICE",
+      "MOVE_IRON_TAIL",
+      "MOVE_SNORE",
+      "MOVE_HEAT_WAVE",
+      "MOVE_HELPING_HAND",
+      "MOVE_ENDEAVOR",
+      "MOVE_SNATCH",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_LITLEO"
+}

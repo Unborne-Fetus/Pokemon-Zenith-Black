@@ -1,0 +1,151 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/663.yml",
+    "evolutions": "data/pml/evolutions/663.yml",
+    "learnsets": "data/pml/learnsets/663.yml"
+  },
+  "national_dex": 663,
+  "species": "SPECIES_TALONFLAME",
+  "base_stats": {
+    "hp": 78,
+    "attack": 81,
+    "defense": 71,
+    "speed": 126,
+    "special_attack": 74,
+    "special_defense": 69
+  },
+  "types": [
+    "TYPE_FIRE",
+    "TYPE_FLYING"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 3,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_BRAVE_BIRD"
+    ],
+    [
+      1,
+      "MOVE_FLARE_BLITZ"
+    ],
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_GROWL"
+    ],
+    [
+      6,
+      "MOVE_QUICK_ATTACK"
+    ],
+    [
+      10,
+      "MOVE_PECK"
+    ],
+    [
+      13,
+      "MOVE_AGILITY"
+    ],
+    [
+      16,
+      "MOVE_FLAIL"
+    ],
+    [
+      17,
+      "MOVE_EMBER"
+    ],
+    [
+      25,
+      "MOVE_ROOST"
+    ],
+    [
+      27,
+      "MOVE_RAZOR_WIND"
+    ],
+    [
+      31,
+      "MOVE_NATURAL_GIFT"
+    ],
+    [
+      39,
+      "MOVE_FLAME_CHARGE"
+    ],
+    [
+      44,
+      "MOVE_ACROBATICS"
+    ],
+    [
+      49,
+      "MOVE_ME_FIRST"
+    ],
+    [
+      55,
+      "MOVE_TAILWIND"
+    ],
+    [
+      60,
+      "MOVE_STEEL_WING"
+    ],
+    [
+      64,
+      "MOVE_BRAVE_BIRD"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 78,
+    "Base Attack": 81,
+    "Base Defense": 71,
+    "Base Speed": 126,
+    "Base Special Attack": 74,
+    "Base Special Defense": 69,
+    "Primary Type": "TYPE_FIRE",
+    "Secondary Type": "TYPE_FLYING",
+    "Capture Rate": 45,
+    "Evolution Stage": 2,
+    "EV Yield": 192,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 15,
+    "Base Happiness": 70,
+    "Experience Group": 3,
+    "Egg Group 1": 4,
+    "Egg Group 2": 4,
+    "Primary Ability": 49,
+    "Secondary Ability": 49,
+    "Hidden Ability": 177,
+    "Escape Rate": 60,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 0,
+    "Base Experience": 175,
+    "Height (cm)": 120,
+    "Weight (cg)": 245,
+    "TM HM 1": -2076881247,
+    "TM HM 2": 872857252,
+    "TM HM 3": 599786504,
+    "TM HM 4": 40,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      0,
+      0,
+      4242,
+      10240
+    ]
+  },
+  "status": "staged_not_playable"
+}

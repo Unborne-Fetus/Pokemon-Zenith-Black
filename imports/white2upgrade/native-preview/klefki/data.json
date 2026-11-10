@@ -1,0 +1,174 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Klefki",
+  "base_stats": {
+    "hp": 57,
+    "attack": 80,
+    "defense": 91,
+    "speed": 75,
+    "special_attack": 80,
+    "special_defense": 87
+  },
+  "types": [
+    "TYPE_STEEL",
+    "TYPE_FAIRY"
+  ],
+  "catch_rate": 75,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 1,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_FAST",
+  "egg_groups": [
+    "EGG_GROUP_MINERAL",
+    "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+    "ABILITY_PRANKSTER",
+    "ABILITY_PRANKSTER"
+  ],
+  "hidden_ability": "ABILITY_MAGICIAN",
+  "flee_rate": 200,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_GRAY",
+  "asymmetric": true,
+  "palette_forms": false,
+  "base_exp": 165,
+  "height": 2,
+  "weight": 30,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_FAIRY_LOCK"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        5,
+        "MOVE_FAIRY_WIND"
+      ],
+      [
+        8,
+        "MOVE_ASTONISH"
+      ],
+      [
+        12,
+        "MOVE_METAL_SOUND"
+      ],
+      [
+        15,
+        "MOVE_SPIKES"
+      ],
+      [
+        18,
+        "MOVE_DRAINING_KISS"
+      ],
+      [
+        23,
+        "MOVE_CRAFTY_SHIELD"
+      ],
+      [
+        27,
+        "MOVE_FOUL_PLAY"
+      ],
+      [
+        32,
+        "MOVE_TORMENT"
+      ],
+      [
+        34,
+        "MOVE_MIRROR_SHOT"
+      ],
+      [
+        36,
+        "MOVE_IMPRISON"
+      ],
+      [
+        40,
+        "MOVE_RECYCLE"
+      ],
+      [
+        43,
+        "MOVE_PLAY_ROUGH"
+      ],
+      [
+        44,
+        "MOVE_MAGIC_ROOM"
+      ],
+      [
+        50,
+        "MOVE_HEAL_BLOCK"
+      ]
+    ],
+    "by_tm": [
+      "TM03",
+      "TM04",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM15",
+      "TM16",
+      "TM17",
+      "TM18",
+      "TM20",
+      "TM21",
+      "TM27",
+      "TM29",
+      "TM32",
+      "TM33",
+      "TM41",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM46",
+      "TM48",
+      "TM68",
+      "TM73",
+      "TM77",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM91",
+      "TM94",
+      "HM04",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_COVET",
+      "MOVE_MAGIC_COAT",
+      "MOVE_FOUL_PLAY",
+      "MOVE_MAGNET_RISE",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_LAST_RESORT",
+      "MOVE_SNORE",
+      "MOVE_MAGIC_ROOM",
+      "MOVE_RECYCLE",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_KLEFKI"
+}

@@ -1,0 +1,25 @@
+{
+  "count": 62,
+  "range": [
+    560,
+    621
+  ],
+  "fairy_moves": [
+    "MOVE_DISARMING_VOICE",
+    "MOVE_DRAINING_KISS",
+    "MOVE_CRAFTY_SHIELD",
+    "MOVE_FLOWER_SHIELD",
+    "MOVE_MISTY_TERRAIN",
+    "MOVE_PLAY_ROUGH",
+    "MOVE_FAIRY_WIND",
+    "MOVE_MOONBLAST",
+    "MOVE_FAIRY_LOCK",
+    "MOVE_AROMATIC_MIST",
+    "MOVE_GEOMANCY",
+    "MOVE_DAZZLING_GLEAM",
+    "MOVE_BABYDOLL_EYES",
+    "MOVE_LIGHT_OF_RUIN"
+  ],
+  "requires_move_effect_porting": true,
+  "includes_playable_battle_implementations": false
+}

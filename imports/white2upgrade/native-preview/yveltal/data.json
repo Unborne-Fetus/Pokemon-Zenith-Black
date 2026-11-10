@@ -1,0 +1,191 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Yveltal",
+  "base_stats": {
+    "hp": 126,
+    "attack": 131,
+    "defense": 95,
+    "speed": 99,
+    "special_attack": 131,
+    "special_defense": 98
+  },
+  "types": [
+    "TYPE_DARK",
+    "TYPE_FLYING"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 3,
+  "ev_yields": {
+    "hp": 3,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 255,
+  "hatch_cycles": 120,
+  "base_friendship": 0,
+  "growth_rate": "GROWTH_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_DARK_AURA",
+    "ABILITY_DARK_AURA"
+  ],
+  "hidden_ability": "ABILITY_DARK_AURA",
+  "flee_rate": 0,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_RED",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 306,
+  "height": 58,
+  "weight": 2030,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_HURRICANE"
+      ],
+      [
+        1,
+        "MOVE_RAZOR_WIND"
+      ],
+      [
+        1,
+        "MOVE_TAUNT"
+      ],
+      [
+        1,
+        "MOVE_ROOST"
+      ],
+      [
+        5,
+        "MOVE_DOUBLE_TEAM"
+      ],
+      [
+        10,
+        "MOVE_AIR_SLASH"
+      ],
+      [
+        18,
+        "MOVE_SNARL"
+      ],
+      [
+        26,
+        "MOVE_OBLIVION_WING"
+      ],
+      [
+        35,
+        "MOVE_DISABLE"
+      ],
+      [
+        44,
+        "MOVE_DARK_PULSE"
+      ],
+      [
+        51,
+        "MOVE_FOUL_PLAY"
+      ],
+      [
+        55,
+        "MOVE_PHANTOM_FORCE"
+      ],
+      [
+        59,
+        "MOVE_PSYCHIC"
+      ],
+      [
+        63,
+        "MOVE_DRAGON_RUSH"
+      ],
+      [
+        72,
+        "MOVE_FOCUS_BLAST"
+      ],
+      [
+        80,
+        "MOVE_SUCKER_PUNCH"
+      ],
+      [
+        88,
+        "MOVE_HYPER_BEAM"
+      ],
+      [
+        93,
+        "MOVE_SKY_ATTACK"
+      ]
+    ],
+    "by_tm": [
+      "TM01",
+      "TM02",
+      "TM06",
+      "TM10",
+      "TM11",
+      "TM12",
+      "TM15",
+      "TM17",
+      "TM18",
+      "TM19",
+      "TM21",
+      "TM27",
+      "TM29",
+      "TM30",
+      "TM32",
+      "TM40",
+      "TM41",
+      "TM42",
+      "TM44",
+      "TM46",
+      "TM48",
+      "TM51",
+      "TM52",
+      "TM58",
+      "TM62",
+      "TM63",
+      "TM65",
+      "TM68",
+      "TM80",
+      "TM85",
+      "TM87",
+      "TM88",
+      "TM89",
+      "TM90",
+      "TM94",
+      "TM95",
+      "HM02",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_BLOCK",
+      "MOVE_FOUL_PLAY",
+      "MOVE_DARK_PULSE",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_HYPER_VOICE",
+      "MOVE_SNORE",
+      "MOVE_KNOCK_OFF",
+      "MOVE_HEAT_WAVE",
+      "MOVE_TAILWIND",
+      "MOVE_SKY_ATTACK",
+      "MOVE_ROOST",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_YVELTAL"
+}

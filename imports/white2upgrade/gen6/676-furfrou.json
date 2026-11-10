@@ -1,0 +1,131 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/676.yml",
+    "evolutions": "data/pml/evolutions/676.yml",
+    "learnsets": "data/pml/learnsets/676.yml"
+  },
+  "national_dex": 676,
+  "species": "SPECIES_FURFROU",
+  "base_stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 60,
+    "speed": 102,
+    "special_attack": 65,
+    "special_defense": 90
+  },
+  "types": [
+    "TYPE_NORMAL",
+    "TYPE_NORMAL"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 1,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_TACKLE"
+    ],
+    [
+      1,
+      "MOVE_GROWL"
+    ],
+    [
+      5,
+      "MOVE_SANDATTACK"
+    ],
+    [
+      9,
+      "MOVE_BABYDOLL_EYES"
+    ],
+    [
+      12,
+      "MOVE_HEADBUTT"
+    ],
+    [
+      15,
+      "MOVE_TAIL_WHIP"
+    ],
+    [
+      22,
+      "MOVE_BITE"
+    ],
+    [
+      27,
+      "MOVE_ODOR_SLEUTH"
+    ],
+    [
+      33,
+      "MOVE_RETALIATE"
+    ],
+    [
+      35,
+      "MOVE_TAKE_DOWN"
+    ],
+    [
+      38,
+      "MOVE_CHARM"
+    ],
+    [
+      42,
+      "MOVE_SUCKER_PUNCH"
+    ],
+    [
+      48,
+      "MOVE_COTTON_GUARD"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 75,
+    "Base Attack": 80,
+    "Base Defense": 60,
+    "Base Speed": 102,
+    "Base Special Attack": 65,
+    "Base Special Defense": 90,
+    "Primary Type": "TYPE_NORMAL",
+    "Secondary Type": "TYPE_NORMAL",
+    "Capture Rate": 160,
+    "Evolution Stage": 2,
+    "EV Yield": 64,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 127,
+    "Egg Happiness": 20,
+    "Base Happiness": 70,
+    "Experience Group": 0,
+    "Egg Group 1": 5,
+    "Egg Group 2": 5,
+    "Primary Ability": 169,
+    "Secondary Ability": 169,
+    "Hidden Ability": 169,
+    "Escape Rate": 0,
+    "Form Data Offset": 749,
+    "Form Sprite Offset": 153,
+    "Form Count": 10,
+    "Color": 72,
+    "Base Experience": 165,
+    "Height (cm)": 120,
+    "Weight (cg)": 280,
+    "TM HM 1": -1944910288,
+    "TM HM 2": 16882176,
+    "TM HM 3": 1944060204,
+    "TM HM 4": 585,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      2048,
+      106624,
+      34,
+      8464
+    ]
+  },
+  "status": "staged_not_playable"
+}

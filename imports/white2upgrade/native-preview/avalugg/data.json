@@ -1,0 +1,189 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Avalugg",
+  "base_stats": {
+    "hp": 95,
+    "attack": 117,
+    "defense": 184,
+    "speed": 28,
+    "special_attack": 44,
+    "special_defense": 46
+  },
+  "types": [
+    "TYPE_ICE",
+    "TYPE_ICE"
+  ],
+  "catch_rate": 55,
+  "evolution_stage": 2,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 127,
+  "hatch_cycles": 20,
+  "base_friendship": 70,
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_MONSTER",
+    "EGG_GROUP_MONSTER"
+  ],
+  "abilities": [
+    "ABILITY_OWN_TEMPO",
+    "ABILITY_ICE_BODY"
+  ],
+  "hidden_ability": "ABILITY_STURDY",
+  "flee_rate": 30,
+  "forms": {
+    "count": 1,
+    "sprite_offset": 0
+  },
+  "color": "COLOR_BLUE",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 180,
+  "height": 20,
+  "weight": 5050,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_IRON_DEFENSE"
+      ],
+      [
+        1,
+        "MOVE_CRUNCH"
+      ],
+      [
+        1,
+        "MOVE_SKULL_BASH"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_BITE"
+      ],
+      [
+        1,
+        "MOVE_HARDEN"
+      ],
+      [
+        5,
+        "MOVE_POWDER_SNOW"
+      ],
+      [
+        10,
+        "MOVE_ICY_WIND"
+      ],
+      [
+        15,
+        "MOVE_TAKE_DOWN"
+      ],
+      [
+        20,
+        "MOVE_SHARPEN"
+      ],
+      [
+        22,
+        "MOVE_CURSE"
+      ],
+      [
+        26,
+        "MOVE_ICE_FANG"
+      ],
+      [
+        30,
+        "MOVE_ICE_BALL"
+      ],
+      [
+        35,
+        "MOVE_RAPID_SPIN"
+      ],
+      [
+        42,
+        "MOVE_AVALANCHE"
+      ],
+      [
+        46,
+        "MOVE_BLIZZARD"
+      ],
+      [
+        51,
+        "MOVE_RECOVER"
+      ],
+      [
+        56,
+        "MOVE_DOUBLE_EDGE"
+      ],
+      [
+        60,
+        "MOVE_SKULL_BASH"
+      ],
+      [
+        65,
+        "MOVE_CRUNCH"
+      ]
+    ],
+    "by_tm": [
+      "TM05",
+      "TM06",
+      "TM07",
+      "TM10",
+      "TM13",
+      "TM14",
+      "TM15",
+      "TM17",
+      "TM18",
+      "TM20",
+      "TM21",
+      "TM26",
+      "TM27",
+      "TM32",
+      "TM39",
+      "TM42",
+      "TM44",
+      "TM45",
+      "TM48",
+      "TM68",
+      "TM69",
+      "TM70",
+      "TM71",
+      "TM74",
+      "TM78",
+      "TM79",
+      "TM80",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM91",
+      "TM94",
+      "HM05"
+    ],
+    "by_tutor": [
+      "MOVE_IRON_HEAD",
+      "MOVE_BLOCK",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_SUPERPOWER",
+      "MOVE_ICY_WIND",
+      "MOVE_SNORE",
+      "MOVE_AFTER_YOU",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_BERGMITE"
+}

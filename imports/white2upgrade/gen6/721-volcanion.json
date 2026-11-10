@@ -1,0 +1,143 @@
+{
+  "source": {
+    "project": "White2Upgrade",
+    "repository": "https://github.com/ds-pokemon-hacking/White2Upgrade",
+    "personal": "data/pml/personal/721.yml",
+    "evolutions": "data/pml/evolutions/721.yml",
+    "learnsets": "data/pml/learnsets/721.yml"
+  },
+  "national_dex": 721,
+  "species": "SPECIES_VOLCANION",
+  "base_stats": {
+    "hp": 80,
+    "attack": 110,
+    "defense": 120,
+    "speed": 70,
+    "special_attack": 130,
+    "special_defense": 90
+  },
+  "types": [
+    "TYPE_FIRE",
+    "TYPE_WATER"
+  ],
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 3,
+    "special_defense": 0
+  },
+  "level_up_moves": [
+    [
+      1,
+      "MOVE_STEAM_ERUPTION"
+    ],
+    [
+      1,
+      "MOVE_FLARE_BLITZ"
+    ],
+    [
+      1,
+      "MOVE_TAKE_DOWN"
+    ],
+    [
+      8,
+      "MOVE_MIST"
+    ],
+    [
+      11,
+      "MOVE_HAZE"
+    ],
+    [
+      15,
+      "MOVE_FLAME_CHARGE"
+    ],
+    [
+      21,
+      "MOVE_WATER_PULSE"
+    ],
+    [
+      28,
+      "MOVE_STOMP"
+    ],
+    [
+      32,
+      "MOVE_SCALD"
+    ],
+    [
+      40,
+      "MOVE_WEATHER_BALL"
+    ],
+    [
+      46,
+      "MOVE_BODY_SLAM"
+    ],
+    [
+      50,
+      "MOVE_HYDRO_PUMP"
+    ],
+    [
+      58,
+      "MOVE_FLARE_BLITZ"
+    ],
+    [
+      65,
+      "MOVE_OVERHEAT"
+    ],
+    [
+      76,
+      "MOVE_EXPLOSION"
+    ],
+    [
+      85,
+      "MOVE_STEAM_ERUPTION"
+    ]
+  ],
+  "evolutions": [],
+  "personal_source_fields": {
+    "Base HP": 80,
+    "Base Attack": 110,
+    "Base Defense": 120,
+    "Base Speed": 70,
+    "Base Special Attack": 130,
+    "Base Special Defense": 90,
+    "Primary Type": "TYPE_FIRE",
+    "Secondary Type": "TYPE_WATER",
+    "Capture Rate": 3,
+    "Evolution Stage": 3,
+    "EV Yield": 768,
+    "Wild Item (50%)": 0,
+    "Wild Item (5%)": 0,
+    "Wild Item (1%)": 0,
+    "Gender Probability": 255,
+    "Egg Happiness": 120,
+    "Base Happiness": 100,
+    "Experience Group": 5,
+    "Egg Group 1": 15,
+    "Egg Group 2": 15,
+    "Primary Ability": 11,
+    "Secondary Ability": 11,
+    "Hidden Ability": 11,
+    "Escape Rate": 0,
+    "Form Data Offset": 0,
+    "Form Sprite Offset": 0,
+    "Form Count": 1,
+    "Color": 5,
+    "Base Experience": 270,
+    "Height (cm)": 170,
+    "Weight (cg)": 1950,
+    "TM HM 1": -965654992,
+    "TM HM 2": -1798664642,
+    "TM HM 3": 650158664,
+    "TM HM 4": 664,
+    "Type Tutors": 0,
+    "Special Tutors": [
+      0,
+      260,
+      32786,
+      8192
+    ]
+  },
+  "status": "staged_not_playable"
+}

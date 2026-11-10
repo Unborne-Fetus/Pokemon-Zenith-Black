@@ -1,0 +1,187 @@
+{
+  "$schema": "../species.schema.json",
+  "name": "Xerneas",
+  "base_stats": {
+    "hp": 126,
+    "attack": 131,
+    "defense": 95,
+    "speed": 99,
+    "special_attack": 131,
+    "special_defense": 98
+  },
+  "types": [
+    "TYPE_FAIRY",
+    "TYPE_FAIRY"
+  ],
+  "catch_rate": 45,
+  "evolution_stage": 3,
+  "ev_yields": {
+    "hp": 3,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "underground": false,
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE",
+    "very_rare": "ITEM_NONE"
+  },
+  "gender_ratio": 255,
+  "hatch_cycles": 120,
+  "base_friendship": 0,
+  "growth_rate": "GROWTH_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_FAIRY_AURA",
+    "ABILITY_FAIRY_AURA"
+  ],
+  "hidden_ability": "ABILITY_FAIRY_AURA",
+  "flee_rate": 0,
+  "forms": {
+    "count": 2,
+    "sprite_offset": 170
+  },
+  "color": "COLOR_BLUE",
+  "asymmetric": false,
+  "palette_forms": false,
+  "base_exp": 306,
+  "height": 30,
+  "weight": 2150,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_HEAL_PULSE"
+      ],
+      [
+        1,
+        "MOVE_AROMATHERAPY"
+      ],
+      [
+        1,
+        "MOVE_INGRAIN"
+      ],
+      [
+        1,
+        "MOVE_TAKE_DOWN"
+      ],
+      [
+        5,
+        "MOVE_LIGHT_SCREEN"
+      ],
+      [
+        10,
+        "MOVE_AURORA_BEAM"
+      ],
+      [
+        18,
+        "MOVE_GRAVITY"
+      ],
+      [
+        26,
+        "MOVE_GEOMANCY"
+      ],
+      [
+        35,
+        "MOVE_MOONBLAST"
+      ],
+      [
+        44,
+        "MOVE_MEGAHORN"
+      ],
+      [
+        51,
+        "MOVE_NIGHT_SLASH"
+      ],
+      [
+        55,
+        "MOVE_HORN_LEECH"
+      ],
+      [
+        59,
+        "MOVE_PSYCH_UP"
+      ],
+      [
+        63,
+        "MOVE_MISTY_TERRAIN"
+      ],
+      [
+        72,
+        "MOVE_NATURE_POWER"
+      ],
+      [
+        80,
+        "MOVE_CLOSE_COMBAT"
+      ],
+      [
+        88,
+        "MOVE_GIGA_IMPACT"
+      ],
+      [
+        93,
+        "MOVE_OUTRAGE"
+      ]
+    ],
+    "by_tm": [
+      "TM03",
+      "TM04",
+      "TM05",
+      "TM06",
+      "TM07",
+      "TM10",
+      "TM11",
+      "TM15",
+      "TM16",
+      "TM17",
+      "TM18",
+      "TM21",
+      "TM24",
+      "TM25",
+      "TM27",
+      "TM29",
+      "TM32",
+      "TM33",
+      "TM42",
+      "TM44",
+      "TM48",
+      "TM49",
+      "TM52",
+      "TM68",
+      "TM70",
+      "TM73",
+      "TM77",
+      "TM80",
+      "TM86",
+      "TM87",
+      "TM88",
+      "TM90",
+      "TM91",
+      "TM94",
+      "HM01",
+      "HM04",
+      "HM05",
+      "HM06"
+    ],
+    "by_tutor": [
+      "MOVE_BLOCK",
+      "MOVE_GRAVITY",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_HYPER_VOICE",
+      "MOVE_SNORE",
+      "MOVE_WONDER_ROOM",
+      "MOVE_ENDEAVOR",
+      "MOVE_OUTRAGE",
+      "MOVE_SLEEP_TALK"
+    ],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "regional_dex_number": null,
+  "baby_species": "SPECIES_XERNEAS"
+}

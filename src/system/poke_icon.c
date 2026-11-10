@@ -29,11 +29,19 @@ enum {
 };
 
 // The icons after the species': the egg, Manaphy's egg, and the forms, in the order of the form sprites
+#ifdef ZENITH_721
+#define POKEICON_EGG 755
+#define POKEICON_FORMS 757
+// The palette source table still describes only the original species.
+#define POKEICON_PALETTE_EGG 757
+#define POKEICON_PALETTE_FORMS 758
+#else
 #define POKEICON_EGG 683
 #define POKEICON_FORMS 685
 // The same icons in the palette table, which leaves two more entries before them
 #define POKEICON_PALETTE_EGG 685
 #define POKEICON_PALETTE_FORMS 686
+#endif
 
 // The species that keep six bits of form and no sex in a packed species
 #define POKEICON_PACK_SPECIES_MASK 0x3ff
@@ -42,6 +50,9 @@ enum {
 
 // The palettes of each icon: the male's, or the only one, in the low nibble and the female's in the high one
 // clang-format off
+#ifdef ZENITH_721
+#include "zenith721_icon_palettes.h"
+#else
 static const u8 sPokeIconPalettes[] = {
     0x00, 0x11, 0x11, 0x11, 0x00, 0x00, 0x00, 0x00, 0x22, 0x22, 0x11, 0x11, 0x00, 0x11, 0x22, 0x22,
     0x00, 0x00, 0x00, 0x22, 0x11, 0x00, 0x00, 0x22, 0x22, 0x22, 0x00, 0x22, 0x22, 0x22, 0x22, 0x22,
@@ -92,6 +103,7 @@ static const u8 sPokeIconPalettes[] = {
     0x11, 0x00, 0x22, 0x11, 0x00, 0x11, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x22, 0x22, 0x22,
     0x22, 0x00, 0x00, 0x00,
 };
+#endif
 
 // clang-format on
 
