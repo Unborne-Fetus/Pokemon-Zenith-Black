@@ -14,9 +14,15 @@ import unittest
 from pathlib import Path
 
 from tools.data.narc import read_narc, write_narc
-from tools.import.white2upgrade_graphics import (
-    ROOT, TARGETS, additions, merge_archive, palette_header, splice_members,
-)
+from importlib import import_module
+
+graphics = import_module("tools.import.white2upgrade_graphics")
+ROOT = graphics.ROOT
+TARGETS = graphics.TARGETS
+additions = graphics.additions
+merge_archive = graphics.merge_archive
+palette_header = graphics.palette_header
+splice_members = graphics.splice_members
 
 BASE_COUNTS = {"a/0/0/4": 15065, "a/0/0/7": 1510, "a/1/6/5": 690}
 INSERT_COUNTS = {"a/0/0/4": 3580, "a/0/0/7": 358, "a/1/6/5": 72}
