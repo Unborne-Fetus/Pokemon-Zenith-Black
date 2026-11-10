@@ -16,9 +16,9 @@ Black 2/White 2 build sources unchanged.
 | 72 target-schema Pokémon records | `native-preview/*/data.json` | structural validation passed |
 | Gen 6 moves #560–621 | `moves/*.json` | 62 source records staged |
 | 18×18 Fairy matchup data | `fairy-type-chart.json` | extracted and validated, not active |
-| 72 battle sprites | `graphics-inventory.json` | 1,440 donor entries indexed |
-| 72 Pokémon icons | `graphics-inventory.json` | 144 donor entries indexed |
-| 72 footprints | `graphics-inventory.json` | 72 donor entries indexed |
+| 72 Kalos battle sprite groups and 107 additional forms | `tools/import/white2upgrade_graphics.py` | 3,580 donor members wired into the opt-in build |
+| 72 Kalos icon groups and 107 additional forms | `tools/import/white2upgrade_graphics.py` | 358 donor members wired into the opt-in build |
+| 72 footprints | `tools/import/white2upgrade_graphics.py` | 72 donor members wired into the opt-in build |
 | Archive-building tool | `tools/import/white2upgrade_graphics.py` | local-only, needs extracted base archives |
 
 The [native conversion report](native-preview/REPORT.md) records missing
@@ -42,8 +42,56 @@ python3 tools/import/white2upgrade_type_chart.py --donor ../White2Upgrade --chec
 python3 tools/import/white2upgrade_graphics.py --donor ../White2Upgrade
 ```
 
-To generate *local* graphics archives using NARCs extracted from your own
-game dump, run the graphics importer with both roots:
+## Kalos graphics integration (new)
+
+The experimental `--zenith-721` build now **automatically imports**
+White2Upgrade's already-encoded Nitro sprite members into its generated
+graphics NARCs. All graphics remain local to your build; the repository
+does not distribute donor game artwork.
+
+The importer preserves the original Pokémon and special IDs and places:
+
+| Graphics | Kalos base species | New alternate forms | Generated NARC |
+| --- | ---: | ---: | --- |
+| Battle sprites, backs, animations and palettes | 72 × 20 = 1,440 members | 107 × 20 = 2,140 members | `a/0/0/4` |
+| Party/PC icons | 72 × 2 = 144 members | 107 × 2 = 214 members | `a/0/0/7` |
+| Footprints | 72 members | Uses existing form footprint handling | `a/1/6/5` |
+
+This accounts for **3,580 battle-sprite members, 358 icon members, and
+72 footprint members**. Empty female-icon/sprite slots are preserved
+because the donor NARCs use numbered member positions, not a compact
+sprite list.
+
+New groups are inserted without changing the old Pokéstar/Egg/Manaphy
+sprites, old form groups, Substitute graphics, or Arceus palettes.
+The importer also generates a 932-entry C icon palette table using the
+donor's palette banks for Kalos forms and the original banks for existing
+Pokémon. In the modified runtime, `POKEGRA_FORM_PALETTES` is adjusted
+for the 107 added sprite groups.
+
+Clone the donor next to Zenith Black:
+
+```sh
+git clone --depth 1 https://github.com/ds-pokemon-hacking/White2Upgrade.git ../White2Upgrade
+```
+
+For a modified ROM build, first complete the species, moves, forms,
+save-layout and battle-engine work listed below, then configure with
+the opt-in graphics source:
+
+```sh
+python3 configure.py b2_us --zenith-721 --zenith-donor ../White2Upgrade
+ninja
+```
+
+The `--zenith-721` preflight still refuses to proceed while the main
+`generated/species.txt` lacks Kalos species; **this is deliberate**.
+The graphics build integration is complete as a source path, but
+a runnable 721-Pokémon ROM remains blocked on the full game-data migration.
+The original matching build is unchanged.
+
+To splice and inspect graphics archives independently of a ROM build,
+use your own extracted Black 2 NARCs:
 
 ```sh
 python3 tools/import/white2upgrade_graphics.py \
@@ -52,9 +100,29 @@ python3 tools/import/white2upgrade_graphics.py \
     --output-root build/gen6-graphics
 ```
 
-The three resulting `a/.../` archives are **intermediate assets**, not a
-playable patched ROM. They are not incorporated into the game until the
-runtime code and file indexes are expanded to match them.
+You can also generate the extra icon palette C header alone:
+
+```sh
+python3 tools/import/white2upgrade_graphics.py \
+    --donor ../White2Upgrade \
+    --palette-header build/include/generated/zenith721_icon_palettes.h
+```
+
+ROM-free unit tests check complete donor ranges, insertion positions,
+preservation of the original archive members, NARC round-trips, and
+palette-bank indexing:
+
+```sh
+ZENITH_GRAPHICS_TEST_DONOR=../White2Upgrade \
+python3 -m unittest tools.import.test_white2upgrade_graphics -v
+```
+
+**Known remaining graphics limits:** Alternate-form battle resources
+are present in the expanded NARC, but the species form records and
+transitions must still be integrated to make the game select them.
+New cries are audio assets, not covered by this graphics pass. The
+modified archive build still requires a compatible personal ROM dump
+to compile and test the complete game.
 
 ## Experimental runtime work committed
 
