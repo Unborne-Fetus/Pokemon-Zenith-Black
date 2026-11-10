@@ -104,7 +104,11 @@ class KalosGraphicsTests(unittest.TestCase):
                                  for member in values],
                             )
                     self.assertEqual(merged[0], base[0])
-                    self.assertEqual(merged[-1], base[-1])
+                    # Icons append their extra forms *after* the old last
+                    # icon, so the original tail is no longer the archive tail.
+                    old_tail = (count - 1 + 144 if archive == "a/0/0/7"
+                                else len(merged) - 1)
+                    self.assertEqual(merged[old_tail], base[-1])
 
     def test_icon_palette_table_has_all_new_forms(self):
         header = palette_header(
