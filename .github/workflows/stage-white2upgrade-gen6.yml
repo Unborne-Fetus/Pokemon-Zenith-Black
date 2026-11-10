@@ -8,6 +8,7 @@ on:
       - tools/import/white2upgrade_gen6.py
       - tools/import/white2upgrade_native.py
       - tools/import/white2upgrade_graphics.py
+      - tools/import/test_white2upgrade_graphics.py
       - tools/import/white2upgrade_moves.py
       - tools/import/white2upgrade_type_chart.py
       - tools/import/zenith721_constants.py
@@ -56,6 +57,14 @@ jobs:
         run: python3 tools/import/zenith721_constants.py --check
       - name: Audit donor graphics for all 72 species
         run: python3 tools/import/white2upgrade_graphics.py --donor /tmp/White2Upgrade --report imports/white2upgrade/graphics-inventory.json
+      - name: Verify Kalos battle sprites, icons, footprints and forms
+        env:
+          ZENITH_GRAPHICS_TEST_DONOR: /tmp/White2Upgrade
+        run: python3 -m unittest tools.import.test_white2upgrade_graphics -v
+      - name: Generate the expanded icon palette C header
+        run: |
+          python3 tools/import/white2upgrade_graphics.py --donor /tmp/White2Upgrade --palette-header /tmp/zenith721_icon_palettes.h
+          test -s /tmp/zenith721_icon_palettes.h
       - name: Publish staged records
         run: |
           git config user.name "github-actions[bot]"
