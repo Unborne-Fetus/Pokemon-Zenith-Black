@@ -37,7 +37,7 @@ enum {
 // The 72 Kalos species add 72 groups of 20 battle sprite files.
 #define POKEGRA_EGG 755
 #define POKEGRA_FORM_FILES 0x3b24
-#define POKEGRA_FORM_PALETTES 0x4059
+#define POKEGRA_FORM_PALETTES 0x48b5
 #else
 #define POKEGRA_EGG 683
 #define POKEGRA_FORM_FILES 0x3584
