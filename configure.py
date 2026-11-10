@@ -825,11 +825,13 @@ def add_version(n: Writer, version: str, dsd: Path, bugfix: bool, shift: int, ze
             # In this experimental variant, merge the donor's already-encoded
             # Nitro members into *extracted* original NARCs instead. This
             # preserves old sprites, special Pokémon and every old form.
-            from tools.import.white2upgrade_graphics import TARGETS, donor_files
+            from importlib import import_module
+            graphics = import_module("tools.import.white2upgrade_graphics")
+            targets, donor_files = graphics.TARGETS, graphics.donor_files
             for archive_name, archive in zip(paths, outputs):
                 source = extract_dir / "files" / archive_name
-                if archive_name in TARGETS:
-                    folder, ranges = TARGETS[archive_name]
+                if archive_name in targets:
+                    folder, ranges = targets[archive_name]
                     donor_dir = zenith_donor / "data/graphics/pokegra" / folder
                     candidates = donor_files(donor_dir)
                     wanted = {i for _, first, count in ranges
